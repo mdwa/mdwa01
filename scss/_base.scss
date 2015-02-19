@@ -1,0 +1,21 @@
+/**
+ * Transitions
+ */
+nav.navbar-default {
+  @include transition-property(all);
+  @include transition-timing-function(ease-in);
+  @include transition-duration(.3s);
+
+  .navbar-nav {
+    &>li {
+      &>a {
+        &:hover {
+          //@include transition-property(background-color, padding-top);
+          @include transition-property(all);
+          @include transition-timing-function(ease-in);
+          @include transition-duration(.3s);
+        }
+      }
+    }
+  }
+}

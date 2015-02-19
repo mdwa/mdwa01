@@ -1,0 +1,95 @@
+@import "compass/typography";
+@import "compass/typography/vertical_rhythm";
+
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+@include establish-baseline;
+
+html {
+  font-size: 100%;
+  line-height: 1.6em;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/**
+ * Main
+ */
+main {
+  //@include rhythm;
+  margin: 0;
+  border: none;
+  &.front {
+    @include leading-border(1px,4,16px,solid);
+    border: none;
+  }
+  &.no-front {
+    article#content {
+      h1 { font-size: 2.5rem; }
+      h2 { font-size: 2.3125rem; }
+      h1#page-title {
+        @include leading-border(1px,3,16px,solid);
+        @include trailing-border(1px,1,16px,solid);
+        @include apply-side-rhythm-border(left,1px,3,16px,solid);
+        @include apply-side-rhythm-border(right,1px,3,16px,solid);
+        border: none;
+      }
+      div.container.content {
+        @include rhythm-borders;
+        border: none;
+        font-size: 1.4375rem;
+        line-height: 1.6;
+        p {
+          @include trailing-border;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+
+/**
+ * Footer
+ */
+footer {
+  @include rhythm;
+  #triptych {
+    @include rhythm-borders;
+    border: none;
+  }
+  #footer {
+    @include adjust-font-size-to(12px);
+    text-align: center;
+  }
+}
+
+/**
+ * Secciones
+ */
+section.secciones {
+  padding-top: 3em;
+  .item {
+    @include rhythm;
+    @include rhythm-borders;
+    border: none;
+    padding: 3em 2em 7em 2em;
+
+    .more-info {
+      @include adjust-font-size-to(14px);
+      text-align: center;
+      @include rhythm-borders;
+    //border: none;
+    padding-bottom: 4em;
+    padding-right: 7em;
+    padding-left: 7em;
+    //padding-bottom: 7em;
+      .glyphicon {
+      }
+    }
+  }
+}

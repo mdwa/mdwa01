@@ -1,0 +1,21 @@
+{
+  "name": "mdwa01",
+  "version": "0.0.1",
+  "authors": [
+    "Iñaki García Blasco <txorua@txorua.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "a/j",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "slider-revolution": "~4.3.7"
+  }
+}
