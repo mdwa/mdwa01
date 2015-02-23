@@ -37,7 +37,7 @@ main {
       h1 { font-size: 2.5rem; }
       h2 { font-size: 2.3125rem; }
       h1#page-title {
-        @include leading-border(1px,3,16px,solid);
+        @include leading-border(1px,1,16px,solid);
         @include trailing-border(1px,1,16px,solid);
         @include apply-side-rhythm-border(left,1px,3,16px,solid);
         @include apply-side-rhythm-border(right,1px,3,16px,solid);
