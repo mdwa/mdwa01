@@ -92,6 +92,7 @@ aside#after_content_container {
  */
 aside#triptych {
   background-color: $gris;
+  @include background(image-url("/sites/all/themes/mdwa01/a/i/body-pattern.jpg"));
   h2 {
     text-shadow: 0 1px 0 white;
   }

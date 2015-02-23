@@ -34,6 +34,9 @@ main {
   }
   &.no-front {
     article#content {
+      .block {
+        @include rhythm;
+      }
       h1 { font-size: 2.5rem; }
       h2 { font-size: 2.3125rem; }
       h1#page-title {
@@ -52,6 +55,12 @@ main {
           @include trailing-border;
           border: none;
         }
+      }
+      #sidebar_first,
+      #sidebar_second {
+        @include adjust-font-size-to(10px);
+        line-height: 1.5rem;
+        h2 { font-size: 1.2rem; }
       }
     }
   }

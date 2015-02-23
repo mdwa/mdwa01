@@ -167,8 +167,9 @@ aside#after_content_container h2 {
 /* line 93, ../../scss/_colors.scss */
 aside#triptych {
   background-color: #ddd;
+  background: url(/sites/all/themes/mdwa01/a/i/body-pattern.jpg);
 }
-/* line 95, ../../scss/_colors.scss */
+/* line 96, ../../scss/_colors.scss */
 aside#triptych h2 {
   text-shadow: 0 1px 0 white;
 }
@@ -176,7 +177,7 @@ aside#triptych h2 {
 /**
  * Footer
  */
-/* line 104, ../../scss/_colors.scss */
+/* line 105, ../../scss/_colors.scss */
 footer #footer {
   background-color: #333;
   color: white;
@@ -186,11 +187,11 @@ footer #footer {
 /**
  * Secciones
  */
-/* line 115, ../../scss/_colors.scss */
+/* line 116, ../../scss/_colors.scss */
 section.secciones .item {
   background-color: white;
 }
-/* line 118, ../../scss/_colors.scss */
+/* line 119, ../../scss/_colors.scss */
 section.secciones .item .more-info {
   background-color: #333;
   color: white;
@@ -235,14 +236,21 @@ main.front {
   border: none;
 }
 /* line 37, ../../scss/_typography.scss */
+main.no-front article#content .block {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+/* line 40, ../../scss/_typography.scss */
 main.no-front article#content h1 {
   font-size: 2.5rem;
 }
-/* line 38, ../../scss/_typography.scss */
+/* line 41, ../../scss/_typography.scss */
 main.no-front article#content h2 {
   font-size: 2.3125rem;
 }
-/* line 39, ../../scss/_typography.scss */
+/* line 42, ../../scss/_typography.scss */
 main.no-front article#content h1#page-title {
   border-top-width: 0.0625em;
   border-top-style: solid;
@@ -258,7 +266,7 @@ main.no-front article#content h1#page-title {
   padding-right: 4.4375em;
   border: none;
 }
-/* line 46, ../../scss/_typography.scss */
+/* line 49, ../../scss/_typography.scss */
 main.no-front article#content div.container.content {
   border-width: 0.0625em;
   border-style: solid;
@@ -267,18 +275,30 @@ main.no-front article#content div.container.content {
   font-size: 1.4375rem;
   line-height: 1.6;
 }
-/* line 51, ../../scss/_typography.scss */
+/* line 54, ../../scss/_typography.scss */
 main.no-front article#content div.container.content p {
   border-bottom-width: 0.0625em;
   border-bottom-style: solid;
   padding-bottom: 1.4375em;
   border: none;
 }
+/* line 59, ../../scss/_typography.scss */
+main.no-front article#content #sidebar_first,
+main.no-front article#content #sidebar_second {
+  font-size: 0.625em;
+  line-height: 2.4em;
+  line-height: 1.5rem;
+}
+/* line 63, ../../scss/_typography.scss */
+main.no-front article#content #sidebar_first h2,
+main.no-front article#content #sidebar_second h2 {
+  font-size: 1.2rem;
+}
 
 /**
  * After Content
  */
-/* line 63, ../../scss/_typography.scss */
+/* line 72, ../../scss/_typography.scss */
 div#after_content {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -294,7 +314,7 @@ div#after_content {
 /**
  * After Content Container
  */
-/* line 73, ../../scss/_typography.scss */
+/* line 82, ../../scss/_typography.scss */
 aside#after_content_container {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -310,7 +330,7 @@ aside#after_content_container {
 /**
  * Triptych
  */
-/* line 83, ../../scss/_typography.scss */
+/* line 92, ../../scss/_typography.scss */
 #triptych {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -326,14 +346,14 @@ aside#after_content_container {
 /**
  * Footer
  */
-/* line 93, ../../scss/_typography.scss */
+/* line 102, ../../scss/_typography.scss */
 footer {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 96, ../../scss/_typography.scss */
+/* line 105, ../../scss/_typography.scss */
 footer #footer {
   font-size: 0.75em;
   line-height: 2em;
@@ -343,11 +363,11 @@ footer #footer {
 /**
  * Secciones
  */
-/* line 105, ../../scss/_typography.scss */
+/* line 114, ../../scss/_typography.scss */
 section.secciones {
   padding-top: 3em;
 }
-/* line 107, ../../scss/_typography.scss */
+/* line 116, ../../scss/_typography.scss */
 section.secciones .item {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -359,7 +379,7 @@ section.secciones .item {
   border: none;
   padding: 3em 2em 7em 2em;
 }
-/* line 113, ../../scss/_typography.scss */
+/* line 122, ../../scss/_typography.scss */
 section.secciones .item .more-info {
   font-size: 0.875em;
   line-height: 1.71429em;
