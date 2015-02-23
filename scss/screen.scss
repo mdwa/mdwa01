@@ -31,6 +31,7 @@ li.leaf {
  * Navigation
  */
 nav.navbar-default {
+  margin-bottom: 0;
   padding-bottom: 30px;
   border-bottom: none;
 
@@ -170,3 +171,8 @@ section.secciones {
   }
 }
 
+#IBEX35 {
+  .logo, .downloadApp {
+    display: none;
+  }
+}

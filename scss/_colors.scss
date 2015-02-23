@@ -4,7 +4,7 @@ $gris-oscuro: #333;
 
 body {
   background-color: white;
-  //@include background(image-url("/sites/all/themes/mdwa01/a/i/body-pattern.jpg"));
+  @include background(image-url("/sites/all/themes/mdwa01/a/i/body-pattern.jpg"));
 }
 
 /**
@@ -14,8 +14,8 @@ header {
   //background-color: rgba(0,0,0,0.4);
   .intro-text {
     .intro-lead-in {
-      color: white;
-      background-color: rgba(0,0,0, 0.4);
+      //color: white;
+      //background-color: rgba(0,0,0, 0.4);
     }
   }
 }
@@ -77,15 +77,30 @@ main {
 }
 
 /**
+ * After Content Container
+ */
+aside#after_content_container {
+  background-color: white;
+  h2 {
+    text-shadow: 0 1px 0 white;
+  }
+}
+
+
+/**
+ * Triptych
+ */
+aside#triptych {
+  background-color: $gris;
+  h2 {
+    text-shadow: 0 1px 0 white;
+  }
+}
+
+/**
  * Footer
  */
 footer {
-  #triptych {
-    background-color: $gris;
-    h2 {
-      text-shadow: 0 1px 0 white;
-    }
-  }
   #footer {
     background-color: $gris-oscuro;
     color: white;

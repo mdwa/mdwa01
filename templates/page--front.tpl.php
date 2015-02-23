@@ -88,7 +88,7 @@
 
 
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header page-scroll">
@@ -165,44 +165,73 @@
 </main> <!-- /#main, /#main-wrapper -->
 
 <?php if ($page['after_content']): ?>
-  <div id="after-content">
+  <div id="after_content">
     <?php print render($page['after_content']); ?>
   </div>
 <?php endif; ?>
 
 
-
-
-    <?php if ($page['footer_firstcolumn'] || $page['footer_secondcolumn'] || $page['footer_thirdcolumn'] || $page['footer_fourthcolumn']): ?>
-      <div id="footer-columns" class="container">
-        <?php print render($page['footer_firstcolumn']); ?>
-        <?php print render($page['footer_secondcolumn']); ?>
-        <?php print render($page['footer_thirdcolumn']); ?>
-        <?php print render($page['footer_fourthcolumn']); ?>
-      </div> <!-- /#footer-columns -->
-    <?php endif; ?>
-
-<footer>
-  <?php if ($page['triptych_first'] || $page['triptych_middle'] || $page['triptych_last']): ?>
-  <aside id="triptych">
+<?php if ($page['after_content_2'] || $page['after_content_3']): ?>
+  <aside id="after_content_container">
     <div class="container">
       <div class="row">
 
-        <div class="col-md-4">
-          <?php print render($page['triptych_first']); ?>
+        <div class="col-md-6">
+          <?php print render($page['after_content_2']); ?>
         </div>
 
-        <div class="col-md-4">
-          <?php print render($page['triptych_middle']); ?>
+        <div class="col-md-6">
+          <?php print render($page['after_content_3']); ?>
         </div>
 
-        <div class="col-md-4">
-          <?php print render($page['triptych_last']); ?>
-        </div>
-
-      </div><!-- /#end-row -->
+      </div>
     </div>
-  </aside> <!-- /#triptych, /#triptych-wrapper -->
+  </aside>
+<?php endif; ?>
+
+<?php if ($page['triptych_first'] || $page['triptych_middle'] || $page['triptych_last']): ?>
+<aside id="triptych">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4">
+        <?php print render($page['triptych_first']); ?>
+      </div>
+
+      <div class="col-md-4">
+        <?php print render($page['triptych_middle']); ?>
+      </div>
+
+      <div class="col-md-4">
+        <?php print render($page['triptych_last']); ?>
+      </div>
+
+    </div><!-- /#end-row -->
+  </div>
+</aside> <!-- /#triptych, /#triptych-wrapper -->
+<?php endif; ?>
+
+<footer>
+  <?php if ($page['footer_firstcolumn'] || $page['footer_secondcolumn'] || $page['footer_thirdcolumn'] || $page['footer_fourthcolumn']): ?>
+    <div id="footer-columns" class="container">
+
+      <div class="col-md-3">
+        <?php print render($page['footer_firstcolumn']); ?>
+      </div>
+
+      <div class="col-md-3">
+        <?php print render($page['footer_secondcolumn']); ?>
+      </div>
+
+      <div class="col-md-3">
+        <?php print render($page['footer_thirdcolumn']); ?>
+      </div>
+
+      <div class="col-md-3">
+        <?php print render($page['footer_fourthcolumn']); ?>
+      </div>
+
+    </div> <!-- /#footer-columns -->
   <?php endif; ?>
 
   <?php if ($page['footer']): ?>

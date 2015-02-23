@@ -104,17 +104,12 @@ nav.navbar-default .navbar-nav > li > a:hover {
 /* line 5, ../../scss/_colors.scss */
 body {
   background-color: white;
+  background: url(/sites/all/themes/mdwa01/a/i/body-pattern.jpg);
 }
 
 /**
  * Header
  */
-/* line 16, ../../scss/_colors.scss */
-header .intro-text .intro-lead-in {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
 /**
  * Navigation
  */
@@ -155,17 +150,33 @@ main.no-front article#content img {
 }
 
 /**
- * Footer
+ * After Content Container
  */
-/* line 83, ../../scss/_colors.scss */
-footer #triptych {
-  background-color: #ddd;
+/* line 82, ../../scss/_colors.scss */
+aside#after_content_container {
+  background-color: white;
 }
-/* line 85, ../../scss/_colors.scss */
-footer #triptych h2 {
+/* line 84, ../../scss/_colors.scss */
+aside#after_content_container h2 {
   text-shadow: 0 1px 0 white;
 }
-/* line 89, ../../scss/_colors.scss */
+
+/**
+ * Triptych
+ */
+/* line 93, ../../scss/_colors.scss */
+aside#triptych {
+  background-color: #ddd;
+}
+/* line 95, ../../scss/_colors.scss */
+aside#triptych h2 {
+  text-shadow: 0 1px 0 white;
+}
+
+/**
+ * Footer
+ */
+/* line 104, ../../scss/_colors.scss */
 footer #footer {
   background-color: #333;
   color: white;
@@ -175,11 +186,11 @@ footer #footer {
 /**
  * Secciones
  */
-/* line 100, ../../scss/_colors.scss */
+/* line 115, ../../scss/_colors.scss */
 section.secciones .item {
   background-color: white;
 }
-/* line 103, ../../scss/_colors.scss */
+/* line 118, ../../scss/_colors.scss */
 section.secciones .item .more-info {
   background-color: #333;
   color: white;
@@ -199,33 +210,39 @@ html {
 
 /* line 15, ../../scss/_typography.scss */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+}
+
+/* line 19, ../../scss/_typography.scss */
+strong {
+  font-weight: 700;
 }
 
 /**
  * Main
  */
-/* line 22, ../../scss/_typography.scss */
+/* line 26, ../../scss/_typography.scss */
 main {
   margin: 0;
   border: none;
+  font-weight: 400;
 }
-/* line 26, ../../scss/_typography.scss */
+/* line 31, ../../scss/_typography.scss */
 main.front {
   border-top-width: 0.0625em;
   border-top-style: solid;
   padding-top: 5.9375em;
   border: none;
 }
-/* line 32, ../../scss/_typography.scss */
+/* line 37, ../../scss/_typography.scss */
 main.no-front article#content h1 {
   font-size: 2.5rem;
 }
-/* line 33, ../../scss/_typography.scss */
+/* line 38, ../../scss/_typography.scss */
 main.no-front article#content h2 {
   font-size: 2.3125rem;
 }
-/* line 34, ../../scss/_typography.scss */
+/* line 39, ../../scss/_typography.scss */
 main.no-front article#content h1#page-title {
   border-top-width: 0.0625em;
   border-top-style: solid;
@@ -241,7 +258,7 @@ main.no-front article#content h1#page-title {
   padding-right: 4.4375em;
   border: none;
 }
-/* line 41, ../../scss/_typography.scss */
+/* line 46, ../../scss/_typography.scss */
 main.no-front article#content div.container.content {
   border-width: 0.0625em;
   border-style: solid;
@@ -250,7 +267,7 @@ main.no-front article#content div.container.content {
   font-size: 1.4375rem;
   line-height: 1.6;
 }
-/* line 46, ../../scss/_typography.scss */
+/* line 51, ../../scss/_typography.scss */
 main.no-front article#content div.container.content p {
   border-bottom-width: 0.0625em;
   border-bottom-style: solid;
@@ -259,23 +276,64 @@ main.no-front article#content div.container.content p {
 }
 
 /**
+ * After Content
+ */
+/* line 63, ../../scss/_typography.scss */
+div#after_content {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+  margin: 0;
+  border-width: 0.0625em;
+  border-style: solid;
+  padding: 1.4375em;
+  border: none;
+}
+
+/**
+ * After Content Container
+ */
+/* line 73, ../../scss/_typography.scss */
+aside#after_content_container {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+  margin: 0;
+  border-width: 0.0625em;
+  border-style: solid;
+  padding: 1.4375em;
+  border: none;
+}
+
+/**
+ * Triptych
+ */
+/* line 83, ../../scss/_typography.scss */
+#triptych {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+  margin: 0;
+  border-width: 0.0625em;
+  border-style: solid;
+  padding: 1.4375em;
+  border: none;
+}
+
+/**
  * Footer
  */
-/* line 59, ../../scss/_typography.scss */
+/* line 93, ../../scss/_typography.scss */
 footer {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 61, ../../scss/_typography.scss */
-footer #triptych {
-  border-width: 0.0625em;
-  border-style: solid;
-  padding: 1.4375em;
-  border: none;
-}
-/* line 65, ../../scss/_typography.scss */
+/* line 96, ../../scss/_typography.scss */
 footer #footer {
   font-size: 0.75em;
   line-height: 2em;
@@ -285,11 +343,11 @@ footer #footer {
 /**
  * Secciones
  */
-/* line 74, ../../scss/_typography.scss */
+/* line 105, ../../scss/_typography.scss */
 section.secciones {
   padding-top: 3em;
 }
-/* line 76, ../../scss/_typography.scss */
+/* line 107, ../../scss/_typography.scss */
 section.secciones .item {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -301,7 +359,7 @@ section.secciones .item {
   border: none;
   padding: 3em 2em 7em 2em;
 }
-/* line 82, ../../scss/_typography.scss */
+/* line 113, ../../scss/_typography.scss */
 section.secciones .item .more-info {
   font-size: 0.875em;
   line-height: 1.71429em;
@@ -314,6 +372,9 @@ section.secciones .item .more-info {
   padding-left: 7em;
 }
 
+/**
+ * Slider
+ */
 /* line 20, ../../scss/screen.scss */
 .glyphicon {
   padding: 0.5em;
@@ -329,36 +390,37 @@ li.leaf {
  */
 /* line 33, ../../scss/screen.scss */
 nav.navbar-default {
+  margin-bottom: 0;
   padding-bottom: 30px;
   border-bottom: none;
 }
-/* line 38, ../../scss/screen.scss */
+/* line 39, ../../scss/screen.scss */
 nav.navbar-default .navbar-brand img {
   max-width: 200px;
   margin-top: -7px;
 }
 @media (max-width: 768px) {
-  /* line 38, ../../scss/screen.scss */
+  /* line 39, ../../scss/screen.scss */
   nav.navbar-default .navbar-brand img {
     max-width: 250px;
   }
 }
 @media (min-width: 992px) {
-  /* line 38, ../../scss/screen.scss */
+  /* line 39, ../../scss/screen.scss */
   nav.navbar-default .navbar-brand img {
     max-width: 300px;
   }
 }
-/* line 51, ../../scss/screen.scss */
+/* line 52, ../../scss/screen.scss */
 nav.navbar-default .navbar-collapse {
   border: none;
 }
-/* line 57, ../../scss/screen.scss */
+/* line 58, ../../scss/screen.scss */
 nav.navbar-default .navbar-nav > li > a {
   margin: 0;
 }
 @media (min-width: 768px) {
-  /* line 59, ../../scss/screen.scss */
+  /* line 60, ../../scss/screen.scss */
   nav.navbar-default .navbar-nav > li > a:hover {
     padding-top: 45px;
     margin-bottom: -30px;
@@ -368,14 +430,14 @@ nav.navbar-default .navbar-nav > li > a {
 /**
  * Header
  */
-/* line 85, ../../scss/screen.scss */
+/* line 86, ../../scss/screen.scss */
 header {
   margin-bottom: 3.75rem;
   background-size: cover;
   background-attachment: scroll;
   text-align: center;
 }
-/* line 92, ../../scss/screen.scss */
+/* line 93, ../../scss/screen.scss */
 header .intro-text {
   width: 50%;
   margin: 0 auto;
@@ -388,7 +450,7 @@ header .intro-text {
 /**
  * Main
  */
-/* line 105, ../../scss/screen.scss */
+/* line 106, ../../scss/screen.scss */
 main.no-front article#content {
   margin-top: -3.75rem;
 }
@@ -396,11 +458,11 @@ main.no-front article#content {
 /**
  * Footer
  */
-/* line 113, ../../scss/screen.scss */
+/* line 114, ../../scss/screen.scss */
 footer {
   margin-bottom: 0;
 }
-/* line 115, ../../scss/screen.scss */
+/* line 116, ../../scss/screen.scss */
 footer img {
   width: 25%;
 }
@@ -408,7 +470,7 @@ footer img {
 /**
  * Secciones
  */
-/* line 124, ../../scss/screen.scss */
+/* line 125, ../../scss/screen.scss */
 section.secciones .item {
   position: relative;
   overflow: hidden;
@@ -422,7 +484,7 @@ section.secciones .item {
   border: none;
   padding: 3em 2em 7em 2em;
 }
-/* line 132, ../../scss/screen.scss */
+/* line 133, ../../scss/screen.scss */
 section.secciones .item .more-info {
   position: absolute;
   right: -9em;
@@ -439,7 +501,7 @@ section.secciones .item .more-info {
   transform: rotate(-45deg);
 }
 
-/* line 150, ../../scss/screen.scss */
+/* line 151, ../../scss/screen.scss */
 #features header h1 {
   font-size: 2.3125rem;
   font-weight: 600;
@@ -449,7 +511,7 @@ section.secciones .item .more-info {
   text-shadow: 0 1px 0 white;
   text-align: center;
 }
-/* line 160, ../../scss/screen.scss */
+/* line 161, ../../scss/screen.scss */
 #features p {
   font-size: 1.4375rem;
   font-weight: 400;
@@ -457,7 +519,12 @@ section.secciones .item .more-info {
   margin-bottom: 1.25rem;
   text-align: center;
 }
-/* line 168, ../../scss/screen.scss */
+/* line 169, ../../scss/screen.scss */
 #features img {
   max-width: 100%;
+}
+
+/* line 175, ../../scss/screen.scss */
+#IBEX35 .logo, #IBEX35 .downloadApp {
+  display: none;
 }
