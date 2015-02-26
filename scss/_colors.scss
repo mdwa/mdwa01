@@ -74,7 +74,8 @@ main {
   &.no-front {
     article#content {
       h1#page-title {
-        @include background(image-url("/sites/all/themes/mdwa01/a/i/banner-background.jpg") no-repeat center center / cover);
+        //@include background(image-url("/sites/all/themes/mdwa01/a/i/banner-background.jpg") no-repeat center center / cover);
+        @include background(image-url("/sites/all/themes/mdwa01/a/i/fachada-bn.jpg") no-repeat center center / cover);
         color: white;
       }
       img {
