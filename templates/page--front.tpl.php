@@ -140,36 +140,11 @@
   </div>
 <?php endif; ?>
 
-<main class="front">
-  <article id="content">
-    <a id="main-content"></a>
-
-    <?php if ($breadcrumb): ?>
-    <div class="container">
-      <div id="breadcrumb"><?php print $breadcrumb; ?></div>
-    </div>
-    <?php endif; ?>
-
-    <?php print render($page['help']); ?>
-    <?php if ($action_links): ?>
-      <ul class="action-links">
-        <?php print render($action_links); ?>
-      </ul>
-    <?php endif; ?>
-
-    <?php print render($page['content']); ?>
-
-    <?php print $feed_icons; ?>
-
-  </article> <!-- /.section, /#content -->
-</main> <!-- /#main, /#main-wrapper -->
-
 <?php if ($page['after_content']): ?>
   <div id="after_content">
     <?php print render($page['after_content']); ?>
   </div>
 <?php endif; ?>
-
 
 <?php if ($page['after_content_2'] || $page['after_content_3']): ?>
   <aside id="after_content_container">

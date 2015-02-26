@@ -63,6 +63,13 @@ nav.navbar-default {
  * Main
  */
 main {
+  .breadcrumb {
+    //background-color: rgba(white, 0.2);
+    background-color: transparent;
+    //border-bottom: solid 1px $azul;
+    //@include box-shadow(rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
+    //@include box-shadow(rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
+  }
   &.no-front {
     article#content {
       h1#page-title {
@@ -71,6 +78,11 @@ main {
       }
       img {
         max-width: 100%;
+      }
+      .container.content {
+        //border: solid 25px orange;
+        //border-image: url('/sites/all/themes/mdwa01/a/i/ICON BOLITAS 5.jpg');
+        @include background(image-url("/sites/all/themes/mdwa01/a/i/ICON BOLITAS 5.jpg") top left);
       }
     }
   }

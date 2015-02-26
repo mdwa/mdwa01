@@ -79,7 +79,7 @@ drupal_add_js('
         startheight:500,
         startwidth: 1140,
         onHoverStop: "on",
-        shadow: 1
+        shadow: 2
     });
     
     api.bind("revolution.slide.onloaded",function (e,data) {

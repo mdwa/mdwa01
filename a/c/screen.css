@@ -139,24 +139,32 @@ nav.navbar-default.navbar-shrink .navbar-nav > li > a:hover {
 /**
  * Main
  */
-/* line 68, ../../scss/_colors.scss */
+/* line 66, ../../scss/_colors.scss */
+main .breadcrumb {
+  background-color: transparent;
+}
+/* line 75, ../../scss/_colors.scss */
 main.no-front article#content h1#page-title {
   background: url(/sites/all/themes/mdwa01/a/i/banner-background.jpg) no-repeat center center/cover;
   color: white;
 }
-/* line 72, ../../scss/_colors.scss */
+/* line 79, ../../scss/_colors.scss */
 main.no-front article#content img {
   max-width: 100%;
+}
+/* line 82, ../../scss/_colors.scss */
+main.no-front article#content .container.content {
+  background: url(/sites/all/themes/mdwa01/a/i/ICON BOLITAS 5.jpg) top left;
 }
 
 /**
  * After Content Container
  */
-/* line 82, ../../scss/_colors.scss */
+/* line 94, ../../scss/_colors.scss */
 aside#after_content_container {
   background-color: white;
 }
-/* line 84, ../../scss/_colors.scss */
+/* line 96, ../../scss/_colors.scss */
 aside#after_content_container h2 {
   text-shadow: 0 1px 0 white;
 }
@@ -164,12 +172,12 @@ aside#after_content_container h2 {
 /**
  * Triptych
  */
-/* line 93, ../../scss/_colors.scss */
+/* line 105, ../../scss/_colors.scss */
 aside#triptych {
   background-color: #ddd;
   background: url(/sites/all/themes/mdwa01/a/i/body-pattern.jpg);
 }
-/* line 96, ../../scss/_colors.scss */
+/* line 108, ../../scss/_colors.scss */
 aside#triptych h2 {
   text-shadow: 0 1px 0 white;
 }
@@ -177,7 +185,7 @@ aside#triptych h2 {
 /**
  * Footer
  */
-/* line 105, ../../scss/_colors.scss */
+/* line 117, ../../scss/_colors.scss */
 footer #footer {
   background-color: #333;
   color: white;
@@ -187,11 +195,11 @@ footer #footer {
 /**
  * Secciones
  */
-/* line 116, ../../scss/_colors.scss */
+/* line 128, ../../scss/_colors.scss */
 section.secciones .item {
   background-color: white;
 }
-/* line 119, ../../scss/_colors.scss */
+/* line 131, ../../scss/_colors.scss */
 section.secciones .item .more-info {
   background-color: #333;
   color: white;
@@ -228,29 +236,34 @@ main {
   border: none;
   font-weight: 400;
 }
-/* line 31, ../../scss/_typography.scss */
+/* line 32, ../../scss/_typography.scss */
+main .breadcrumb {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+}
+/* line 36, ../../scss/_typography.scss */
 main.front {
   border-top-width: 0.0625em;
   border-top-style: solid;
   padding-top: 5.9375em;
   border: none;
 }
-/* line 37, ../../scss/_typography.scss */
+/* line 42, ../../scss/_typography.scss */
 main.no-front article#content .block {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 40, ../../scss/_typography.scss */
+/* line 45, ../../scss/_typography.scss */
 main.no-front article#content h1 {
   font-size: 2.5rem;
 }
-/* line 41, ../../scss/_typography.scss */
+/* line 46, ../../scss/_typography.scss */
 main.no-front article#content h2 {
   font-size: 2.3125rem;
 }
-/* line 42, ../../scss/_typography.scss */
+/* line 47, ../../scss/_typography.scss */
 main.no-front article#content h1#page-title {
   border-top-width: 0.0625em;
   border-top-style: solid;
@@ -266,30 +279,31 @@ main.no-front article#content h1#page-title {
   padding-right: 4.4375em;
   border: none;
 }
-/* line 49, ../../scss/_typography.scss */
+/* line 54, ../../scss/_typography.scss */
 main.no-front article#content div.container.content {
   border-width: 0.0625em;
   border-style: solid;
   padding: 1.4375em;
   border: none;
+  border-left: solid 3rem orange;
   font-size: 1.4375rem;
   line-height: 1.6;
 }
-/* line 54, ../../scss/_typography.scss */
+/* line 61, ../../scss/_typography.scss */
 main.no-front article#content div.container.content p {
   border-bottom-width: 0.0625em;
   border-bottom-style: solid;
   padding-bottom: 1.4375em;
   border: none;
 }
-/* line 59, ../../scss/_typography.scss */
+/* line 66, ../../scss/_typography.scss */
 main.no-front article#content #sidebar_first,
 main.no-front article#content #sidebar_second {
   font-size: 0.625em;
   line-height: 2.4em;
   line-height: 1.5rem;
 }
-/* line 63, ../../scss/_typography.scss */
+/* line 70, ../../scss/_typography.scss */
 main.no-front article#content #sidebar_first h2,
 main.no-front article#content #sidebar_second h2 {
   font-size: 1.2rem;
@@ -298,7 +312,7 @@ main.no-front article#content #sidebar_second h2 {
 /**
  * After Content
  */
-/* line 72, ../../scss/_typography.scss */
+/* line 79, ../../scss/_typography.scss */
 div#after_content {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -314,7 +328,7 @@ div#after_content {
 /**
  * After Content Container
  */
-/* line 82, ../../scss/_typography.scss */
+/* line 89, ../../scss/_typography.scss */
 aside#after_content_container {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -330,7 +344,7 @@ aside#after_content_container {
 /**
  * Triptych
  */
-/* line 92, ../../scss/_typography.scss */
+/* line 99, ../../scss/_typography.scss */
 #triptych {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -346,14 +360,14 @@ aside#after_content_container {
 /**
  * Footer
  */
-/* line 102, ../../scss/_typography.scss */
+/* line 109, ../../scss/_typography.scss */
 footer {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 105, ../../scss/_typography.scss */
+/* line 112, ../../scss/_typography.scss */
 footer #footer {
   font-size: 0.75em;
   line-height: 2em;
@@ -363,11 +377,11 @@ footer #footer {
 /**
  * Secciones
  */
-/* line 114, ../../scss/_typography.scss */
+/* line 121, ../../scss/_typography.scss */
 section.secciones {
   padding-top: 3em;
 }
-/* line 116, ../../scss/_typography.scss */
+/* line 123, ../../scss/_typography.scss */
 section.secciones .item {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -379,7 +393,7 @@ section.secciones .item {
   border: none;
   padding: 3em 2em 7em 2em;
 }
-/* line 122, ../../scss/_typography.scss */
+/* line 129, ../../scss/_typography.scss */
 section.secciones .item .more-info {
   font-size: 0.875em;
   line-height: 1.71429em;
@@ -471,6 +485,13 @@ header .intro-text {
  * Main
  */
 /* line 106, ../../scss/screen.scss */
+main.no-front .breadcrumb {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+/* line 109, ../../scss/screen.scss */
 main.no-front article#content {
   margin-top: -3.75rem;
 }
@@ -478,11 +499,11 @@ main.no-front article#content {
 /**
  * Footer
  */
-/* line 114, ../../scss/screen.scss */
+/* line 117, ../../scss/screen.scss */
 footer {
   margin-bottom: 0;
 }
-/* line 116, ../../scss/screen.scss */
+/* line 119, ../../scss/screen.scss */
 footer img {
   width: 25%;
 }
@@ -490,7 +511,7 @@ footer img {
 /**
  * Secciones
  */
-/* line 125, ../../scss/screen.scss */
+/* line 128, ../../scss/screen.scss */
 section.secciones .item {
   position: relative;
   overflow: hidden;
@@ -504,7 +525,7 @@ section.secciones .item {
   border: none;
   padding: 3em 2em 7em 2em;
 }
-/* line 133, ../../scss/screen.scss */
+/* line 136, ../../scss/screen.scss */
 section.secciones .item .more-info {
   position: absolute;
   right: -9em;
@@ -521,9 +542,16 @@ section.secciones .item .more-info {
   transform: rotate(-45deg);
 }
 
-/* line 151, ../../scss/screen.scss */
+/* line 153, ../../scss/screen.scss */
+#features header {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+/* line 155, ../../scss/screen.scss */
 #features header h1 {
-  font-size: 2.3125rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 1.4;
   margin-top: 0.2rem;
@@ -531,7 +559,16 @@ section.secciones .item .more-info {
   text-shadow: 0 1px 0 white;
   text-align: center;
 }
-/* line 161, ../../scss/screen.scss */
+/* line 164, ../../scss/screen.scss */
+#features header span.glyphicon {
+  padding: 0;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-shadow: 0 1px 0 white;
+  text-align: center;
+}
+/* line 173, ../../scss/screen.scss */
 #features p {
   font-size: 1.4375rem;
   font-weight: 400;
@@ -539,12 +576,12 @@ section.secciones .item .more-info {
   margin-bottom: 1.25rem;
   text-align: center;
 }
-/* line 169, ../../scss/screen.scss */
+/* line 181, ../../scss/screen.scss */
 #features img {
   max-width: 100%;
 }
 
-/* line 175, ../../scss/screen.scss */
+/* line 187, ../../scss/screen.scss */
 #IBEX35 .logo, #IBEX35 .downloadApp {
   display: none;
 }

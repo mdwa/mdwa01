@@ -28,6 +28,11 @@ main {
   margin: 0;
   border: none;
   font-weight: 400;
+
+  .breadcrumb {
+    @include adjust-font-size-to(14px);
+  }
+
   &.front {
     @include leading-border(1px,4,16px,solid);
     border: none;
@@ -49,6 +54,8 @@ main {
       div.container.content {
         @include rhythm-borders;
         border: none;
+        border-left: solid 3rem orange;
+        //border-image: url('/sites/all/themes/mdwa01/a/i/ICON BOLITAS 5.jpg');
         font-size: 1.4375rem;
         line-height: 1.6;
         p {
