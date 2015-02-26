@@ -108,10 +108,45 @@ aside#after_content_container {
  */
 footer {
   @include rhythm;
+  margin: 0;
+
+  ul {
+    li.leaf {
+      list-style-image: none;
+      list-style-type: none;
+      &:before {
+        color: $gris-oscuro;
+        font-family: "Glyphicons Halflings";
+        content: " ";
+      }
+      a {
+        color: white;
+      }
+    }
+  }
+
+  #footer-columns {
+    @include adjust-font-size-to(14px);
+    @include rhythm-borders;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    h2 {
+      padding-bottom: 0.3rem;
+      border-bottom: solid 1px white;
+    }
+    .content {
+      @include leading-border;
+      @include trailing-border;
+      border: none;
+    }
+  }
 
   #footer {
     @include adjust-font-size-to(12px);
-    text-align: center;
+    border-top: solid 1px white;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

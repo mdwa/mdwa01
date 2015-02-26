@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -101,7 +102,7 @@ nav.navbar-default .navbar-nav > li > a:hover {
   transition-duration: 0.3s;
 }
 
-/* line 5, ../../scss/_colors.scss */
+/* line 6, ../../scss/_colors.scss */
 body {
   background-color: white;
   background: url(/sites/all/themes/mdwa01/a/i/body-pattern.jpg);
@@ -113,16 +114,16 @@ body {
 /**
  * Navigation
  */
-/* line 26, ../../scss/_colors.scss */
+/* line 27, ../../scss/_colors.scss */
 nav.navbar-default {
   background-color: rgba(221, 221, 221, 0.8);
 }
-/* line 33, ../../scss/_colors.scss */
+/* line 34, ../../scss/_colors.scss */
 nav.navbar-default .navbar-nav > li > a {
   color: #333;
 }
 @media (min-width: 768px) {
-  /* line 38, ../../scss/_colors.scss */
+  /* line 39, ../../scss/_colors.scss */
   nav.navbar-default .navbar-nav > li > a:hover {
     color: white;
     background-color: #00528e;
@@ -131,7 +132,7 @@ nav.navbar-default .navbar-nav > li > a {
     box-shadow: rgba(0, 82, 142, 0.6) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
   }
 }
-/* line 53, ../../scss/_colors.scss */
+/* line 54, ../../scss/_colors.scss */
 nav.navbar-default.navbar-shrink .navbar-nav > li > a:hover {
   color: white;
 }
@@ -139,20 +140,20 @@ nav.navbar-default.navbar-shrink .navbar-nav > li > a:hover {
 /**
  * Main
  */
-/* line 66, ../../scss/_colors.scss */
+/* line 67, ../../scss/_colors.scss */
 main .breadcrumb {
   background-color: transparent;
 }
-/* line 75, ../../scss/_colors.scss */
+/* line 76, ../../scss/_colors.scss */
 main.no-front article#content h1#page-title {
   background: url(/sites/all/themes/mdwa01/a/i/banner-background.jpg) no-repeat center center/cover;
   color: white;
 }
-/* line 79, ../../scss/_colors.scss */
+/* line 80, ../../scss/_colors.scss */
 main.no-front article#content img {
   max-width: 100%;
 }
-/* line 82, ../../scss/_colors.scss */
+/* line 83, ../../scss/_colors.scss */
 main.no-front article#content .container.content {
   background: url(/sites/all/themes/mdwa01/a/i/ICON BOLITAS 5.jpg) top left;
 }
@@ -160,11 +161,11 @@ main.no-front article#content .container.content {
 /**
  * After Content Container
  */
-/* line 94, ../../scss/_colors.scss */
+/* line 95, ../../scss/_colors.scss */
 aside#after_content_container {
   background-color: white;
 }
-/* line 96, ../../scss/_colors.scss */
+/* line 97, ../../scss/_colors.scss */
 aside#after_content_container h2 {
   text-shadow: 0 1px 0 white;
 }
@@ -172,12 +173,12 @@ aside#after_content_container h2 {
 /**
  * Triptych
  */
-/* line 105, ../../scss/_colors.scss */
+/* line 106, ../../scss/_colors.scss */
 aside#triptych {
   background-color: #ddd;
   background: url(/sites/all/themes/mdwa01/a/i/body-pattern.jpg);
 }
-/* line 108, ../../scss/_colors.scss */
+/* line 109, ../../scss/_colors.scss */
 aside#triptych h2 {
   text-shadow: 0 1px 0 white;
 }
@@ -186,20 +187,19 @@ aside#triptych h2 {
  * Footer
  */
 /* line 117, ../../scss/_colors.scss */
-footer #footer {
-  background-color: #333;
+footer {
+  background-color: #7f7f7f;
   color: white;
-  text-shadow: 0 1px 0 black;
 }
 
 /**
  * Secciones
  */
-/* line 128, ../../scss/_colors.scss */
+/* line 130, ../../scss/_colors.scss */
 section.secciones .item {
   background-color: white;
 }
-/* line 131, ../../scss/_colors.scss */
+/* line 133, ../../scss/_colors.scss */
 section.secciones .item .more-info {
   background-color: #333;
   color: white;
@@ -366,22 +366,66 @@ footer {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
+  margin: 0;
 }
-/* line 112, ../../scss/_typography.scss */
+/* line 114, ../../scss/_typography.scss */
+footer ul li.leaf {
+  list-style-image: none;
+  list-style-type: none;
+}
+/* line 117, ../../scss/_typography.scss */
+footer ul li.leaf:before {
+  color: #333;
+  font-family: "Glyphicons Halflings";
+  content: " ";
+}
+/* line 122, ../../scss/_typography.scss */
+footer ul li.leaf a {
+  color: white;
+}
+/* line 128, ../../scss/_typography.scss */
+footer #footer-columns {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  border-width: 0.0625em;
+  border-style: solid;
+  padding: 1.4375em;
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+}
+/* line 134, ../../scss/_typography.scss */
+footer #footer-columns h2 {
+  padding-bottom: 0.3rem;
+  border-bottom: solid 1px white;
+}
+/* line 138, ../../scss/_typography.scss */
+footer #footer-columns .content {
+  border-top-width: 0.0625em;
+  border-top-style: solid;
+  padding-top: 1.4375em;
+  border-bottom-width: 0.0625em;
+  border-bottom-style: solid;
+  padding-bottom: 1.4375em;
+  border: none;
+}
+/* line 145, ../../scss/_typography.scss */
 footer #footer {
   font-size: 0.75em;
   line-height: 2em;
-  text-align: center;
+  border-top: solid 1px white;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /**
  * Secciones
  */
-/* line 121, ../../scss/_typography.scss */
+/* line 156, ../../scss/_typography.scss */
 section.secciones {
   padding-top: 3em;
 }
-/* line 123, ../../scss/_typography.scss */
+/* line 158, ../../scss/_typography.scss */
 section.secciones .item {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -393,7 +437,7 @@ section.secciones .item {
   border: none;
   padding: 3em 2em 7em 2em;
 }
-/* line 129, ../../scss/_typography.scss */
+/* line 164, ../../scss/_typography.scss */
 section.secciones .item .more-info {
   font-size: 0.875em;
   line-height: 1.71429em;

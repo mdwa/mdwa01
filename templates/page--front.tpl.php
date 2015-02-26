@@ -210,7 +210,7 @@
   <?php endif; ?>
 
   <?php if ($page['footer']): ?>
-    <div id="footer" class="container-fluid">
+    <div id="footer" class="container">
       <?php print render($page['footer']); ?>
     </div>
   <?php endif; ?>
