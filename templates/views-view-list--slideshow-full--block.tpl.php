@@ -30,7 +30,7 @@
 							data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
 							data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
 							data-speed="600"
-							data-start="1400"
+							data-start="500"
 							data-easing="Power4.easeOut"
 							data-endspeed="600"
 							data-endeasing="Power0.easeIn"
@@ -79,7 +79,9 @@ drupal_add_js('
         startheight:500,
         startwidth: 1140,
         onHoverStop: "on",
-        shadow: 2
+        shadow: 2,
+        fullWidth: "on",
+        dottedOverlay: "twoxtwo"
     });
     
     api.bind("revolution.slide.onloaded",function (e,data) {
