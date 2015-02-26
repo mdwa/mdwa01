@@ -560,7 +560,7 @@ section.secciones .item .more-info {
   text-align: center;
 }
 /* line 164, ../../scss/screen.scss */
-#features header span.glyphicon {
+#features header i.icon {
   padding: 0;
   font-size: 5rem;
   font-weight: 600;
@@ -580,8 +580,13 @@ section.secciones .item .more-info {
 #features img {
   max-width: 100%;
 }
+/* line 184, ../../scss/screen.scss */
+#features a.btn {
+  background-color: #00528e;
+  color: white;
+}
 
-/* line 187, ../../scss/screen.scss */
+/* line 191, ../../scss/screen.scss */
 #IBEX35 .logo, #IBEX35 .downloadApp {
   display: none;
 }

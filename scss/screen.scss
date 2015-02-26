@@ -161,7 +161,7 @@ section.secciones {
       text-shadow: 0 1px 0 white;
       text-align: center;
     }
-    span.glyphicon {
+    i.icon {
       padding: 0;
       font-size: 5rem;
       font-weight: 600;
@@ -180,6 +180,10 @@ section.secciones {
 
   img {
     max-width: 100%;
+  }
+  a.btn {
+    background-color: $azul;
+    color: white;
   }
 }
 

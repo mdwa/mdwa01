@@ -1,0 +1,28 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "f0c301ac841dafc38d8eb1b933fc73e5",
+      "css": "spin2",
+      "code": 59392,
+      "src": "fontelico"
+    },
+    {
+      "uid": "31972e4e9d080eaa796290349ae6c1fd",
+      "css": "users",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "8c0ffa714cecbf5144e022d9c3df4a1f",
+      "css": "bank",
+      "code": 59394,
+      "src": "fontawesome"
+    }
+  ]
+}

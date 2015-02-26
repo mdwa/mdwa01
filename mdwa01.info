@@ -34,6 +34,7 @@ regions[footer] = Footer
 ;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;
+stylesheets[all][] = a/f/fontello/css/fontello.css
 stylesheets[all][] = a/j/bootstrap/dist/css/bootstrap.min.css
 stylesheets[all][] = a/j/slider-revolution/src/css/settings.css
 stylesheets[screen, projection][] = a/c/screen.css
