@@ -80,8 +80,7 @@ drupal_add_js('
         startwidth: 1140,
         onHoverStop: "on",
         shadow: 2,
-        fullWidth: "on",
-        dottedOverlay: "twoxtwo"
+        fullWidth: "on"
     });
     
     api.bind("revolution.slide.onloaded",function (e,data) {

@@ -105,7 +105,6 @@ nav.navbar-default .navbar-nav > li > a:hover {
 /* line 6, ../../scss/_colors.scss */
 body {
   background-color: white;
-  background: url(/sites/all/themes/mdwa01/a/i/body-pattern.jpg);
 }
 
 /**
@@ -127,9 +126,6 @@ nav.navbar-default .navbar-nav > li > a {
   nav.navbar-default .navbar-nav > li > a:hover {
     color: white;
     background-color: #00528e;
-    -moz-box-shadow: rgba(0, 82, 142, 0.6) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
-    -webkit-box-shadow: rgba(0, 82, 142, 0.6) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
-    box-shadow: rgba(0, 82, 142, 0.6) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
   }
 }
 /* line 54, ../../scss/_colors.scss */
@@ -146,14 +142,14 @@ main .breadcrumb {
 }
 /* line 76, ../../scss/_colors.scss */
 main.no-front article#content h1#page-title {
-  background: url(/sites/all/themes/mdwa01/a/i/fachada-bn.jpg) no-repeat center center/cover;
+  background: url(/sites/all/themes/mdwa01/a/i/banner-background-2.jpg) no-repeat center center/cover;
   color: white;
 }
-/* line 81, ../../scss/_colors.scss */
+/* line 82, ../../scss/_colors.scss */
 main.no-front article#content img {
   max-width: 100%;
 }
-/* line 84, ../../scss/_colors.scss */
+/* line 85, ../../scss/_colors.scss */
 main.no-front article#content .container.content {
   background: url(/sites/all/themes/mdwa01/a/i/ICON BOLITAS 5.jpg) top left;
 }
@@ -161,11 +157,11 @@ main.no-front article#content .container.content {
 /**
  * After Content Container
  */
-/* line 96, ../../scss/_colors.scss */
+/* line 97, ../../scss/_colors.scss */
 aside#after_content_container {
   background-color: white;
 }
-/* line 98, ../../scss/_colors.scss */
+/* line 99, ../../scss/_colors.scss */
 aside#after_content_container h2 {
   text-shadow: 0 1px 0 white;
 }
@@ -173,12 +169,12 @@ aside#after_content_container h2 {
 /**
  * Triptych
  */
-/* line 107, ../../scss/_colors.scss */
+/* line 108, ../../scss/_colors.scss */
 aside#triptych {
   background-color: #ddd;
   background: url(/sites/all/themes/mdwa01/a/i/body-pattern.jpg);
 }
-/* line 110, ../../scss/_colors.scss */
+/* line 111, ../../scss/_colors.scss */
 aside#triptych h2 {
   text-shadow: 0 1px 0 white;
 }
@@ -186,7 +182,7 @@ aside#triptych h2 {
 /**
  * Footer
  */
-/* line 118, ../../scss/_colors.scss */
+/* line 119, ../../scss/_colors.scss */
 footer {
   background-color: #7f7f7f;
   color: white;
@@ -195,11 +191,11 @@ footer {
 /**
  * Secciones
  */
-/* line 131, ../../scss/_colors.scss */
+/* line 132, ../../scss/_colors.scss */
 section.secciones .item {
   background-color: white;
 }
-/* line 134, ../../scss/_colors.scss */
+/* line 135, ../../scss/_colors.scss */
 section.secciones .item .more-info {
   background-color: #333;
   color: white;
@@ -453,6 +449,14 @@ section.secciones .item .more-info {
 /**
  * Slider
  */
+/**
+ * Blog
+ */
+/* line 189, ../../scss/_typography.scss */
+.view-blog .view-content p {
+  text-align: justify;
+}
+
 /* line 20, ../../scss/screen.scss */
 .glyphicon {
   padding: 0.5em;
@@ -631,6 +635,19 @@ section.secciones .item .more-info {
 }
 
 /* line 191, ../../scss/screen.scss */
+#tickerIBEX35 .tickerStock {
+  width: 100% !important;
+}
+/* line 193, ../../scss/screen.scss */
+#tickerIBEX35 .tickerStock .tickerCont {
+  width: 100% !important;
+}
+/* line 196, ../../scss/screen.scss */
+#tickerIBEX35 .tickerStock .tickerLogo {
+  display: none;
+}
+
+/* line 202, ../../scss/screen.scss */
 #IBEX35 .logo, #IBEX35 .downloadApp {
   display: none;
 }

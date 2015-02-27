@@ -5,7 +5,7 @@ $gris-oscuro: #333;
 
 body {
   background-color: white;
-  @include background(image-url("/sites/all/themes/mdwa01/a/i/body-pattern.jpg"));
+  //@include background(image-url("/sites/all/themes/mdwa01/a/i/body-pattern.jpg"));
 }
 
 /**
@@ -40,7 +40,7 @@ nav.navbar-default {
           @media (min-width: 768px) {
             color: white;
             background-color: rgba($azul, 1);
-            @include box-shadow(rgba(0,82,142, 0.6) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
+            //@include box-shadow(rgba(0,82,142, 0.6) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
           }
         }
       }
@@ -75,7 +75,8 @@ main {
     article#content {
       h1#page-title {
         //@include background(image-url("/sites/all/themes/mdwa01/a/i/banner-background.jpg") no-repeat center center / cover);
-        @include background(image-url("/sites/all/themes/mdwa01/a/i/fachada-bn.jpg") no-repeat center center / cover);
+        //@include background(image-url("/sites/all/themes/mdwa01/a/i/fachada-bn.jpg") no-repeat center center / cover);
+        @include background(image-url("/sites/all/themes/mdwa01/a/i/banner-background-2.jpg") no-repeat center center / cover);
         color: white;
       }
       img {
