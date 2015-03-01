@@ -3,6 +3,10 @@ $gris:        #ddd;
 $gris-medio:  #7f7f7f;
 $gris-oscuro: #333;
 
+a {
+  color: $azul;
+}
+
 body {
   background-color: white;
   //@include background(image-url("/sites/all/themes/mdwa01/a/i/body-pattern.jpg"));
@@ -32,7 +36,7 @@ nav.navbar-default {
   .navbar-nav {
     &>li {
       &>a {
-          color: $gris-oscuro;
+        color: $gris-oscuro;
         @media (min-width: 768px) {
           //color: white;
         }
@@ -41,6 +45,12 @@ nav.navbar-default {
             color: white;
             background-color: rgba($azul, 1);
             //@include box-shadow(rgba(0,82,142, 0.6) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
+          }
+        }
+        &.active {
+          color: $azul;
+          &:hover {
+            color: white;
           }
         }
       }
@@ -120,6 +130,15 @@ footer {
   background-color: $gris-medio;
   color: white;
   #footer-columns {
+   .content {
+      color: $gris;
+      a {
+        color: $gris;
+      }
+    }
+    [class^="icon-"], [class*="icon-"] {
+      color: $gris-oscuro;
+    }
   }
   #footer {
   }

@@ -103,6 +103,11 @@ nav.navbar-default .navbar-nav > li > a:hover {
 }
 
 /* line 6, ../../scss/_colors.scss */
+a {
+  color: #00528e;
+}
+
+/* line 10, ../../scss/_colors.scss */
 body {
   background-color: white;
 }
@@ -113,22 +118,30 @@ body {
 /**
  * Navigation
  */
-/* line 27, ../../scss/_colors.scss */
+/* line 31, ../../scss/_colors.scss */
 nav.navbar-default {
   background-color: rgba(221, 221, 221, 0.8);
 }
-/* line 34, ../../scss/_colors.scss */
+/* line 38, ../../scss/_colors.scss */
 nav.navbar-default .navbar-nav > li > a {
   color: #333;
 }
 @media (min-width: 768px) {
-  /* line 39, ../../scss/_colors.scss */
+  /* line 43, ../../scss/_colors.scss */
   nav.navbar-default .navbar-nav > li > a:hover {
     color: white;
     background-color: #00528e;
   }
 }
-/* line 54, ../../scss/_colors.scss */
+/* line 50, ../../scss/_colors.scss */
+nav.navbar-default .navbar-nav > li > a.active {
+  color: #00528e;
+}
+/* line 52, ../../scss/_colors.scss */
+nav.navbar-default .navbar-nav > li > a.active:hover {
+  color: white;
+}
+/* line 64, ../../scss/_colors.scss */
 nav.navbar-default.navbar-shrink .navbar-nav > li > a:hover {
   color: white;
 }
@@ -136,20 +149,20 @@ nav.navbar-default.navbar-shrink .navbar-nav > li > a:hover {
 /**
  * Main
  */
-/* line 67, ../../scss/_colors.scss */
+/* line 77, ../../scss/_colors.scss */
 main .breadcrumb {
   background-color: transparent;
 }
-/* line 76, ../../scss/_colors.scss */
+/* line 86, ../../scss/_colors.scss */
 main.no-front article#content h1#page-title {
   background: url(/sites/all/themes/mdwa01/a/i/banner-background-2.jpg) no-repeat center center/cover;
   color: white;
 }
-/* line 82, ../../scss/_colors.scss */
+/* line 92, ../../scss/_colors.scss */
 main.no-front article#content img {
   max-width: 100%;
 }
-/* line 85, ../../scss/_colors.scss */
+/* line 95, ../../scss/_colors.scss */
 main.no-front article#content .container.content {
   background: url(/sites/all/themes/mdwa01/a/i/ICON BOLITAS 5.jpg) top left;
 }
@@ -157,11 +170,11 @@ main.no-front article#content .container.content {
 /**
  * After Content Container
  */
-/* line 97, ../../scss/_colors.scss */
+/* line 107, ../../scss/_colors.scss */
 aside#after_content_container {
   background-color: white;
 }
-/* line 99, ../../scss/_colors.scss */
+/* line 109, ../../scss/_colors.scss */
 aside#after_content_container h2 {
   text-shadow: 0 1px 0 white;
 }
@@ -169,12 +182,12 @@ aside#after_content_container h2 {
 /**
  * Triptych
  */
-/* line 108, ../../scss/_colors.scss */
+/* line 118, ../../scss/_colors.scss */
 aside#triptych {
   background-color: #ddd;
   background: url(/sites/all/themes/mdwa01/a/i/body-pattern.jpg);
 }
-/* line 111, ../../scss/_colors.scss */
+/* line 121, ../../scss/_colors.scss */
 aside#triptych h2 {
   text-shadow: 0 1px 0 white;
 }
@@ -182,20 +195,32 @@ aside#triptych h2 {
 /**
  * Footer
  */
-/* line 119, ../../scss/_colors.scss */
+/* line 129, ../../scss/_colors.scss */
 footer {
   background-color: #7f7f7f;
   color: white;
+}
+/* line 133, ../../scss/_colors.scss */
+footer #footer-columns .content {
+  color: #ddd;
+}
+/* line 135, ../../scss/_colors.scss */
+footer #footer-columns .content a {
+  color: #ddd;
+}
+/* line 139, ../../scss/_colors.scss */
+footer #footer-columns [class^="icon-"], footer #footer-columns [class*="icon-"] {
+  color: #333;
 }
 
 /**
  * Secciones
  */
-/* line 132, ../../scss/_colors.scss */
+/* line 151, ../../scss/_colors.scss */
 section.secciones .item {
   background-color: white;
 }
-/* line 135, ../../scss/_colors.scss */
+/* line 154, ../../scss/_colors.scss */
 section.secciones .item .more-info {
   background-color: #333;
   color: white;
@@ -210,7 +235,7 @@ html {
 /* line 10, ../../scss/_typography.scss */
 html {
   font-size: 100%;
-  line-height: 1.6em;
+  line-height: 1.6rem;
 }
 
 /* line 15, ../../scss/_typography.scss */
@@ -553,13 +578,24 @@ footer {
 }
 /* line 119, ../../scss/screen.scss */
 footer img {
-  width: 25%;
+  width: 80px;
+  height: 80px;
+  vertical-align: top;
+}
+/* line 125, ../../scss/screen.scss */
+footer [class^="icon-"], footer [class*="icon-"] {
+  padding: 0;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-shadow: 0 1px 0 white;
+  text-align: center;
 }
 
 /**
  * Secciones
  */
-/* line 128, ../../scss/screen.scss */
+/* line 139, ../../scss/screen.scss */
 section.secciones .item {
   position: relative;
   overflow: hidden;
@@ -573,7 +609,7 @@ section.secciones .item {
   border: none;
   padding: 3em 2em 7em 2em;
 }
-/* line 136, ../../scss/screen.scss */
+/* line 147, ../../scss/screen.scss */
 section.secciones .item .more-info {
   position: absolute;
   right: -9em;
@@ -590,14 +626,14 @@ section.secciones .item .more-info {
   transform: rotate(-45deg);
 }
 
-/* line 153, ../../scss/screen.scss */
+/* line 164, ../../scss/screen.scss */
 #features header {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 155, ../../scss/screen.scss */
+/* line 166, ../../scss/screen.scss */
 #features header h1 {
   font-size: 1.7rem;
   font-weight: 600;
@@ -607,8 +643,8 @@ section.secciones .item .more-info {
   text-shadow: 0 1px 0 white;
   text-align: center;
 }
-/* line 164, ../../scss/screen.scss */
-#features header i.icon {
+/* line 175, ../../scss/screen.scss */
+#features header [class^="icon-"], #features header [class*="icon-"] {
   padding: 0;
   font-size: 5rem;
   font-weight: 600;
@@ -616,7 +652,7 @@ section.secciones .item .more-info {
   text-shadow: 0 1px 0 white;
   text-align: center;
 }
-/* line 173, ../../scss/screen.scss */
+/* line 184, ../../scss/screen.scss */
 #features p {
   font-size: 1.4375rem;
   font-weight: 400;
@@ -624,30 +660,30 @@ section.secciones .item .more-info {
   margin-bottom: 1.25rem;
   text-align: center;
 }
-/* line 181, ../../scss/screen.scss */
+/* line 192, ../../scss/screen.scss */
 #features img {
   max-width: 100%;
 }
-/* line 184, ../../scss/screen.scss */
+/* line 195, ../../scss/screen.scss */
 #features a.btn {
   background-color: #00528e;
   color: white;
 }
 
-/* line 191, ../../scss/screen.scss */
+/* line 202, ../../scss/screen.scss */
 #tickerIBEX35 .tickerStock {
   width: 100% !important;
 }
-/* line 193, ../../scss/screen.scss */
+/* line 204, ../../scss/screen.scss */
 #tickerIBEX35 .tickerStock .tickerCont {
   width: 100% !important;
 }
-/* line 196, ../../scss/screen.scss */
+/* line 207, ../../scss/screen.scss */
 #tickerIBEX35 .tickerStock .tickerLogo {
   display: none;
 }
 
-/* line 202, ../../scss/screen.scss */
+/* line 213, ../../scss/screen.scss */
 #IBEX35 .logo, #IBEX35 .downloadApp {
   display: none;
 }

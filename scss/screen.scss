@@ -117,7 +117,18 @@ main.no-front {
 footer {
   margin-bottom: 0;
   img {
-    width: 25%;
+    width: 80px;
+    height: 80px;
+    vertical-align: top;
+    //max-width: 100%;
+  }
+  [class^="icon-"], [class*="icon-"] {
+    padding: 0;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-shadow: 0 1px 0 white;
+    text-align: center;
   }
 }
 
@@ -161,7 +172,7 @@ section.secciones {
       text-shadow: 0 1px 0 white;
       text-align: center;
     }
-    i.icon {
+    [class^="icon-"], [class*="icon-"] {
       padding: 0;
       font-size: 5rem;
       font-weight: 600;

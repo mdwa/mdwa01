@@ -7,21 +7,35 @@
   "ascent": 850,
   "glyphs": [
     {
+      "uid": "5ce27d08340c4285f08fb9d021196bf5",
+      "css": "mdwa-logo",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M578.7 0C259.1 0 0 259.1 0 578.7 0 744.8 69.9 894.5 181.8 1000L435 416.6 578.7 350.2 689.3 398.1 726.2 556.6 858.9 670.9 975.8 999.8C1087.6 894.3 1157.5 744.7 1157.5 578.7 1157.5 259.1 898.4 0 578.7 0Z",
+        "width": 1157
+      },
+      "search": [
+        "mdwa-logo"
+      ]
+    },
+    {
       "uid": "f0c301ac841dafc38d8eb1b933fc73e5",
       "css": "spin2",
-      "code": 59392,
+      "code": 59395,
       "src": "fontelico"
     },
     {
       "uid": "31972e4e9d080eaa796290349ae6c1fd",
       "css": "users",
-      "code": 59393,
+      "code": 59394,
       "src": "fontawesome"
     },
     {
       "uid": "8c0ffa714cecbf5144e022d9c3df4a1f",
       "css": "bank",
-      "code": 59394,
+      "code": 59393,
       "src": "fontawesome"
     }
   ]
