@@ -19,3 +19,41 @@ nav.navbar-default {
     }
   }
 }
+
+
+.cl-effect-1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  a {
+    color: #333;
+    text-shadow: 0 1px 0 white;
+  }
+  a::before {
+    font-family: "kingthings_flourishesregular";
+    font-size: 1.8em;
+    content: "N";
+    margin-right: 10px;
+    transform: translateX(20px);
+  }
+  a::after {
+    font-family: "kingthings_flourishesregular";
+    font-size: 1.8em;
+    content: "P";
+    margin-left: 10px;
+    transform: translateX(-20px);
+  }
+
+  a::before,
+  a::after {
+    display: inline-block;
+    opacity: 0;
+    transition: transform 0.3s ease 0s, opacity 0.2s ease 0s;
+  }
+  a:hover::before,
+  a:hover::after {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

@@ -86,6 +86,7 @@
  */
 ?>
 
+
 <!-- Navigation -->
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -139,15 +140,84 @@
   </div>
 <?php endif; ?>
 
+<main class="no-front">
+
+  <article id="content">
+    <a id="main-content"></a>
+
+    <?php if (!$is_front): ?>
+    <h1 id="page-title">Blogs</h1>
+
+      <?php if ($breadcrumb): ?>
+      <div class="container">
+        <div id="breadcrumb"><?php print $breadcrumb; ?></div>
+      </div>
+      <?php endif; ?>
+
+    <?php endif; ?>
+
+    <div class="container content">
+      <?php print render($page['help']); ?>
+      <?php if ($action_links): ?>
+        <div class="row">
+          <ul class="action-links">
+            <?php print render($action_links); ?>
+          </ul>
+        </div>
+      <?php endif; ?>
+      <div class="row">
+        <?php if ($page['sidebar_first']): ?>
+          <div id="sidebar_first" class="col-md-3">
+            <?php print render($page['sidebar_first']); ?>
+          </div>
+        <?php endif; ?>
+
+        <?php
+          $class = FALSE;
+          if ($page['sidebar_first'] && $page['sidebar_second']) {
+            $class = ' class="col-md-6"';
+          } elseif ($page['sidebar_first'] || $page['sidebar_second']) {
+            $class = ' class="col-md-9"';
+          }
+        ?>
+        <div<?php if ($class) print $class; ?>>
+      <?php print render($title_prefix); ?>
+      <?php if ($title): ?>
+        <h1 class="title">
+          <?php print $title; ?>
+        </h1>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
+      <?php if ($tabs): ?>
+        <div class="tabs">
+          <?php print render($tabs); ?>
+        </div>
+      <?php endif; ?>
+
+
+          <?php print render($page['content']); ?>
+        </div>
+
+        <?php if ($page['sidebar_second']): ?>
+          <div id="sidebar_second" class="col-md-3">
+            <?php print render($page['sidebar_second']); ?>
+          </div>
+        <?php endif; ?>
+
+        <?php print $feed_icons; ?>
+      </div>
+    </div>
+
+  </article> <!-- /.section, /#content -->
+
+</main> <!-- /#main, /#main-wrapper -->
+
+
 <?php if ($page['after_content']): ?>
-  <div id="after_content">
+  <div id="after-content">
     <?php print render($page['after_content']); ?>
   </div>
 <?php endif; ?>
-
-<svg preserveAspectRatio="none" viewBox="0 0 100 102" height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" id="bigTriangleColor">
-  <path d="M0 0 L50 100 L100 0 Z"/>
-</svg>
 
 <?php if ($page['after_content_2'] || $page['after_content_3']): ?>
   <aside id="after_content_container">
@@ -213,7 +283,7 @@
   <?php endif; ?>
 
   <?php if ($page['footer']): ?>
-    <div id="footer" class="container">
+    <div id="footer" class="container-fluid">
       <?php print render($page['footer']); ?>
     </div>
   <?php endif; ?>

@@ -193,12 +193,13 @@ section.secciones {
     max-width: 100%;
   }
   a.btn {
-    background-color: $azul;
-    color: white;
+    //background-color: $azul;
+    //color: white;
   }
 }
 
 #tickerIBEX35 {
+  @include rhythm;
   .tickerStock {
     width: 100% !important;
     .tickerCont {

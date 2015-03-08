@@ -105,7 +105,12 @@ main {
  * After Content Container
  */
 aside#after_content_container {
-  background-color: white;
+  background-color: #eee;
+  @media (min-width: 992px) {
+    @include background(#eee image-url("/sites/all/themes/mdwa01/a/i/separador-griis.png"));
+    background-repeat: repeat-y;
+    background-position: top center;
+  }
   h2 {
     text-shadow: 0 1px 0 white;
   }
@@ -155,5 +160,16 @@ section.secciones {
       background-color: $gris-oscuro;
       color: white;
     }
+  }
+}
+
+#bigTriangleColor {
+  display: block;
+  background-color: #eee;
+  path {
+    //fill: #3498db;
+    fill: white;
+    stroke: white;
+    stroke-width: 2;
   }
 }

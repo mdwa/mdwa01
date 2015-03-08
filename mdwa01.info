@@ -36,6 +36,7 @@ regions[footer] = Footer
 ;;;;;;;;;;;;;;;;;;;;
 stylesheets[all][] = a/f/mdwa/css/mdwa.css
 stylesheets[all][] = a/f/fontello/css/fontello.css
+stylesheets[all][] = a/f/kingthingsflourishes_regular_macroman/stylesheet.css
 stylesheets[all][] = a/j/bootstrap/dist/css/bootstrap.min.css
 stylesheets[all][] = a/j/slider-revolution/src/css/settings.css
 stylesheets[screen, projection][] = a/c/screen.css
