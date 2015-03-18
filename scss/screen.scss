@@ -59,8 +59,8 @@ nav.navbar-default {
         margin: 0;
         &:hover {
           @media (min-width: 768px) {
-            padding-top: 45px;
-            margin-bottom: -30px;
+            //padding-top: 45px;
+            //margin-bottom: -30px;
           }
         }
       }
@@ -235,4 +235,18 @@ section.secciones {
 .banner {
   width: 100%;
   position: relative;
+}
+.tp-caption.mdwawhitebg {
+font-size:30px;
+line-height:30px;
+font-weight:300;
+font-family:"Open Sans";
+color:rgb(255, 255, 255);
+text-decoration:none;
+background-color:rgba(0, 0, 0, 0.4);
+padding:5px 15px 10px;
+text-shadow:none;
+border-width:0px;
+border-color:rgb(0, 0, 0);
+border-style:none;
 }

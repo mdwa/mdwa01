@@ -25,9 +25,9 @@
         <img src="<?php print $image; ?>"/>
 
 
-        <div class="tp-caption large_bold_white_25 customin customout tp-resizeme"
-							data-x="center" data-hoffset="0"
-							data-y="170"
+        <div class="tp-caption mdwawhitebg customin customout tp-resizeme"
+							data-x="right" data-hoffset="-50"
+							data-y="50"
 							data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
 							data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
 							data-speed="600"
@@ -36,7 +36,7 @@
 							data-endspeed="600"
 							data-endeasing="Power0.easeIn"
               style="z-index: 3"><?php print $title; ?></div>
-
+<!--
         <div class="tp-caption medium_bg_darkblue skewfromrightshort customout"
 			       data-x="right" data-hoffset="0"
 				  	 data-y="bottom" daata-voffset="-200"
@@ -47,7 +47,7 @@
 				  	 data-endspeed="500"
 					   data-endeasing="Power4.easeIn"
 		  			 data-captionhidden="on"
-			  		 style="z-index: 14">A Professional Solution</div>
+			  		 style="z-index: 14">A Professional Solution</div> -->
       </li>
 
     <?php endforeach; ?>
@@ -80,8 +80,9 @@ drupal_add_js('
         startheight:350,
         startwidth: 1140,
         onHoverStop: "on",
-        shadow: 2,
-        fullWidth: "on"
+        shadow: 0,
+        fullWidth: "off",
+        navigationType: "none"
     });
     
     api.bind("revolution.slide.onloaded",function (e,data) {

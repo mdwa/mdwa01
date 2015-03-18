@@ -174,21 +174,28 @@ nav.navbar-default .navbar-nav > li > a {
   color: #333;
 }
 @media (min-width: 768px) {
-  /* line 47, ../../scss/_colors.scss */
-  nav.navbar-default .navbar-nav > li > a:hover {
-    color: white;
-    background-color: #00528e;
+  /* line 42, ../../scss/_colors.scss */
+  nav.navbar-default .navbar-nav > li > a {
+    border-bottom: solid white 3px;
   }
 }
-/* line 54, ../../scss/_colors.scss */
+@media (min-width: 768px) {
+  /* line 48, ../../scss/_colors.scss */
+  nav.navbar-default .navbar-nav > li > a:hover {
+    border-bottom: solid #00528e 3px;
+  }
+}
+/* line 56, ../../scss/_colors.scss */
 nav.navbar-default .navbar-nav > li > a.active {
   color: #00528e;
 }
-/* line 56, ../../scss/_colors.scss */
-nav.navbar-default .navbar-nav > li > a.active:hover {
-  color: white;
+@media (min-width: 768px) {
+  /* line 56, ../../scss/_colors.scss */
+  nav.navbar-default .navbar-nav > li > a.active {
+    border-bottom: solid #00528e 3px;
+  }
 }
-/* line 68, ../../scss/_colors.scss */
+/* line 70, ../../scss/_colors.scss */
 nav.navbar-default.navbar-shrink .navbar-nav > li > a:hover {
   color: white;
 }
@@ -196,11 +203,11 @@ nav.navbar-default.navbar-shrink .navbar-nav > li > a:hover {
 /**
  * Main
  */
-/* line 82, ../../scss/_colors.scss */
+/* line 84, ../../scss/_colors.scss */
 body.no-front main .breadcrumb {
   background-color: transparent;
 }
-/* line 86, ../../scss/_colors.scss */
+/* line 88, ../../scss/_colors.scss */
 body.no-front main article#content img {
   max-width: 100%;
 }
@@ -208,19 +215,19 @@ body.no-front main article#content img {
 /**
  * After Content Container
  */
-/* line 96, ../../scss/_colors.scss */
+/* line 98, ../../scss/_colors.scss */
 aside#after_content_container {
   background-color: #eee;
 }
 @media (min-width: 992px) {
-  /* line 96, ../../scss/_colors.scss */
+  /* line 98, ../../scss/_colors.scss */
   aside#after_content_container {
     background: #eee url(/sites/all/themes/mdwa01/a/i/separador-griis.png);
     background-repeat: repeat-y;
     background-position: top center;
   }
 }
-/* line 103, ../../scss/_colors.scss */
+/* line 105, ../../scss/_colors.scss */
 aside#after_content_container h2 {
   text-shadow: 0 1px 0 white;
 }
@@ -228,12 +235,12 @@ aside#after_content_container h2 {
 /**
  * Triptych
  */
-/* line 112, ../../scss/_colors.scss */
+/* line 114, ../../scss/_colors.scss */
 aside#triptych {
   background-color: #eee;
   background: url(/sites/all/themes/mdwa01/a/i/body-pattern.jpg);
 }
-/* line 115, ../../scss/_colors.scss */
+/* line 117, ../../scss/_colors.scss */
 aside#triptych h2 {
   text-shadow: 0 1px 0 white;
 }
@@ -241,20 +248,20 @@ aside#triptych h2 {
 /**
  * Footer
  */
-/* line 123, ../../scss/_colors.scss */
+/* line 125, ../../scss/_colors.scss */
 footer {
   background-color: #7f7f7f;
   color: white;
 }
-/* line 127, ../../scss/_colors.scss */
+/* line 129, ../../scss/_colors.scss */
 footer #footer-columns .content {
   color: #eee;
 }
-/* line 129, ../../scss/_colors.scss */
+/* line 131, ../../scss/_colors.scss */
 footer #footer-columns .content a {
   color: #eee;
 }
-/* line 133, ../../scss/_colors.scss */
+/* line 135, ../../scss/_colors.scss */
 footer #footer-columns [class^="icon-"], footer #footer-columns [class*="icon-"] {
   color: #333;
 }
@@ -262,22 +269,22 @@ footer #footer-columns [class^="icon-"], footer #footer-columns [class*="icon-"]
 /**
  * Secciones
  */
-/* line 145, ../../scss/_colors.scss */
+/* line 147, ../../scss/_colors.scss */
 section.secciones .item {
   background-color: white;
 }
-/* line 148, ../../scss/_colors.scss */
+/* line 150, ../../scss/_colors.scss */
 section.secciones .item .more-info {
   background-color: #333;
   color: white;
 }
 
-/* line 155, ../../scss/_colors.scss */
+/* line 157, ../../scss/_colors.scss */
 #bigTriangleColor {
   display: block;
   background-color: #eee;
 }
-/* line 158, ../../scss/_colors.scss */
+/* line 160, ../../scss/_colors.scss */
 #bigTriangleColor path {
   fill: white;
   stroke: white;
@@ -696,13 +703,6 @@ nav.navbar-default .navbar-collapse {
 nav.navbar-default .navbar-nav > li > a {
   margin: 0;
 }
-@media (min-width: 768px) {
-  /* line 60, ../../scss/screen.scss */
-  nav.navbar-default .navbar-nav > li > a:hover {
-    padding-top: 45px;
-    margin-bottom: -30px;
-  }
-}
 
 /**
  * Header
@@ -879,4 +879,20 @@ section.secciones .item .more-info {
 .banner {
   width: 100%;
   position: relative;
+}
+
+/* line 239, ../../scss/screen.scss */
+.tp-caption.mdwawhitebg {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 300;
+  font-family: "Open Sans";
+  color: white;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px 15px 10px;
+  text-shadow: none;
+  border-width: 0px;
+  border-color: black;
+  border-style: none;
 }
