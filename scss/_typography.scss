@@ -134,8 +134,10 @@ aside#after_content_container {
 
   #block-views-blog-block-2 {
     h2 {
+      font-family: 'Merriweather', serif;
       font-weight: 700;
-      @include adjust-font-size-to(18px);
+      color: #666;
+      //@include adjust-font-size-to(18px);
       @include rhythm;
       margin-top: 0;
     }
@@ -145,14 +147,16 @@ aside#after_content_container {
       @include rhythm;
       margin-bottom: 0;
       header {
+        text-align: center;
         margin-bottom: 0.5rem;
         h1 {
-          @include adjust-font-size-to(18px);
+          text-align: left;
+          //@include adjust-font-size-to(18px);
         }
         p.blog-meta {
           font-style: italic;
           @include adjust-font-size-to(12px);
-          text-align: center;
+          //text-align: center;
         }
       }
      &::after {

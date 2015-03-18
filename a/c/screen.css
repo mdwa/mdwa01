@@ -153,10 +153,16 @@ body {
   background-color: white;
 }
 
+/* line 15, ../../scss/_colors.scss */
+.whitebg {
+  background-color: white;
+  padding: 1rem;
+}
+
 /**
  * Header
  */
-/* line 18, ../../scss/_colors.scss */
+/* line 23, ../../scss/_colors.scss */
 #top-info {
   color: #00528e;
   background-color: #eee;
@@ -165,37 +171,37 @@ body {
 /**
  * Navigation
  */
-/* line 35, ../../scss/_colors.scss */
+/* line 40, ../../scss/_colors.scss */
 nav.navbar-default {
   background-color: white;
 }
-/* line 42, ../../scss/_colors.scss */
+/* line 47, ../../scss/_colors.scss */
 nav.navbar-default .navbar-nav > li > a {
   color: #333;
 }
 @media (min-width: 768px) {
-  /* line 42, ../../scss/_colors.scss */
+  /* line 47, ../../scss/_colors.scss */
   nav.navbar-default .navbar-nav > li > a {
     border-bottom: solid white 3px;
   }
 }
 @media (min-width: 768px) {
-  /* line 48, ../../scss/_colors.scss */
+  /* line 53, ../../scss/_colors.scss */
   nav.navbar-default .navbar-nav > li > a:hover {
     border-bottom: solid #00528e 3px;
   }
 }
-/* line 56, ../../scss/_colors.scss */
+/* line 61, ../../scss/_colors.scss */
 nav.navbar-default .navbar-nav > li > a.active {
   color: #00528e;
 }
 @media (min-width: 768px) {
-  /* line 56, ../../scss/_colors.scss */
+  /* line 61, ../../scss/_colors.scss */
   nav.navbar-default .navbar-nav > li > a.active {
     border-bottom: solid #00528e 3px;
   }
 }
-/* line 70, ../../scss/_colors.scss */
+/* line 75, ../../scss/_colors.scss */
 nav.navbar-default.navbar-shrink .navbar-nav > li > a:hover {
   color: white;
 }
@@ -203,11 +209,11 @@ nav.navbar-default.navbar-shrink .navbar-nav > li > a:hover {
 /**
  * Main
  */
-/* line 84, ../../scss/_colors.scss */
+/* line 89, ../../scss/_colors.scss */
 body.no-front main .breadcrumb {
   background-color: transparent;
 }
-/* line 88, ../../scss/_colors.scss */
+/* line 93, ../../scss/_colors.scss */
 body.no-front main article#content img {
   max-width: 100%;
 }
@@ -215,19 +221,19 @@ body.no-front main article#content img {
 /**
  * After Content Container
  */
-/* line 98, ../../scss/_colors.scss */
+/* line 103, ../../scss/_colors.scss */
 aside#after_content_container {
   background-color: #eee;
 }
 @media (min-width: 992px) {
-  /* line 98, ../../scss/_colors.scss */
+  /* line 103, ../../scss/_colors.scss */
   aside#after_content_container {
     background: #eee url(/sites/all/themes/mdwa01/a/i/separador-griis.png);
     background-repeat: repeat-y;
     background-position: top center;
   }
 }
-/* line 105, ../../scss/_colors.scss */
+/* line 110, ../../scss/_colors.scss */
 aside#after_content_container h2 {
   text-shadow: 0 1px 0 white;
 }
@@ -235,12 +241,12 @@ aside#after_content_container h2 {
 /**
  * Triptych
  */
-/* line 114, ../../scss/_colors.scss */
+/* line 119, ../../scss/_colors.scss */
 aside#triptych {
   background-color: #eee;
   background: url(/sites/all/themes/mdwa01/a/i/body-pattern.jpg);
 }
-/* line 117, ../../scss/_colors.scss */
+/* line 122, ../../scss/_colors.scss */
 aside#triptych h2 {
   text-shadow: 0 1px 0 white;
 }
@@ -248,20 +254,20 @@ aside#triptych h2 {
 /**
  * Footer
  */
-/* line 125, ../../scss/_colors.scss */
+/* line 130, ../../scss/_colors.scss */
 footer {
   background-color: #7f7f7f;
   color: white;
 }
-/* line 129, ../../scss/_colors.scss */
+/* line 134, ../../scss/_colors.scss */
 footer #footer-columns .content {
   color: #eee;
 }
-/* line 131, ../../scss/_colors.scss */
+/* line 136, ../../scss/_colors.scss */
 footer #footer-columns .content a {
   color: #eee;
 }
-/* line 135, ../../scss/_colors.scss */
+/* line 140, ../../scss/_colors.scss */
 footer #footer-columns [class^="icon-"], footer #footer-columns [class*="icon-"] {
   color: #333;
 }
@@ -269,22 +275,22 @@ footer #footer-columns [class^="icon-"], footer #footer-columns [class*="icon-"]
 /**
  * Secciones
  */
-/* line 147, ../../scss/_colors.scss */
+/* line 152, ../../scss/_colors.scss */
 section.secciones .item {
   background-color: white;
 }
-/* line 150, ../../scss/_colors.scss */
+/* line 155, ../../scss/_colors.scss */
 section.secciones .item .more-info {
   background-color: #333;
   color: white;
 }
 
-/* line 157, ../../scss/_colors.scss */
+/* line 162, ../../scss/_colors.scss */
 #bigTriangleColor {
   display: block;
   background-color: #eee;
 }
-/* line 160, ../../scss/_colors.scss */
+/* line 165, ../../scss/_colors.scss */
 #bigTriangleColor path {
   fill: white;
   stroke: white;
@@ -479,16 +485,16 @@ aside#after_content_container .row > div {
 }
 /* line 136, ../../scss/_typography.scss */
 aside#after_content_container #block-views-blog-block-2 h2 {
+  font-family: 'Merriweather', serif;
   font-weight: 700;
-  font-size: 1.28571em;
-  line-height: 1.33333em;
+  color: #666;
   margin-top: 1.71429em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.71429em;
   margin-top: 0;
 }
-/* line 142, ../../scss/_typography.scss */
+/* line 144, ../../scss/_typography.scss */
 aside#after_content_container #block-views-blog-block-2 article.teaser {
   font-family: 'Merriweather', serif;
   text-align: center;
@@ -498,23 +504,22 @@ aside#after_content_container #block-views-blog-block-2 article.teaser {
   margin-bottom: 1.71429em;
   margin-bottom: 0;
 }
-/* line 147, ../../scss/_typography.scss */
+/* line 149, ../../scss/_typography.scss */
 aside#after_content_container #block-views-blog-block-2 article.teaser header {
+  text-align: center;
   margin-bottom: 0.5rem;
 }
-/* line 149, ../../scss/_typography.scss */
-aside#after_content_container #block-views-blog-block-2 article.teaser header h1 {
-  font-size: 1.28571em;
-  line-height: 1.33333em;
-}
 /* line 152, ../../scss/_typography.scss */
+aside#after_content_container #block-views-blog-block-2 article.teaser header h1 {
+  text-align: left;
+}
+/* line 156, ../../scss/_typography.scss */
 aside#after_content_container #block-views-blog-block-2 article.teaser header p.blog-meta {
   font-style: italic;
   font-size: 0.85714em;
   line-height: 2em;
-  text-align: center;
 }
-/* line 158, ../../scss/_typography.scss */
+/* line 162, ../../scss/_typography.scss */
 aside#after_content_container #block-views-blog-block-2 article.teaser::after {
   font-family: "kingthings_flourishesregular";
   content: "O";
@@ -526,7 +531,7 @@ aside#after_content_container #block-views-blog-block-2 article.teaser::after {
 /**
  * Triptych
  */
-/* line 171, ../../scss/_typography.scss */
+/* line 175, ../../scss/_typography.scss */
 #triptych {
   margin-top: 1.71429em;
   padding-top: 0em;
@@ -542,7 +547,7 @@ aside#after_content_container #block-views-blog-block-2 article.teaser::after {
 /**
  * Footer
  */
-/* line 181, ../../scss/_typography.scss */
+/* line 185, ../../scss/_typography.scss */
 footer {
   margin-top: 1.71429em;
   padding-top: 0em;
@@ -550,22 +555,22 @@ footer {
   margin-bottom: 1.71429em;
   margin: 0;
 }
-/* line 186, ../../scss/_typography.scss */
+/* line 190, ../../scss/_typography.scss */
 footer ul li.leaf {
   list-style-image: none;
   list-style-type: none;
 }
-/* line 189, ../../scss/_typography.scss */
+/* line 193, ../../scss/_typography.scss */
 footer ul li.leaf:before {
   color: #333;
   font-family: "Glyphicons Halflings";
   content: " ";
 }
-/* line 194, ../../scss/_typography.scss */
+/* line 198, ../../scss/_typography.scss */
 footer ul li.leaf a {
   color: white;
 }
-/* line 200, ../../scss/_typography.scss */
+/* line 204, ../../scss/_typography.scss */
 footer #footer-columns {
   font-size: 0.85714em;
   line-height: 2em;
@@ -576,16 +581,16 @@ footer #footer-columns {
   padding-right: 0;
   border: none;
 }
-/* line 206, ../../scss/_typography.scss */
+/* line 210, ../../scss/_typography.scss */
 footer #footer-columns div {
   overflow: hidden;
 }
-/* line 209, ../../scss/_typography.scss */
+/* line 213, ../../scss/_typography.scss */
 footer #footer-columns h2 {
   padding-bottom: 0.3rem;
   border-bottom: solid 1px white;
 }
-/* line 213, ../../scss/_typography.scss */
+/* line 217, ../../scss/_typography.scss */
 footer #footer-columns .content {
   border-top-width: 0.07143em;
   border-top-style: solid;
@@ -595,19 +600,19 @@ footer #footer-columns .content {
   padding-bottom: 1.64286em;
   border: none;
 }
-/* line 219, ../../scss/_typography.scss */
+/* line 223, ../../scss/_typography.scss */
 footer #footer-columns dt {
   text-align: right;
   width: 20%;
   float: left;
   color: #333;
 }
-/* line 225, ../../scss/_typography.scss */
+/* line 229, ../../scss/_typography.scss */
 footer #footer-columns dd {
   width: 75%;
   float: right;
 }
-/* line 231, ../../scss/_typography.scss */
+/* line 235, ../../scss/_typography.scss */
 footer #footer {
   font-size: 0.85714em;
   line-height: 2em;
@@ -619,11 +624,11 @@ footer #footer {
 /**
  * Secciones
  */
-/* line 242, ../../scss/_typography.scss */
+/* line 246, ../../scss/_typography.scss */
 section.secciones {
   padding-top: 3em;
 }
-/* line 244, ../../scss/_typography.scss */
+/* line 248, ../../scss/_typography.scss */
 section.secciones .item {
   margin-top: 1.71429em;
   padding-top: 0em;
@@ -635,7 +640,7 @@ section.secciones .item {
   border: none;
   padding: 3em 2em 7em 2em;
 }
-/* line 250, ../../scss/_typography.scss */
+/* line 254, ../../scss/_typography.scss */
 section.secciones .item .more-info {
   font-size: 1em;
   line-height: 1.71429em;
@@ -654,7 +659,7 @@ section.secciones .item .more-info {
 /**
  * Blog
  */
-/* line 274, ../../scss/_typography.scss */
+/* line 278, ../../scss/_typography.scss */
 .view-blog .view-content p {
   text-align: justify;
 }
