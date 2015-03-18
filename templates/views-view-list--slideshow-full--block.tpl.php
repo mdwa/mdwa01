@@ -1,5 +1,6 @@
-<div id="slideshow" class="fullwidthbanner-container main-slider">
-  <div class="fullwidthbanner">
+<div class="boxedcontainer">
+<div id="slideshow" class="banner-container main-slider">
+  <div class="banner">
     <ul>
     <?php $rs_effect='fade'; ?>
     <?php foreach ($rows as $id => $row): ?>
@@ -56,7 +57,7 @@
 
   </div>
 </div>
-
+</div>
 
 
 
@@ -74,9 +75,9 @@ drupal_add_js('
         tpj.fn.css = tpj.fn.cssOriginal;
 
     
-    var api = tpj(".fullwidthbanner").revolution({
+    var api = tpj(".banner").revolution({
         delay:"'.$rs_effect_time.'",
-        startheight:500,
+        startheight:350,
         startwidth: 1140,
         onHoverStop: "on",
         shadow: 2,

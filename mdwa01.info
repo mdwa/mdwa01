@@ -10,8 +10,8 @@ regions[header]              = Header
 regions[help]                = Help
 regions[page_top]            = Page top
 regions[page_bottom]         = Page bottom
-regions[highlighted]         = Highlighted
 
+regions[slider]              = Slider
 regions[featured]            = Featured
 regions[before_content]      = Before content
 regions[sidebar_first]       = Sidebar first

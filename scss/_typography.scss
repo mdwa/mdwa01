@@ -2,13 +2,13 @@
 @import "compass/typography/vertical_rhythm";
 
 
-$base-font-size: 16px;
+$base-font-size: 14px;
 $base-line-height: 24px;
 
 @include establish-baseline;
 
 html {
-  font-size: 100%;
+  //font-size: 100%;
   line-height: 1.6rem;
 }
 
@@ -20,6 +20,36 @@ strong {
   font-weight: 700;
 }
 
+aside {
+  @include rhythm;
+}
+
+
+/**
+ * Header
+ */
+#top-info {
+  @include adjust-font-size-to(12px);
+  @include rhythm-borders;
+  border: none;
+  margin-bottom: 2rem;
+}
+header {
+  &.no-front {
+    h1#page-title {
+      @include leading-border(1px,1,16px,solid);
+      @include trailing-border(1px,1,16px,solid);
+      @include apply-side-rhythm-border(left,1px,3,16px,solid);
+      @include apply-side-rhythm-border(right,1px,3,16px,solid);
+      border: none;
+      @include background(image-url("/sites/all/themes/mdwa01/a/i/banner-background-2.jpg") no-repeat center center / cover);
+      color: white;
+      text-align: left;
+      font-size: 2.5rem;
+    }
+  }
+}
+
 /**
  * Main
  */
@@ -28,36 +58,40 @@ main {
   margin: 0;
   border: none;
   font-weight: 400;
-
   .breadcrumb {
-    @include adjust-font-size-to(14px);
+    @include adjust-font-size-to(12px);
   }
+}
 
-  &.front {
-    @include leading-border(1px,4,16px,solid);
-    border: none;
-  }
-  &.no-front {
+body.no-front {
+  main {
+    .breadcrumb {
+      @include rhythm;
+    }
     article#content {
       .block {
         @include rhythm;
       }
       h1 { font-size: 2.5rem; }
       h2 { font-size: 2.3125rem; }
+
       h1#page-title {
         @include leading-border(1px,1,16px,solid);
         @include trailing-border(1px,1,16px,solid);
         @include apply-side-rhythm-border(left,1px,3,16px,solid);
         @include apply-side-rhythm-border(right,1px,3,16px,solid);
         border: none;
+        @include background(image-url("/sites/all/themes/mdwa01/a/i/banner-background-2.jpg") no-repeat center center / cover);
+        color: white;
+        text-align: left;
+        font-size: 2.5rem;
       }
+
       div.container.content {
         @include rhythm-borders;
         padding-top: 0;
         border: none;
-        //border-left: solid 3rem orange;
-        //border-image: url('/sites/all/themes/mdwa01/a/i/ICON BOLITAS 5.jpg');
-        font-size: 1.4375rem;
+        //font-size: 1.4375rem;
         line-height: 1.6;
         p {
           @include trailing-border;
@@ -79,7 +113,7 @@ main {
  */
 div#after_content {
   @include rhythm;
-  margin: 0;
+  //margin: 0;
   @include rhythm-borders;
   border: none;
 }

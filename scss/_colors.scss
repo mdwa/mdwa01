@@ -1,5 +1,5 @@
 $azul:        #00528e;
-$gris:        #ddd;
+$gris:        #eee;
 $gris-medio:  #7f7f7f;
 $gris-oscuro: #333;
 
@@ -15,6 +15,10 @@ body {
 /**
  * Header
  */
+#top-info {
+  color: $azul;
+  background-color: $gris;
+}
 header {
   //background-color: rgba(0,0,0,0.4);
   .intro-text {
@@ -29,8 +33,8 @@ header {
  * Navigation
  */
 nav.navbar-default {
+  background-color: white;
   //background-color: rgba($gris, 0.8);
-  background-color: rgba($gris, 0.8);
   //@include background-image(linear-gradient(to right, white, rgba(0,0,0,0.6)));
 
   .navbar-nav {
@@ -73,29 +77,14 @@ nav.navbar-default {
 /**
  * Main
  */
-main {
-  .breadcrumb {
-    //background-color: rgba(white, 0.2);
-    background-color: transparent;
-    //border-bottom: solid 1px $azul;
-    //@include box-shadow(rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
-    //@include box-shadow(rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
-  }
-  &.no-front {
+body.no-front {
+  main {
+    .breadcrumb {
+      background-color: transparent;
+    }
     article#content {
-      h1#page-title {
-        //@include background(image-url("/sites/all/themes/mdwa01/a/i/banner-background.jpg") no-repeat center center / cover);
-        //@include background(image-url("/sites/all/themes/mdwa01/a/i/fachada-bn.jpg") no-repeat center center / cover);
-        @include background(image-url("/sites/all/themes/mdwa01/a/i/banner-background-2.jpg") no-repeat center center / cover);
-        color: white;
-      }
       img {
         max-width: 100%;
-      }
-      .container.content {
-        //border: solid 25px orange;
-        //border-image: url('/sites/all/themes/mdwa01/a/i/ICON BOLITAS 5.jpg');
-        @include background(image-url("/sites/all/themes/mdwa01/a/i/ICON BOLITAS 5.jpg") top left);
       }
     }
   }
