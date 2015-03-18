@@ -1,6 +1,13 @@
+<!-- Contact info -->
+<?php if ($page['header']): ?>
+  <section id="top-info">
+    <?php print render($page['header']); ?>
+  </section>
+<?php endif; ?>
+
 <!-- Navigation -->
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
+  <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header page-scroll">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -42,7 +49,7 @@
     <?php endif; ?>
 
     <?php if ($tabs): ?>
-      <div class="tabs">
+      <div class="tabs container">
         <?php print render($tabs); ?>
       </div>
     <?php endif; ?>

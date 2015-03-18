@@ -741,8 +741,7 @@ footer {
 }
 /* line 114, ../../scss/screen.scss */
 footer img {
-  width: 80px;
-  height: 80px;
+  width: 150px;
   vertical-align: top;
 }
 /* line 120, ../../scss/screen.scss */
@@ -751,7 +750,6 @@ footer [class^="icon-"], footer [class*="icon-"] {
   font-size: 4rem;
   font-weight: 600;
   line-height: 1.4;
-  text-shadow: 0 1px 0 white;
   text-align: center;
 }
 
