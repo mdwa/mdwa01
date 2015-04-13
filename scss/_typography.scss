@@ -3,13 +3,11 @@
 
 
 $base-font-size: 14px;
-$base-line-height: 24px;
+$base-line-height: 21px;
 
 @include establish-baseline;
 
 html {
-  //font-size: 100%;
-  line-height: 1.6rem;
 }
 
 body {
@@ -35,18 +33,28 @@ aside {
   margin-bottom: 2rem;
 }
 header {
-  &.no-front {
     h1#page-title {
       @include leading-border(1px,1,16px,solid);
       @include trailing-border(1px,1,16px,solid);
       @include apply-side-rhythm-border(left,1px,3,16px,solid);
       @include apply-side-rhythm-border(right,1px,3,16px,solid);
       border: none;
-      @include background(image-url("/sites/all/themes/mdwa01/a/i/banner-background-2.jpg") no-repeat center center / cover);
-      color: white;
+      //@include background(image-url("/sites/all/themes/mdwa01/a/i/banner-background-2.jpg") no-repeat center center / cover);
       text-align: left;
       font-size: 2.5rem;
     }
+}
+
+/**
+ * Navigation
+ */
+nav.navbar-default {
+  text-transform: uppercase;
+  @media (min-width: 768px) {
+    @include adjust-font-size-to(10px);
+  }
+  @media (min-width: 992px) {
+    @include adjust-font-size-to(14px);
   }
 }
 
@@ -64,35 +72,84 @@ main {
 }
 
 body.no-front {
+  header {
+    text-align: left;
+      h1#page-title {
+        display: inline-block;
+        @include adjust-font-size-to(18px);
+        @include rhythm-borders;
+        margin: 0;
+        border: none;
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: white;
+      }
+  }
+
   main {
     .breadcrumb {
       @include rhythm;
     }
     article#content {
+      @include rhythm;
+      font-weight: 300;
+      .breadcrumb {
+        @include adjust-font-size-to(16px);
+      }
+      header {
+        background-color: $gris;
+        text-align: left;
+      }
       .block {
         @include rhythm;
       }
-      h1 { font-size: 2.5rem; }
-      h2 { font-size: 2.3125rem; }
+      h1 { font-size: 2.5em; }
+      h2 { font-size: 2.3em; }
+      h3 { font-size: 2.1em; }
+      h4 { font-size: 1.8em; }
+      h5 { font-size: 1.5em; }
+      h6 { font-size: 1.3em; }
+      h1, h2, h3, h4, h5, h6 {
+        text-transform: uppercase;
+        @include rhythm;
+      }
 
       h1#page-title {
-        @include leading-border(1px,1,16px,solid);
-        @include trailing-border(1px,1,16px,solid);
-        @include apply-side-rhythm-border(left,1px,3,16px,solid);
-        @include apply-side-rhythm-border(right,1px,3,16px,solid);
+        display: inline-block;
+        @include adjust-font-size-to(18px);
+        @include rhythm-borders;
+        margin: 0;
         border: none;
-        @include background(image-url("/sites/all/themes/mdwa01/a/i/banner-background-2.jpg") no-repeat center center / cover);
-        color: white;
-        text-align: left;
-        font-size: 2.5rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: white;
+      }
+       h2 {
+         margin-bottom: 0;
+         padding-bottom: 1em;
+         border-bottom: solid 1px $azul;
+       }
+      i {
+        padding: 0;
+        //color: $gris;
+      }
+
+
+      article.equipo {
+        line-height: 1.8em;
+        h1 {
+          @include adjust-font-size-to(20px);
+          @include rhythm(0);
+          margin-top: 0;
+          font-style: italic;
+       }
       }
 
       div.container.content {
         @include rhythm-borders;
         padding-top: 0;
         border: none;
-        //font-size: 1.4375rem;
-        line-height: 1.6;
+        line-height: 1.8em;
         p {
           @include trailing-border;
           border: none;
@@ -101,8 +158,8 @@ body.no-front {
       #sidebar_first,
       #sidebar_second {
         @include adjust-font-size-to(10px);
-        line-height: 1.5rem;
-        h2 { font-size: 1.2rem; }
+        line-height: 1.5em;
+        h2 { font-size: 1.2em; }
       }
     }
   }

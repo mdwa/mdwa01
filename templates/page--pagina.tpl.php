@@ -30,7 +30,7 @@
   <!-- /.container-fluid -->
 </nav>   
 
-<main>
+<main class="pagina">
   <article id="content">
     <header>
     <div class="container">
@@ -43,7 +43,8 @@
       </h1>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
-    </div>    </header>
+    </div>
+    </header>
 
     <?php if ($messages): ?>
       <aside id="messages">

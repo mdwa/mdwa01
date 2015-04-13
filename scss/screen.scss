@@ -128,6 +128,18 @@ footer {
 }
 
 /**
+ * Equipo
+ */
+article.equipo {
+  @include rhythm;
+  h1 {
+    @include rhythm;
+    margin-top: 0;
+    color: $azul;
+  }
+}
+
+/**
  * Secciones
  */
 section.secciones {

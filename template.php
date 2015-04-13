@@ -29,3 +29,12 @@ function mdwa01_preprocess_page(&$variables) {
 function mdwa01_menu_tree__primary(&$variables) {
   return '<ul class="nav navbar-nav navbar-right">' .$variables['tree'] . '</ul>';
 }
+
+function mdwa01_breadcrumb(&$variables) {
+  $breadcrumb = $variables['breadcrumb'];
+  if (!empty($breadcrumb)) {
+    $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
+    $output .= '<div class="breadcrumb"><i class="glyphicon glyphicon-home">&nbsp;</i>' . implode(' » ', $breadcrumb) . '</div>';
+    return $output;
+  }
+}

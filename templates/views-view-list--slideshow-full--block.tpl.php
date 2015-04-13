@@ -15,12 +15,13 @@
         $field_slideshow_entry_path  = field_get_items('node', $node, 'field_slideshow_entry_path');
         $field_slideshow_teaser      = field_get_items('node', $node, 'field_slideshow_teaser');
 
-        $image  = image_style_url('slideshow', $field_slideshow_entry_image[0]['uri']); 
-        $path   = ($field_slideshow_entry_path) ? $field_slideshow_entry_path[0]['safe_value'] : false;
-        $teaser = ($field_slideshow_teaser) ? $field_slideshow_teaser[0]['safe_value'] : false;
+        $image    = image_style_url('slideshow', $field_slideshow_entry_image[0]['uri']); 
+        $path     = ($field_slideshow_entry_path) ? explode('#', $field_slideshow_entry_path[0]['safe_value'])[0] : false;
+        $fragment = ($path && sizeof(explode('#', $field_slideshow_entry_path[0]['safe_value'])) > 1) ? explode('#', $field_slideshow_entry_path[0]['safe_value'])[1] : false;
+        $teaser   = ($field_slideshow_teaser) ? $field_slideshow_teaser[0]['safe_value'] : false;
       ?>
             
-      <li <?php if ($path): ?>data-link="<?php print url($path); ?>"<?php endif; ?> data-transition="<?php print $rs_effect ?>" data-slotamount="1" data-masterspeed="400" data-delay="25000">
+      <li <?php if ($path): ?>data-link="<?php print url($path, array('fragment' => $fragment)); ?>"<?php endif; ?> data-transition="<?php print $rs_effect ?>" data-slotamount="1" data-masterspeed="400" data-delay="25000">
 
         <img src="<?php print $image; ?>"/>
 

@@ -31,7 +31,17 @@
 </nav>   
 
 <header>
-  <h1 id="page-title">Blog</h1>
+    <div class="container">
+    <?php print render($title_prefix); ?>
+    <?php if ($title): ?>
+      <h1 class="title" id="page-title">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+        Blog
+        <i class="glyphicon glyphicon-chevron-right"></i>
+      </h1>
+    <?php endif; ?>
+    <?php print render($title_suffix); ?>
+    </div>
 </header>
 
 <?php if ($messages): ?>

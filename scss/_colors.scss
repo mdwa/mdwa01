@@ -12,6 +12,10 @@ body {
   //@include background(image-url("/sites/all/themes/mdwa01/a/i/body-pattern.jpg"));
 }
 
+.breadcrumb {
+  color: $azul;
+}
+
 .whitebg {
   background-color: white;
   padding: 1rem;
@@ -55,13 +59,13 @@ nav.navbar-default {
             //color: white;
             //background-color: rgba($azul, 1);
             //@include box-shadow(rgba(0,82,142, 0.6) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
-            border-bottom: solid $azul 3px;
+            border-bottom: solid $azul 1px;
           }
         }
         &.active {
           color: $azul;
           @media (min-width: 768px) {
-            border-bottom: solid $azul 3px;
+            border-bottom: solid $azul 1px;
           }
         }
       }
@@ -85,11 +89,26 @@ nav.navbar-default {
  * Main
  */
 body.no-front {
+  header {
+    background-color: $gris;
+      h1, h2, h3, h4, h5, h6 {
+        color: $azul;
+        i {
+          color: $gris;
+        }
+      }
+  }
   main {
     .breadcrumb {
       background-color: transparent;
     }
     article#content {
+      h1, h2, h3, h4, h5, h6 {
+        color: $azul;
+        i {
+          color: $gris;
+        }
+      }
       img {
         max-width: 100%;
       }
