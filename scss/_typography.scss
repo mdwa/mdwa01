@@ -157,9 +157,13 @@ body.no-front {
       }
       #sidebar_first,
       #sidebar_second {
-        @include adjust-font-size-to(10px);
-        line-height: 1.5em;
-        h2 { font-size: 1.2em; }
+        @include adjust-font-size-to(14px);
+        h2 {
+          font-size: 1.2em;
+        }
+        .content {
+          @include rhythm;
+        }
       }
     }
   }

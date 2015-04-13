@@ -38,3 +38,9 @@ function mdwa01_breadcrumb(&$variables) {
     return $output;
   }
 }
+
+function mdwa01_feed_icon($variables) {
+  $text = t('Subscribe to !feed-title', array('!feed-title' => $variables ['title']));
+  $icon = '<i class="fa fa-rss"></i>';
+  return l($icon, $variables ['url'], array('html' => TRUE, 'attributes' => array('class' => array('feed-icon'), 'title' => $text)));
+}

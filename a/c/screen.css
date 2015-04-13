@@ -234,10 +234,6 @@ body.no-front main .breadcrumb {
 body.no-front main article#content h1, body.no-front main article#content h2, body.no-front main article#content h3, body.no-front main article#content h4, body.no-front main article#content h5, body.no-front main article#content h6 {
   color: #00528e;
 }
-/* line 108, ../../scss/_colors.scss */
-body.no-front main article#content h1 i, body.no-front main article#content h2 i, body.no-front main article#content h3 i, body.no-front main article#content h4 i, body.no-front main article#content h5 i, body.no-front main article#content h6 i {
-  color: #eee;
-}
 /* line 112, ../../scss/_colors.scss */
 body.no-front main article#content img {
   max-width: 100%;
@@ -556,20 +552,27 @@ body.no-front main article#content div.container.content p {
 /* line 158, ../../scss/_typography.scss */
 body.no-front main article#content #sidebar_first,
 body.no-front main article#content #sidebar_second {
-  font-size: 0.71429em;
-  line-height: 2.1em;
+  font-size: 1em;
   line-height: 1.5em;
 }
-/* line 162, ../../scss/_typography.scss */
+/* line 161, ../../scss/_typography.scss */
 body.no-front main article#content #sidebar_first h2,
 body.no-front main article#content #sidebar_second h2 {
   font-size: 1.2em;
+}
+/* line 164, ../../scss/_typography.scss */
+body.no-front main article#content #sidebar_first .content,
+body.no-front main article#content #sidebar_second .content {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
 }
 
 /**
  * After Content
  */
-/* line 171, ../../scss/_typography.scss */
+/* line 175, ../../scss/_typography.scss */
 div#after_content {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -584,7 +587,7 @@ div#after_content {
 /**
  * After Content Container
  */
-/* line 181, ../../scss/_typography.scss */
+/* line 185, ../../scss/_typography.scss */
 aside#after_content_container {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -596,13 +599,13 @@ aside#after_content_container {
   padding: 1.42857em;
   border: none;
 }
-/* line 187, ../../scss/_typography.scss */
+/* line 191, ../../scss/_typography.scss */
 aside#after_content_container .row > div {
   border-width: 0.0625em;
   border-style: none;
   padding: 2.5625em;
 }
-/* line 193, ../../scss/_typography.scss */
+/* line 197, ../../scss/_typography.scss */
 aside#after_content_container #block-views-blog-block-2 h2 {
   font-family: 'Merriweather', serif;
   font-weight: 700;
@@ -613,7 +616,7 @@ aside#after_content_container #block-views-blog-block-2 h2 {
   margin-bottom: 1.5em;
   margin-top: 0;
 }
-/* line 201, ../../scss/_typography.scss */
+/* line 205, ../../scss/_typography.scss */
 aside#after_content_container #block-views-blog-block-2 article.teaser {
   font-family: 'Merriweather', serif;
   text-align: center;
@@ -623,22 +626,22 @@ aside#after_content_container #block-views-blog-block-2 article.teaser {
   margin-bottom: 1.5em;
   margin-bottom: 0;
 }
-/* line 206, ../../scss/_typography.scss */
+/* line 210, ../../scss/_typography.scss */
 aside#after_content_container #block-views-blog-block-2 article.teaser header {
   text-align: center;
   margin-bottom: 0.5rem;
 }
-/* line 209, ../../scss/_typography.scss */
+/* line 213, ../../scss/_typography.scss */
 aside#after_content_container #block-views-blog-block-2 article.teaser header h1 {
   text-align: left;
 }
-/* line 213, ../../scss/_typography.scss */
+/* line 217, ../../scss/_typography.scss */
 aside#after_content_container #block-views-blog-block-2 article.teaser header p.blog-meta {
   font-style: italic;
   font-size: 0.85714em;
   line-height: 1.75em;
 }
-/* line 219, ../../scss/_typography.scss */
+/* line 223, ../../scss/_typography.scss */
 aside#after_content_container #block-views-blog-block-2 article.teaser::after {
   font-family: "kingthings_flourishesregular";
   content: "O";
@@ -650,7 +653,7 @@ aside#after_content_container #block-views-blog-block-2 article.teaser::after {
 /**
  * Triptych
  */
-/* line 232, ../../scss/_typography.scss */
+/* line 236, ../../scss/_typography.scss */
 #triptych {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -666,7 +669,7 @@ aside#after_content_container #block-views-blog-block-2 article.teaser::after {
 /**
  * Footer
  */
-/* line 242, ../../scss/_typography.scss */
+/* line 246, ../../scss/_typography.scss */
 footer {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -674,22 +677,22 @@ footer {
   margin-bottom: 1.5em;
   margin: 0;
 }
-/* line 247, ../../scss/_typography.scss */
+/* line 251, ../../scss/_typography.scss */
 footer ul li.leaf {
   list-style-image: none;
   list-style-type: none;
 }
-/* line 250, ../../scss/_typography.scss */
+/* line 254, ../../scss/_typography.scss */
 footer ul li.leaf:before {
   color: #333;
   font-family: "Glyphicons Halflings";
   content: " ";
 }
-/* line 255, ../../scss/_typography.scss */
+/* line 259, ../../scss/_typography.scss */
 footer ul li.leaf a {
   color: white;
 }
-/* line 261, ../../scss/_typography.scss */
+/* line 265, ../../scss/_typography.scss */
 footer #footer-columns {
   font-size: 0.85714em;
   line-height: 1.75em;
@@ -700,16 +703,16 @@ footer #footer-columns {
   padding-right: 0;
   border: none;
 }
-/* line 267, ../../scss/_typography.scss */
+/* line 271, ../../scss/_typography.scss */
 footer #footer-columns div {
   overflow: hidden;
 }
-/* line 270, ../../scss/_typography.scss */
+/* line 274, ../../scss/_typography.scss */
 footer #footer-columns h2 {
   padding-bottom: 0.3rem;
   border-bottom: solid 1px white;
 }
-/* line 274, ../../scss/_typography.scss */
+/* line 278, ../../scss/_typography.scss */
 footer #footer-columns .content {
   border-top-width: 0.07143em;
   border-top-style: solid;
@@ -719,19 +722,19 @@ footer #footer-columns .content {
   padding-bottom: 1.42857em;
   border: none;
 }
-/* line 280, ../../scss/_typography.scss */
+/* line 284, ../../scss/_typography.scss */
 footer #footer-columns dt {
   text-align: right;
   width: 20%;
   float: left;
   color: #333;
 }
-/* line 286, ../../scss/_typography.scss */
+/* line 290, ../../scss/_typography.scss */
 footer #footer-columns dd {
   width: 75%;
   float: right;
 }
-/* line 292, ../../scss/_typography.scss */
+/* line 296, ../../scss/_typography.scss */
 footer #footer {
   font-size: 0.85714em;
   line-height: 1.75em;
@@ -743,11 +746,11 @@ footer #footer {
 /**
  * Secciones
  */
-/* line 303, ../../scss/_typography.scss */
+/* line 307, ../../scss/_typography.scss */
 section.secciones {
   padding-top: 3em;
 }
-/* line 305, ../../scss/_typography.scss */
+/* line 309, ../../scss/_typography.scss */
 section.secciones .item {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -759,7 +762,7 @@ section.secciones .item {
   border: none;
   padding: 3em 2em 7em 2em;
 }
-/* line 311, ../../scss/_typography.scss */
+/* line 315, ../../scss/_typography.scss */
 section.secciones .item .more-info {
   font-size: 1em;
   line-height: 1.5em;
@@ -778,7 +781,7 @@ section.secciones .item .more-info {
 /**
  * Blog
  */
-/* line 335, ../../scss/_typography.scss */
+/* line 339, ../../scss/_typography.scss */
 .view-blog .view-content p {
   text-align: justify;
 }
