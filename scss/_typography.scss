@@ -193,7 +193,8 @@ aside#after_content_container {
     //border: none;
   }
 
-  #block-views-blog-block-2 {
+  #block-views-actualidad-entradas-recientes, 
+  #block-views-actualidad-ultimas-noticias {
     h2 {
       font-family: 'Merriweather', serif;
       font-weight: 700;
@@ -208,16 +209,32 @@ aside#after_content_container {
       @include rhythm;
       margin-bottom: 0;
       header {
-        text-align: center;
         margin-bottom: 0.5rem;
+        text-align: left;
         h1 {
-          text-align: left;
-          //@include adjust-font-size-to(18px);
+          @include adjust-font-size-to(18px);
         }
-        p.blog-meta {
+        p.blog-meta, 
+        p.noticia-meta {
           font-style: italic;
           @include adjust-font-size-to(12px);
-          //text-align: center;
+        }
+        span.entradilla {
+          @include adjust-font-size-to(12px);
+        }
+      }
+      p {
+        text-align: left;
+      }
+      figure {
+        @include rhythm;
+        img {
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+        }
+        figcaption {
+          @include adjust-font-size-to(12px);
         }
       }
      &::after {

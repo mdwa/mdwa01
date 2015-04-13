@@ -605,8 +605,9 @@ aside#after_content_container .row > div {
   border-style: none;
   padding: 2.5625em;
 }
-/* line 197, ../../scss/_typography.scss */
-aside#after_content_container #block-views-blog-block-2 h2 {
+/* line 198, ../../scss/_typography.scss */
+aside#after_content_container #block-views-actualidad-entradas-recientes h2,
+aside#after_content_container #block-views-actualidad-ultimas-noticias h2 {
   font-family: 'Merriweather', serif;
   font-weight: 700;
   color: #666;
@@ -616,8 +617,9 @@ aside#after_content_container #block-views-blog-block-2 h2 {
   margin-bottom: 1.5em;
   margin-top: 0;
 }
-/* line 205, ../../scss/_typography.scss */
-aside#after_content_container #block-views-blog-block-2 article.teaser {
+/* line 206, ../../scss/_typography.scss */
+aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser,
+aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser {
   font-family: 'Merriweather', serif;
   text-align: center;
   margin-top: 1.5em;
@@ -626,23 +628,62 @@ aside#after_content_container #block-views-blog-block-2 article.teaser {
   margin-bottom: 1.5em;
   margin-bottom: 0;
 }
-/* line 210, ../../scss/_typography.scss */
-aside#after_content_container #block-views-blog-block-2 article.teaser header {
-  text-align: center;
+/* line 211, ../../scss/_typography.scss */
+aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser header,
+aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser header {
   margin-bottom: 0.5rem;
-}
-/* line 213, ../../scss/_typography.scss */
-aside#after_content_container #block-views-blog-block-2 article.teaser header h1 {
   text-align: left;
 }
+/* line 214, ../../scss/_typography.scss */
+aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser header h1,
+aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser header h1 {
+  font-size: 1.28571em;
+  line-height: 2.33333em;
+}
 /* line 217, ../../scss/_typography.scss */
-aside#after_content_container #block-views-blog-block-2 article.teaser header p.blog-meta {
+aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser header p.blog-meta,
+aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser header p.noticia-meta,
+aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser header p.blog-meta,
+aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser header p.noticia-meta {
   font-style: italic;
   font-size: 0.85714em;
   line-height: 1.75em;
 }
-/* line 223, ../../scss/_typography.scss */
-aside#after_content_container #block-views-blog-block-2 article.teaser::after {
+/* line 222, ../../scss/_typography.scss */
+aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser header span.entradilla,
+aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser header span.entradilla {
+  font-size: 0.85714em;
+  line-height: 1.75em;
+}
+/* line 226, ../../scss/_typography.scss */
+aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser p,
+aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser p {
+  text-align: left;
+}
+/* line 229, ../../scss/_typography.scss */
+aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser figure,
+aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser figure {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+/* line 231, ../../scss/_typography.scss */
+aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser figure img,
+aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser figure img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+/* line 236, ../../scss/_typography.scss */
+aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser figure figcaption,
+aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser figure figcaption {
+  font-size: 0.85714em;
+  line-height: 1.75em;
+}
+/* line 240, ../../scss/_typography.scss */
+aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser::after,
+aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser::after {
   font-family: "kingthings_flourishesregular";
   content: "O";
   font-size: 2.57143em;
@@ -653,7 +694,7 @@ aside#after_content_container #block-views-blog-block-2 article.teaser::after {
 /**
  * Triptych
  */
-/* line 236, ../../scss/_typography.scss */
+/* line 253, ../../scss/_typography.scss */
 #triptych {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -669,7 +710,7 @@ aside#after_content_container #block-views-blog-block-2 article.teaser::after {
 /**
  * Footer
  */
-/* line 246, ../../scss/_typography.scss */
+/* line 263, ../../scss/_typography.scss */
 footer {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -677,22 +718,22 @@ footer {
   margin-bottom: 1.5em;
   margin: 0;
 }
-/* line 251, ../../scss/_typography.scss */
+/* line 268, ../../scss/_typography.scss */
 footer ul li.leaf {
   list-style-image: none;
   list-style-type: none;
 }
-/* line 254, ../../scss/_typography.scss */
+/* line 271, ../../scss/_typography.scss */
 footer ul li.leaf:before {
   color: #333;
   font-family: "Glyphicons Halflings";
   content: " ";
 }
-/* line 259, ../../scss/_typography.scss */
+/* line 276, ../../scss/_typography.scss */
 footer ul li.leaf a {
   color: white;
 }
-/* line 265, ../../scss/_typography.scss */
+/* line 282, ../../scss/_typography.scss */
 footer #footer-columns {
   font-size: 0.85714em;
   line-height: 1.75em;
@@ -703,16 +744,16 @@ footer #footer-columns {
   padding-right: 0;
   border: none;
 }
-/* line 271, ../../scss/_typography.scss */
+/* line 288, ../../scss/_typography.scss */
 footer #footer-columns div {
   overflow: hidden;
 }
-/* line 274, ../../scss/_typography.scss */
+/* line 291, ../../scss/_typography.scss */
 footer #footer-columns h2 {
   padding-bottom: 0.3rem;
   border-bottom: solid 1px white;
 }
-/* line 278, ../../scss/_typography.scss */
+/* line 295, ../../scss/_typography.scss */
 footer #footer-columns .content {
   border-top-width: 0.07143em;
   border-top-style: solid;
@@ -722,19 +763,19 @@ footer #footer-columns .content {
   padding-bottom: 1.42857em;
   border: none;
 }
-/* line 284, ../../scss/_typography.scss */
+/* line 301, ../../scss/_typography.scss */
 footer #footer-columns dt {
   text-align: right;
   width: 20%;
   float: left;
   color: #333;
 }
-/* line 290, ../../scss/_typography.scss */
+/* line 307, ../../scss/_typography.scss */
 footer #footer-columns dd {
   width: 75%;
   float: right;
 }
-/* line 296, ../../scss/_typography.scss */
+/* line 313, ../../scss/_typography.scss */
 footer #footer {
   font-size: 0.85714em;
   line-height: 1.75em;
@@ -746,11 +787,11 @@ footer #footer {
 /**
  * Secciones
  */
-/* line 307, ../../scss/_typography.scss */
+/* line 324, ../../scss/_typography.scss */
 section.secciones {
   padding-top: 3em;
 }
-/* line 309, ../../scss/_typography.scss */
+/* line 326, ../../scss/_typography.scss */
 section.secciones .item {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -762,7 +803,7 @@ section.secciones .item {
   border: none;
   padding: 3em 2em 7em 2em;
 }
-/* line 315, ../../scss/_typography.scss */
+/* line 332, ../../scss/_typography.scss */
 section.secciones .item .more-info {
   font-size: 1em;
   line-height: 1.5em;
@@ -781,7 +822,7 @@ section.secciones .item .more-info {
 /**
  * Blog
  */
-/* line 339, ../../scss/_typography.scss */
+/* line 356, ../../scss/_typography.scss */
 .view-blog .view-content p {
   text-align: justify;
 }
@@ -1040,4 +1081,13 @@ section.secciones .item .more-info {
   border-width: 0px;
   border-color: black;
   border-style: none;
+}
+
+/**
+ * Blog
+ */
+/* line 272, ../../scss/screen.scss */
+.node-blog .content p img {
+  display: block;
+  margin: 0 auto;
 }
