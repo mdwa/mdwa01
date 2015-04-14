@@ -143,70 +143,70 @@ nav.navbar-default .navbar-nav > li > a:hover {
   transform: translateX(0px);
 }
 
-/* line 6, ../../scss/_colors.scss */
+/* line 7, ../../scss/_colors.scss */
 a {
   color: #00528e;
 }
 
-/* line 10, ../../scss/_colors.scss */
+/* line 11, ../../scss/_colors.scss */
 body {
   background-color: white;
 }
 
-/* line 15, ../../scss/_colors.scss */
+/* line 16, ../../scss/_colors.scss */
 .breadcrumb {
   color: #00528e;
 }
 
-/* line 19, ../../scss/_colors.scss */
+/* line 20, ../../scss/_colors.scss */
 .whitebg {
   background-color: white;
-  padding: 1rem;
+  padding: 1em;
 }
 
 /**
  * Header
  */
-/* line 27, ../../scss/_colors.scss */
+/* line 28, ../../scss/_colors.scss */
 #top-info {
   color: #00528e;
-  background-color: #eee;
+  background-color: #f6f6f6;
 }
 
 /**
  * Navigation
  */
-/* line 44, ../../scss/_colors.scss */
+/* line 45, ../../scss/_colors.scss */
 nav.navbar-default {
   background-color: white;
 }
-/* line 51, ../../scss/_colors.scss */
+/* line 52, ../../scss/_colors.scss */
 nav.navbar-default .navbar-nav > li > a {
-  color: #333;
+  color: #181818;
 }
 @media (min-width: 768px) {
-  /* line 51, ../../scss/_colors.scss */
+  /* line 52, ../../scss/_colors.scss */
   nav.navbar-default .navbar-nav > li > a {
     border-bottom: solid white 3px;
   }
 }
 @media (min-width: 768px) {
-  /* line 57, ../../scss/_colors.scss */
+  /* line 58, ../../scss/_colors.scss */
   nav.navbar-default .navbar-nav > li > a:hover {
     border-bottom: solid #00528e 1px;
   }
 }
-/* line 65, ../../scss/_colors.scss */
+/* line 66, ../../scss/_colors.scss */
 nav.navbar-default .navbar-nav > li > a.active {
   color: #00528e;
 }
 @media (min-width: 768px) {
-  /* line 65, ../../scss/_colors.scss */
+  /* line 66, ../../scss/_colors.scss */
   nav.navbar-default .navbar-nav > li > a.active {
     border-bottom: solid #00528e 1px;
   }
 }
-/* line 79, ../../scss/_colors.scss */
+/* line 80, ../../scss/_colors.scss */
 nav.navbar-default.navbar-shrink .navbar-nav > li > a:hover {
   color: white;
 }
@@ -214,27 +214,27 @@ nav.navbar-default.navbar-shrink .navbar-nav > li > a:hover {
 /**
  * Main
  */
-/* line 92, ../../scss/_colors.scss */
+/* line 93, ../../scss/_colors.scss */
 body.no-front header {
-  background-color: #eee;
+  background-color: #f6f6f6;
 }
-/* line 94, ../../scss/_colors.scss */
+/* line 95, ../../scss/_colors.scss */
 body.no-front header h1, body.no-front header h2, body.no-front header h3, body.no-front header h4, body.no-front header h5, body.no-front header h6 {
   color: #00528e;
 }
-/* line 96, ../../scss/_colors.scss */
+/* line 97, ../../scss/_colors.scss */
 body.no-front header h1 i, body.no-front header h2 i, body.no-front header h3 i, body.no-front header h4 i, body.no-front header h5 i, body.no-front header h6 i {
-  color: #eee;
+  color: #f6f6f6;
 }
-/* line 102, ../../scss/_colors.scss */
+/* line 103, ../../scss/_colors.scss */
 body.no-front main .breadcrumb {
   background-color: transparent;
 }
-/* line 106, ../../scss/_colors.scss */
+/* line 107, ../../scss/_colors.scss */
 body.no-front main article#content h1, body.no-front main article#content h2, body.no-front main article#content h3, body.no-front main article#content h4, body.no-front main article#content h5, body.no-front main article#content h6 {
   color: #00528e;
 }
-/* line 112, ../../scss/_colors.scss */
+/* line 113, ../../scss/_colors.scss */
 body.no-front main article#content img {
   max-width: 100%;
 }
@@ -242,14 +242,13 @@ body.no-front main article#content img {
 /**
  * After Content Container
  */
-/* line 122, ../../scss/_colors.scss */
+/* line 123, ../../scss/_colors.scss */
 aside#after_content_container {
-  background-color: #eee;
+  background-color: #f6f6f6;
 }
 @media (min-width: 992px) {
-  /* line 122, ../../scss/_colors.scss */
+  /* line 123, ../../scss/_colors.scss */
   aside#after_content_container {
-    background: #eee url(/sites/all/themes/mdwa01/a/i/separador-griis.png);
     background-repeat: repeat-y;
     background-position: top center;
   }
@@ -259,15 +258,20 @@ aside#after_content_container h2 {
   text-shadow: 0 1px 0 white;
 }
 
+/* line 133, ../../scss/_colors.scss */
+aside#after_content_container_2 {
+  background-color: #f6f6f6;
+}
+
 /**
  * Triptych
  */
-/* line 138, ../../scss/_colors.scss */
+/* line 141, ../../scss/_colors.scss */
 aside#triptych {
-  background-color: #eee;
+  background-color: #f6f6f6;
   background: url(/sites/all/themes/mdwa01/a/i/body-pattern.jpg);
 }
-/* line 141, ../../scss/_colors.scss */
+/* line 144, ../../scss/_colors.scss */
 aside#triptych h2 {
   text-shadow: 0 1px 0 white;
 }
@@ -275,43 +279,43 @@ aside#triptych h2 {
 /**
  * Footer
  */
-/* line 149, ../../scss/_colors.scss */
+/* line 152, ../../scss/_colors.scss */
 footer {
-  background-color: #7f7f7f;
+  background-color: #626262;
   color: white;
 }
-/* line 153, ../../scss/_colors.scss */
+/* line 156, ../../scss/_colors.scss */
 footer #footer-columns .content {
-  color: #eee;
+  color: #f6f6f6;
 }
-/* line 155, ../../scss/_colors.scss */
+/* line 158, ../../scss/_colors.scss */
 footer #footer-columns .content a {
-  color: #eee;
+  color: #f6f6f6;
 }
-/* line 159, ../../scss/_colors.scss */
+/* line 162, ../../scss/_colors.scss */
 footer #footer-columns [class^="icon-"], footer #footer-columns [class*="icon-"] {
-  color: #333;
+  color: #181818;
 }
 
 /**
  * Secciones
  */
-/* line 171, ../../scss/_colors.scss */
+/* line 174, ../../scss/_colors.scss */
 section.secciones .item {
   background-color: white;
 }
-/* line 174, ../../scss/_colors.scss */
+/* line 177, ../../scss/_colors.scss */
 section.secciones .item .more-info {
-  background-color: #333;
+  background-color: #181818;
   color: white;
 }
 
-/* line 181, ../../scss/_colors.scss */
+/* line 184, ../../scss/_colors.scss */
 #bigTriangleColor {
   display: block;
-  background-color: #eee;
+  background-color: #f6f6f6;
 }
-/* line 184, ../../scss/_colors.scss */
+/* line 187, ../../scss/_colors.scss */
 #bigTriangleColor path {
   fill: white;
   stroke: white;
@@ -452,7 +456,7 @@ body.no-front main article#content .breadcrumb {
 }
 /* line 99, ../../scss/_typography.scss */
 body.no-front main article#content header {
-  background-color: #eee;
+  background-color: #f6f6f6;
   text-align: left;
 }
 /* line 103, ../../scss/_typography.scss */
@@ -510,7 +514,6 @@ body.no-front main article#content h1#page-title {
 }
 /* line 127, ../../scss/_typography.scss */
 body.no-front main article#content h2 {
-  margin-bottom: 0;
   padding-bottom: 1em;
   border-bottom: solid 1px #00528e;
 }
@@ -549,18 +552,27 @@ body.no-front main article#content div.container.content p {
   padding-bottom: 1.42857em;
   border: none;
 }
-/* line 158, ../../scss/_typography.scss */
+/* line 157, ../../scss/_typography.scss */
+body.no-front main article#content div.container.content ul {
+  list-style-position: inside;
+}
+/* line 159, ../../scss/_typography.scss */
+body.no-front main article#content div.container.content ul li::before {
+  font-family: "Glyphicons Halflings";
+  content: "  ";
+}
+/* line 165, ../../scss/_typography.scss */
 body.no-front main article#content #sidebar_first,
 body.no-front main article#content #sidebar_second {
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 161, ../../scss/_typography.scss */
+/* line 168, ../../scss/_typography.scss */
 body.no-front main article#content #sidebar_first h2,
 body.no-front main article#content #sidebar_second h2 {
   font-size: 1.2em;
 }
-/* line 164, ../../scss/_typography.scss */
+/* line 171, ../../scss/_typography.scss */
 body.no-front main article#content #sidebar_first .content,
 body.no-front main article#content #sidebar_second .content {
   margin-top: 1.5em;
@@ -572,7 +584,7 @@ body.no-front main article#content #sidebar_second .content {
 /**
  * After Content
  */
-/* line 175, ../../scss/_typography.scss */
+/* line 182, ../../scss/_typography.scss */
 div#after_content {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -587,7 +599,7 @@ div#after_content {
 /**
  * After Content Container
  */
-/* line 185, ../../scss/_typography.scss */
+/* line 192, ../../scss/_typography.scss */
 aside#after_content_container {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -599,25 +611,27 @@ aside#after_content_container {
   padding: 1.42857em;
   border: none;
 }
-/* line 191, ../../scss/_typography.scss */
+/* line 198, ../../scss/_typography.scss */
 aside#after_content_container .row > div {
   border-width: 0.0625em;
   border-style: none;
   padding: 2.5625em;
 }
-/* line 198, ../../scss/_typography.scss */
+/* line 205, ../../scss/_typography.scss */
 aside#after_content_container #block-views-actualidad-entradas-recientes h2,
 aside#after_content_container #block-views-actualidad-ultimas-noticias h2 {
   font-family: 'Merriweather', serif;
-  font-weight: 700;
+  font-weight: 300;
   color: #666;
+  text-transform: uppercase;
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
   margin-top: 0;
+  border-bottom: solid 1px #dddddd;
 }
-/* line 206, ../../scss/_typography.scss */
+/* line 215, ../../scss/_typography.scss */
 aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser,
 aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser {
   font-family: 'Merriweather', serif;
@@ -628,19 +642,19 @@ aside#after_content_container #block-views-actualidad-ultimas-noticias article.t
   margin-bottom: 1.5em;
   margin-bottom: 0;
 }
-/* line 211, ../../scss/_typography.scss */
+/* line 220, ../../scss/_typography.scss */
 aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser header,
 aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser header {
   margin-bottom: 0.5rem;
   text-align: left;
 }
-/* line 214, ../../scss/_typography.scss */
+/* line 223, ../../scss/_typography.scss */
 aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser header h1,
 aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser header h1 {
   font-size: 1.28571em;
   line-height: 2.33333em;
 }
-/* line 217, ../../scss/_typography.scss */
+/* line 226, ../../scss/_typography.scss */
 aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser header p.blog-meta,
 aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser header p.noticia-meta,
 aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser header p.blog-meta,
@@ -649,18 +663,18 @@ aside#after_content_container #block-views-actualidad-ultimas-noticias article.t
   font-size: 0.85714em;
   line-height: 1.75em;
 }
-/* line 222, ../../scss/_typography.scss */
+/* line 231, ../../scss/_typography.scss */
 aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser header span.entradilla,
 aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser header span.entradilla {
   font-size: 0.85714em;
   line-height: 1.75em;
 }
-/* line 226, ../../scss/_typography.scss */
+/* line 235, ../../scss/_typography.scss */
 aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser p,
 aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser p {
   text-align: left;
 }
-/* line 229, ../../scss/_typography.scss */
+/* line 238, ../../scss/_typography.scss */
 aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser figure,
 aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser figure {
   margin-top: 1.5em;
@@ -668,20 +682,18 @@ aside#after_content_container #block-views-actualidad-ultimas-noticias article.t
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 231, ../../scss/_typography.scss */
+/* line 240, ../../scss/_typography.scss */
 aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser figure img,
 aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser figure img {
-  width: 100%;
-  max-width: 100%;
   height: auto;
 }
-/* line 236, ../../scss/_typography.scss */
+/* line 245, ../../scss/_typography.scss */
 aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser figure figcaption,
 aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser figure figcaption {
   font-size: 0.85714em;
   line-height: 1.75em;
 }
-/* line 240, ../../scss/_typography.scss */
+/* line 249, ../../scss/_typography.scss */
 aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser::after,
 aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser::after {
   font-family: "kingthings_flourishesregular";
@@ -691,10 +703,43 @@ aside#after_content_container #block-views-actualidad-ultimas-noticias article.t
   text-shadow: 0 1px 0 white;
 }
 
+/* line 258, ../../scss/_typography.scss */
+aside#after_content_container_2 {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+  margin: 0;
+  border-width: 0.07143em;
+  border-style: solid;
+  padding: 1.42857em;
+  border: none;
+}
+/* line 264, ../../scss/_typography.scss */
+aside#after_content_container_2 .row > div {
+  border-width: 0.0625em;
+  border-style: none;
+  padding: 2.5625em;
+}
+/* line 267, ../../scss/_typography.scss */
+aside#after_content_container_2 .row > div h2 {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  color: #666;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+  margin-top: 0;
+  border-bottom: solid 1px #dddddd;
+}
+
 /**
  * Triptych
  */
-/* line 253, ../../scss/_typography.scss */
+/* line 284, ../../scss/_typography.scss */
 #triptych {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -710,7 +755,7 @@ aside#after_content_container #block-views-actualidad-ultimas-noticias article.t
 /**
  * Footer
  */
-/* line 263, ../../scss/_typography.scss */
+/* line 294, ../../scss/_typography.scss */
 footer {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -718,22 +763,22 @@ footer {
   margin-bottom: 1.5em;
   margin: 0;
 }
-/* line 268, ../../scss/_typography.scss */
+/* line 299, ../../scss/_typography.scss */
 footer ul li.leaf {
   list-style-image: none;
   list-style-type: none;
 }
-/* line 271, ../../scss/_typography.scss */
+/* line 302, ../../scss/_typography.scss */
 footer ul li.leaf:before {
-  color: #333;
+  color: #181818;
   font-family: "Glyphicons Halflings";
   content: " ";
 }
-/* line 276, ../../scss/_typography.scss */
+/* line 307, ../../scss/_typography.scss */
 footer ul li.leaf a {
   color: white;
 }
-/* line 282, ../../scss/_typography.scss */
+/* line 313, ../../scss/_typography.scss */
 footer #footer-columns {
   font-size: 0.85714em;
   line-height: 1.75em;
@@ -744,16 +789,16 @@ footer #footer-columns {
   padding-right: 0;
   border: none;
 }
-/* line 288, ../../scss/_typography.scss */
+/* line 319, ../../scss/_typography.scss */
 footer #footer-columns div {
   overflow: hidden;
 }
-/* line 291, ../../scss/_typography.scss */
+/* line 322, ../../scss/_typography.scss */
 footer #footer-columns h2 {
   padding-bottom: 0.3rem;
   border-bottom: solid 1px white;
 }
-/* line 295, ../../scss/_typography.scss */
+/* line 326, ../../scss/_typography.scss */
 footer #footer-columns .content {
   border-top-width: 0.07143em;
   border-top-style: solid;
@@ -763,19 +808,19 @@ footer #footer-columns .content {
   padding-bottom: 1.42857em;
   border: none;
 }
-/* line 301, ../../scss/_typography.scss */
+/* line 332, ../../scss/_typography.scss */
 footer #footer-columns dt {
   text-align: right;
   width: 20%;
   float: left;
-  color: #333;
+  color: #181818;
 }
-/* line 307, ../../scss/_typography.scss */
+/* line 338, ../../scss/_typography.scss */
 footer #footer-columns dd {
   width: 75%;
   float: right;
 }
-/* line 313, ../../scss/_typography.scss */
+/* line 344, ../../scss/_typography.scss */
 footer #footer {
   font-size: 0.85714em;
   line-height: 1.75em;
@@ -787,11 +832,11 @@ footer #footer {
 /**
  * Secciones
  */
-/* line 324, ../../scss/_typography.scss */
+/* line 355, ../../scss/_typography.scss */
 section.secciones {
   padding-top: 3em;
 }
-/* line 326, ../../scss/_typography.scss */
+/* line 357, ../../scss/_typography.scss */
 section.secciones .item {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -803,7 +848,7 @@ section.secciones .item {
   border: none;
   padding: 3em 2em 7em 2em;
 }
-/* line 332, ../../scss/_typography.scss */
+/* line 363, ../../scss/_typography.scss */
 section.secciones .item .more-info {
   font-size: 1em;
   line-height: 1.5em;
@@ -822,7 +867,7 @@ section.secciones .item .more-info {
 /**
  * Blog
  */
-/* line 356, ../../scss/_typography.scss */
+/* line 387, ../../scss/_typography.scss */
 .view-blog .view-content p {
   text-align: justify;
 }
@@ -1016,7 +1061,7 @@ section.secciones .item .more-info {
 }
 /* line 207, ../../scss/screen.scss */
 #features .call-to-action a.btn {
-  background-color: #eee;
+  background-color: #f6f6f6;
 }
 
 /* line 215, ../../scss/screen.scss */

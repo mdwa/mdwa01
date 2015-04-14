@@ -26,11 +26,11 @@
 ?>
 <article class="teaser">
 <header>
-<span class="entradilla"><?php print $variables['fields']['field_noticia_entradilla']->content; ?></span>
 <h1><?php print $variables['fields']['title']->content; ?></h1>
+<span class="entradilla"><?php print $variables['fields']['field_noticia_entradilla']->content; ?></span>
 <p class="noticia-meta">
 <time datetime="<?php print date("c", $row->node_created); ?>"><?php print format_date($row->node_created,"medio_sin_hora"); ?></time></span>
-<br/>
+<span>&nbsp;|&nbsp;</span>
 <span><?php print t('Published in');?> <?php print $variables['fields']['field_tags']->content; ?>
 </p>
 </header>

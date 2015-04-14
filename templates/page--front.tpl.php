@@ -77,6 +77,20 @@
   </aside>
 <?php endif; ?>
 
+<?php if ($page['after_content_4']): ?>
+  <aside id="after_content_container_2">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          <?php print render($page['after_content_4']); ?>
+        </div>
+
+      </div>
+    </div>
+  </aside>
+<?php endif; ?>
+
 <?php if ($page['triptych_first'] || $page['triptych_middle'] || $page['triptych_last']): ?>
 <aside id="triptych">
   <div class="container">

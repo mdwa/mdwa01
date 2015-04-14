@@ -20,6 +20,7 @@ regions[sidebar_second]      = Sidebar second
 regions[after_content]       = After content
 regions[after_content_2]     = After content 2
 regions[after_content_3]     = After content 3
+regions[after_content_4]     = After content 4
 
 regions[triptych_first]      = Triptych first
 regions[triptych_middle]     = Triptych middle

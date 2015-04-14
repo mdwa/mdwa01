@@ -38,7 +38,7 @@
     <?php if ($title): ?>
       <h1 class="title" id="page-title">
         <i class="glyphicon glyphicon-chevron-left"></i>
-        <?php print $title; ?>
+        <?php if (isset($section_title) && !empty($section_title)) print $section_title; else print $title; ?>
         <i class="glyphicon glyphicon-chevron-right"></i>
       </h1>
     <?php endif; ?>
@@ -146,7 +146,7 @@
   <?php endif; ?>
 
   <?php if ($page['footer']): ?>
-    <div id="footer" class="container-fluid">
+    <div id="footer" class="container">
       <?php print render($page['footer']); ?>
     </div>
   <?php endif; ?>

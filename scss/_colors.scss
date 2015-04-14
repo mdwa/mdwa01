@@ -1,7 +1,8 @@
 $azul:        #00528e;
-$gris:        #eee;
-$gris-medio:  #7f7f7f;
-$gris-oscuro: #333;
+$gris:        #f6f6f6;
+$gris-claro:  shade($gris, 10%);
+$gris-medio:  shade($gris, 60%);
+$gris-oscuro: shade($gris, 90%);
 
 a {
   color: $azul;
@@ -18,7 +19,7 @@ body {
 
 .whitebg {
   background-color: white;
-  padding: 1rem;
+  padding: 1em;
 }
 
 /**
@@ -120,15 +121,17 @@ body.no-front {
  * After Content Container
  */
 aside#after_content_container {
-  background-color: #eee;
+  background-color: $gris;
   @media (min-width: 992px) {
-    @include background(#eee image-url("/sites/all/themes/mdwa01/a/i/separador-griis.png"));
     background-repeat: repeat-y;
     background-position: top center;
   }
   h2 {
     text-shadow: 0 1px 0 white;
   }
+}
+aside#after_content_container_2{
+  background-color: $gris;
 }
 
 
@@ -180,7 +183,7 @@ section.secciones {
 
 #bigTriangleColor {
   display: block;
-  background-color: #eee;
+  background-color: $gris;
   path {
     //fill: #3498db;
     fill: white;
