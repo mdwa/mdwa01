@@ -202,16 +202,16 @@ nav.navbar-default .navbar-nav > li > a {
   }
 }
 /* line 70, ../../scss/_colors.scss */
-nav.navbar-default .navbar-nav > li > a.active {
+nav.navbar-default .navbar-nav > li > a.active, nav.navbar-default .navbar-nav > li > a.active-trail {
   color: #00528e;
 }
 @media (min-width: 768px) {
   /* line 70, ../../scss/_colors.scss */
-  nav.navbar-default .navbar-nav > li > a.active {
+  nav.navbar-default .navbar-nav > li > a.active, nav.navbar-default .navbar-nav > li > a.active-trail {
     border-bottom: solid #00528e 1px;
   }
 }
-/* line 84, ../../scss/_colors.scss */
+/* line 85, ../../scss/_colors.scss */
 nav.navbar-default.navbar-shrink .navbar-nav > li > a:hover {
   color: white;
 }
@@ -219,19 +219,19 @@ nav.navbar-default.navbar-shrink .navbar-nav > li > a:hover {
 /**
  * Main
  */
-/* line 98, ../../scss/_colors.scss */
+/* line 99, ../../scss/_colors.scss */
 body.no-front main .breadcrumb {
   background-color: transparent;
 }
-/* line 102, ../../scss/_colors.scss */
+/* line 103, ../../scss/_colors.scss */
 body.no-front main article#content > header {
   background-color: #f6f6f6;
 }
-/* line 105, ../../scss/_colors.scss */
+/* line 106, ../../scss/_colors.scss */
 body.no-front main article#content h1, body.no-front main article#content h2, body.no-front main article#content h3, body.no-front main article#content h4, body.no-front main article#content h5, body.no-front main article#content h6 {
   color: #00528e;
 }
-/* line 107, ../../scss/_colors.scss */
+/* line 108, ../../scss/_colors.scss */
 body.no-front main article#content h1 i, body.no-front main article#content h2 i, body.no-front main article#content h3 i, body.no-front main article#content h4 i, body.no-front main article#content h5 i, body.no-front main article#content h6 i {
   color: #f6f6f6;
 }
@@ -239,7 +239,7 @@ body.no-front main article#content h1 i, body.no-front main article#content h2 i
 /**
  * Features
  */
-/* line 120, ../../scss/_colors.scss */
+/* line 121, ../../scss/_colors.scss */
 #features .call-to-action a.btn {
   background-color: #f6f6f6;
 }
@@ -247,24 +247,24 @@ body.no-front main article#content h1 i, body.no-front main article#content h2 i
 /**
  * After Content Container
  */
-/* line 129, ../../scss/_colors.scss */
+/* line 130, ../../scss/_colors.scss */
 aside#after_content_container {
   background-color: #f6f6f6;
 }
 @media (min-width: 992px) {
-  /* line 129, ../../scss/_colors.scss */
+  /* line 130, ../../scss/_colors.scss */
   aside#after_content_container {
     background-repeat: repeat-y;
     background-position: top center;
   }
 }
 
-/* line 136, ../../scss/_colors.scss */
+/* line 137, ../../scss/_colors.scss */
 aside#after_content_container_2 {
   background-color: #f6f6f6;
 }
 
-/* line 141, ../../scss/_colors.scss */
+/* line 142, ../../scss/_colors.scss */
 aside#after_content_container h2,
 aside#after_content_container_2 h2 {
   text-shadow: 0 1px 0 white;
@@ -274,12 +274,12 @@ aside#after_content_container_2 h2 {
 /**
  * Triptych
  */
-/* line 151, ../../scss/_colors.scss */
+/* line 152, ../../scss/_colors.scss */
 aside#triptych {
   background-color: #f6f6f6;
   background: url(/sites/all/themes/mdwa01/a/i/body-pattern.jpg);
 }
-/* line 154, ../../scss/_colors.scss */
+/* line 155, ../../scss/_colors.scss */
 aside#triptych h2 {
   text-shadow: 0 1px 0 white;
 }
@@ -287,20 +287,20 @@ aside#triptych h2 {
 /**
  * Footer
  */
-/* line 162, ../../scss/_colors.scss */
+/* line 163, ../../scss/_colors.scss */
 footer {
   background-color: #626262;
   color: white;
 }
-/* line 166, ../../scss/_colors.scss */
+/* line 167, ../../scss/_colors.scss */
 footer #footer-columns .content {
   color: #f6f6f6;
 }
-/* line 168, ../../scss/_colors.scss */
+/* line 169, ../../scss/_colors.scss */
 footer #footer-columns .content a {
   color: #f6f6f6;
 }
-/* line 172, ../../scss/_colors.scss */
+/* line 173, ../../scss/_colors.scss */
 footer #footer-columns [class^="icon-"], footer #footer-columns [class*="icon-"] {
   color: #181818;
 }
@@ -308,22 +308,22 @@ footer #footer-columns [class^="icon-"], footer #footer-columns [class*="icon-"]
 /**
  * Secciones
  */
-/* line 184, ../../scss/_colors.scss */
+/* line 185, ../../scss/_colors.scss */
 section.secciones .item {
   background-color: white;
 }
-/* line 187, ../../scss/_colors.scss */
+/* line 188, ../../scss/_colors.scss */
 section.secciones .item .more-info {
   background-color: #181818;
   color: white;
 }
 
-/* line 194, ../../scss/_colors.scss */
+/* line 195, ../../scss/_colors.scss */
 #bigTriangleColor {
   display: block;
   background-color: #f6f6f6;
 }
-/* line 197, ../../scss/_colors.scss */
+/* line 198, ../../scss/_colors.scss */
 #bigTriangleColor path {
   fill: white;
   stroke: white;

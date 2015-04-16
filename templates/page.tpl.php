@@ -97,16 +97,6 @@
         <?php if ($page['sidebar_second']): ?>
           <div id="sidebar_second" class="col-sm-12 col-md-3">
             <?php print render($page['sidebar_second']); ?>
-
-            <?php if ($feed_icons): ?>
-            <div class="block">
-              <h2>RSS</h2>
-              <div class="content">
-                <p><?php print t('Subscribe to') . ' ' . $title . ' ' . $feed_icons; ?>
-              </div>
-            </div>
-            <?php endif; ?>
-
           </div>
         <?php endif; ?>
 

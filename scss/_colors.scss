@@ -67,7 +67,8 @@ nav.navbar-default {
             border-bottom: solid $azul 1px;
           }
         }
-        &.active {
+        &.active,
+        &.active-trail {
           color: $azul;
           @media (min-width: 768px) {
             border-bottom: solid $azul 1px;
