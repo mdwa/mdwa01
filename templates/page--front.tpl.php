@@ -64,11 +64,11 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <?php print render($page['after_content_2']); ?>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <?php print render($page['after_content_3']); ?>
         </div>
 

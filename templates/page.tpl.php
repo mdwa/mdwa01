@@ -30,6 +30,7 @@
   <!-- /.container-fluid -->
 </nav>   
 
+<!-- Main content -->
 <main>
   <article id="content">
     <header>
@@ -94,7 +95,7 @@
         </div>
 
         <?php if ($page['sidebar_second']): ?>
-          <div id="sidebar_second" class="col-md-3">
+          <div id="sidebar_second" class="col-sm-12 col-md-3">
             <?php print render($page['sidebar_second']); ?>
 
             <?php if ($feed_icons): ?>

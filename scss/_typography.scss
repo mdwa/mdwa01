@@ -14,6 +14,20 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+h1 { font-size: 2.5em; }
+h2 { font-size: 2.3em; }
+h3 { font-size: 2.1em; }
+h4 { font-size: 1.8em; }
+h5 { font-size: 1.5em; }
+h6 { font-size: 1.3em; }
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  @include rhythm;
+}
+h2 {
+  padding-bottom: 1em;
+  border-bottom: solid 1px $azul;
+}
 strong {
   font-weight: 700;
 }
@@ -31,18 +45,6 @@ aside {
   @include rhythm-borders;
   border: none;
   margin-bottom: 2rem;
-}
-header {
-    h1#page-title {
-      @include leading-border(1px,1,16px,solid);
-      @include trailing-border(1px,1,16px,solid);
-      @include apply-side-rhythm-border(left,1px,3,16px,solid);
-      @include apply-side-rhythm-border(right,1px,3,16px,solid);
-      border: none;
-      //@include background(image-url("/sites/all/themes/mdwa01/a/i/banner-background-2.jpg") no-repeat center center / cover);
-      text-align: left;
-      font-size: 2.5rem;
-    }
 }
 
 /**
@@ -62,57 +64,19 @@ nav.navbar-default {
  * Main
  */
 main {
-  //@include rhythm;
   margin: 0;
   border: none;
-  font-weight: 400;
-  .breadcrumb {
-    @include adjust-font-size-to(12px);
-  }
+  font-weight: 300;
 }
 
 body.no-front {
-  header {
-    text-align: left;
-      h1#page-title {
-        display: inline-block;
-        @include adjust-font-size-to(18px);
-        @include rhythm-borders;
-        margin: 0;
-        border: none;
-        padding-top: 0;
-        padding-bottom: 0;
-        background-color: white;
-      }
-  }
-
   main {
     .breadcrumb {
       @include rhythm;
+      @include adjust-font-size-to(16px);
     }
     article#content {
       @include rhythm;
-      font-weight: 300;
-      .breadcrumb {
-        @include adjust-font-size-to(16px);
-      }
-      header {
-        background-color: $gris;
-        text-align: left;
-      }
-      .block {
-        @include rhythm;
-      }
-      h1 { font-size: 2.5em; }
-      h2 { font-size: 2.3em; }
-      h3 { font-size: 2.1em; }
-      h4 { font-size: 1.8em; }
-      h5 { font-size: 1.5em; }
-      h6 { font-size: 1.3em; }
-      h1, h2, h3, h4, h5, h6 {
-        text-transform: uppercase;
-        @include rhythm;
-      }
 
       h1#page-title {
         display: inline-block;
@@ -124,53 +88,34 @@ body.no-front {
         padding-bottom: 0;
         background-color: white;
       }
-       h2 {
-         //margin-bottom: 0;
-         padding-bottom: 1em;
-         border-bottom: solid 1px $azul;
-       }
+
       i {
         padding: 0;
         //color: $gris;
       }
+    }
+  }
 
-
-      article.equipo {
-        line-height: 1.8em;
-        h1 {
-          @include adjust-font-size-to(20px);
-          @include rhythm(0);
-          margin-top: 0;
-          font-style: italic;
-       }
-      }
-
-      div.container.content {
-        @include rhythm-borders;
-        padding-top: 0;
+  article#content {
+    div.container.content {
+      @include rhythm-borders;
+      padding-top: 0;
+      border: none;
+      line-height: 1.8em;
+      p {
+        @include trailing-border;
         border: none;
-        line-height: 1.8em;
-        p {
-          @include trailing-border;
-          border: none;
-        }
-        ul {
-          list-style-position: inside;
-          li::before {
-            font-family: "Glyphicons Halflings";
-            content: "  ";
-          }
-        }
       }
-      #sidebar_first,
-      #sidebar_second {
-        @include adjust-font-size-to(14px);
-        h2 {
-          font-size: 1.2em;
-        }
-        .content {
-          @include rhythm;
-        }
+
+    }
+    #sidebar_first,
+    #sidebar_second {
+      @include adjust-font-size-to(14px);
+      h2 {
+        font-size: 1.2em;
+      }
+      .content {
+        @include rhythm;
       }
     }
   }
@@ -181,7 +126,6 @@ body.no-front {
  */
 div#after_content {
   @include rhythm;
-  //margin: 0;
   @include rhythm-borders;
   border: none;
 }
@@ -189,94 +133,17 @@ div#after_content {
 /**
  * After Content Container
  */
-aside#after_content_container {
-  @include rhythm;
-  margin: 0;
-  @include rhythm-borders;
-  border: none;
-
-  .row>div {
-    @include rhythm-borders(1px,2,16px,none);
-    //border: none;
-  }
-
-  #block-views-actualidad-entradas-recientes, 
-  #block-views-actualidad-ultimas-noticias {
-    h2 {
-      font-family: 'Merriweather', serif;
-      font-weight: 300;
-      color: #666;
-      text-transform: uppercase;
-      //@include adjust-font-size-to(18px);
-      @include rhythm;
-      margin-top: 0;
-      border-bottom: solid 1px $gris-claro;
-    }
-    article.teaser {
-      font-family: 'Merriweather', serif;
-      text-align: center;
-      @include rhythm;
-      margin-bottom: 0;
-      header {
-        margin-bottom: 0.5rem;
-        text-align: left;
-        h1 {
-          @include adjust-font-size-to(18px);
-        }
-        p.blog-meta, 
-        p.noticia-meta {
-          font-style: italic;
-          @include adjust-font-size-to(12px);
-        }
-        span.entradilla {
-          @include adjust-font-size-to(12px);
-        }
-      }
-      p {
-        text-align: left;
-      }
-      figure {
-        @include rhythm;
-        img {
-          //width: 100%;
-          //max-width: 100%;
-          height: auto;
-        }
-        figcaption {
-          @include adjust-font-size-to(12px);
-        }
-      }
-     &::after {
-       font-family: "kingthings_flourishesregular";
-       content: "O";
-       @include adjust-font-size-to(36px);
-       text-shadow: 0 1px 0 white;
-     }
-    }
-  }
-}
+aside#after_content_container,
 aside#after_content_container_2 {
   @include rhythm;
   margin: 0;
   @include rhythm-borders;
   border: none;
-
   .row>div {
     @include rhythm-borders(1px,2,16px,none);
-    //border: none;
-    h2 {
-      font-family: 'Merriweather', serif;
-      font-weight: 300;
-      color: #666;
-      text-transform: uppercase;
-      text-align: center;
-      @include rhythm;
-      margin-top: 0;
-      border-bottom: solid 1px $gris-claro;
-    }
-
   }
 }
+
 
 /**
  * Triptych
@@ -294,7 +161,39 @@ aside#after_content_container_2 {
 footer {
   @include rhythm;
   margin: 0;
+}
+#footer-columns {
+  @include adjust-font-size-to(12px);
+  @include rhythm-borders;
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+  div {
+    overflow: hidden;
+  }
+  h2 {
+    @include adjust-font-size-to(14px);
+    @include rhythm(0);
+    text-transform: capitalize;
+    padding-bottom: 0.3rem;
+    border-bottom: solid 1px white;
+  }
+  .content {
+    @include leading-border;
+    @include trailing-border;
+    border: none;
+  }
 
+  dt {
+    text-align: right;
+    width: 20%;
+    float: left;
+    color: $gris-oscuro;
+  }
+  dd {
+    width: 75%;
+    float: right;
+  }
   ul {
     li.leaf {
       list-style-image: none;
@@ -309,75 +208,62 @@ footer {
       }
     }
   }
-
-  #footer-columns {
-    @include adjust-font-size-to(12px);
-    @include rhythm-borders;
-    padding-left: 0;
-    padding-right: 0;
-    border: none;
-    div {
-      overflow: hidden;
-    }
-    h2 {
-      padding-bottom: 0.3rem;
-      border-bottom: solid 1px white;
-    }
-    .content {
-      @include leading-border;
-      @include trailing-border;
-      border: none;
-    }
-
-    dt {
-      text-align: right;
-      width: 20%;
-      float: left;
-      color: $gris-oscuro;
-    }
-    dd {
-      width: 75%;
-      float: right;
-    }
+  img {
+    width: 150px;
+    vertical-align: top;
   }
-
-  #footer {
-    @include adjust-font-size-to(12px);
-    border-top: solid 1px white;
-    padding-left: 0;
-    padding-right: 0;
+  [class^="icon-"], [class*="icon-"] {
+    padding: 0;
+    font-size: 4em;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
   }
+}
+#footer {
+  @include adjust-font-size-to(12px);
+  border-top: solid 1px white;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /**
- * Secciones
+ * Features
  */
-section.secciones {
-  padding-top: 3em;
-  .item {
+#features {
+  header {
     @include rhythm;
-    @include rhythm-borders;
-    border: none;
-    padding: 3em 2em 7em 2em;
-
-    .more-info {
+    h1 {
       @include adjust-font-size-to(14px);
+      font-weight: 600;
+      line-height: 1.4;
+      margin-top: 0.2em;
+      margin-bottom: 0.5em;
+      text-shadow: 0 1px 0 white;
       text-align: center;
-      @include rhythm-borders;
-    //border: none;
-    padding-bottom: 4em;
-    padding-right: 7em;
-    padding-left: 7em;
-    //padding-bottom: 7em;
-      .glyphicon {
-      }
+    }
+    [class^="icon-"], [class*="icon-"] {
+      padding: 0;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.4;
+      text-shadow: 0 1px 0 white;
+      text-align: center;
     }
   }
-}
+  p {
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
 
-/**
- * Slider
- */
+  .call-to-action {
+    float: none;
+    margin: auto;
+    @include rhythm-borders;
+    border: none;
+  }
+}
 
 /**
  * Blog
@@ -387,5 +273,111 @@ section.secciones {
     p {
       text-align: justify;
     }
+  }
+}
+
+#after_content_container,
+#after_content_container_2 {
+  .block {
+    h2 {
+      @include adjust-font-size-to(14px);
+      font-family: 'Merriweather', serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      //@include adjust-font-size-to(18px);
+      @include rhythm;
+      margin-top: 0;
+      border-bottom: solid 1px $gris-claro;
+    }
+  }
+}
+#after_content_container_2 {
+  .block {
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+
+.node-pagina {
+  ul {
+    list-style-position: inside;
+    li::before {
+      font-family: "Glyphicons Halflings";
+      content: "  ";
+    }
+  }
+}
+
+.noticia,
+.blog {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  @include rhythm;
+  margin-bottom: 0;
+  //min-height: 42em;
+  header {
+    margin-bottom: 0.5em;
+    text-align: left;
+    h1 {
+      @include adjust-font-size-to(20px);
+      @include rhythm(0);
+      text-transform: none;
+    }
+
+    p.blog-meta, 
+    p.noticia-meta {
+      font-style: italic;
+      @include adjust-font-size-to(12px);
+    }
+    .entradilla {
+      font-weight: 300;
+      @include adjust-font-size-to(12px);
+    }
+  }
+  p {
+    text-align: left;
+  }
+  figure {
+    @include rhythm;
+    img {
+      //width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+    figcaption {
+      @include adjust-font-size-to(12px);
+    }
+  }
+  &.teaser::after {
+    font-family: "kingthings_flourishesregular";
+    content: "O";
+    @include adjust-font-size-to(36px);
+    text-shadow: 0 1px 0 white;
+  }
+}
+.blog {
+    h1 {
+      line-height: 1.5em;
+      @include rhythm(0);
+    }
+  .field-name-body {
+    @include rhythm;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.equipo {
+  @include rhythm;
+  line-height: 1.8em;
+  h1 {
+    @include adjust-font-size-to(20px);
+    @include rhythm(0);
+    margin-top: 0;
+    font-style: italic;
   }
 }

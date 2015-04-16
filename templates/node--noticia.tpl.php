@@ -1,28 +1,40 @@
-<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-  <?php else: ?>
-    <h1<?php print $title_attributes; ?>><?php print $title; ?></h1>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
-
-  <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php print $submitted; ?>
-    </div>
-  <?php endif; ?>
-
-  <div class="content"<?php print $content_attributes; ?>>
-    <?php
-      // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-      hide($content['links']);
-      print render($content);
-    ?>
-  </div>
-
-  <?php print render($content['links']); ?>
-
+<?php if ($teaser): ?>
+  <article id="node-<?php print $node->nid; ?>" class="noticia teaser">
+  <header>
+    <h1>
+      <?php print render($title_prefix); ?>
+      <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
+      <?php print render($title_sufix); ?>
+    </h1>
+    <?php print render($content['field_noticia_entradilla']); ?>
+  </header>
+  <?php print render($content['field_noticia_foto']); ?>
+  <?php print render($content['body']); ?>
+  <div class="text-right"><?php print render($content['links']); ?></div>
 </article>
+<?php endif; ?>
+
+
+<?php if ($view_mode == "full"): ?>
+<article id="node-<?php print $node->nid; ?>" class="noticia full">
+  <header>
+    <h1>
+      <?php print render($title_prefix); ?>
+      <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
+      <?php print render($title_sufix); ?>
+    </h1>
+    <?php print render($content['field_noticia_entradilla']); ?>
+    <p class="noticia-meta">
+    <?php if ($display_submitted): ?>
+      <time datetime="<?php print $variables['datetime']; ?>" class="submitted">
+       <?php print $submitted; ?>
+      </time>
+    <?php endif; ?>
+    <span> | </span><?php print render($content['field_tags']); ?>
+    </p>
+  </header>
+  <?php hide($content ['sharethis']); ?>
+  <?php print render($content); ?>
+  <?php print render($content ['sharethis']); ?>
+</article>
+<?php endif; ?>

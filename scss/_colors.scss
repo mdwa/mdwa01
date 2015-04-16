@@ -4,13 +4,17 @@ $gris-claro:  shade($gris, 10%);
 $gris-medio:  shade($gris, 60%);
 $gris-oscuro: shade($gris, 90%);
 
+body {
+  background-color: white;
+  //@include background(image-url("/sites/all/themes/mdwa01/a/i/body-pattern.jpg"));
+}
+
 a {
   color: $azul;
 }
 
-body {
-  background-color: white;
-  //@include background(image-url("/sites/all/themes/mdwa01/a/i/body-pattern.jpg"));
+strong {
+  color: $azul;
 }
 
 .breadcrumb {
@@ -90,29 +94,31 @@ nav.navbar-default {
  * Main
  */
 body.no-front {
-  header {
-    background-color: $gris;
-      h1, h2, h3, h4, h5, h6 {
-        color: $azul;
-        i {
-          color: $gris;
-        }
-      }
-  }
   main {
     .breadcrumb {
       background-color: transparent;
     }
     article#content {
-      h1, h2, h3, h4, h5, h6 {
+      &>header {
+        background-color: $gris;
+      }
+      h1,h2,h3,h4,h5,h6 {
         color: $azul;
         i {
-          //color: $gris;
+          color: $gris;
         }
       }
-      img {
-        max-width: 100%;
-      }
+    }
+  }
+}
+
+/**
+ * Features
+ */
+#features {
+  .call-to-action {
+    a.btn {
+      background-color: $gris;
     }
   }
 }
@@ -126,12 +132,16 @@ aside#after_content_container {
     background-repeat: repeat-y;
     background-position: top center;
   }
+}
+aside#after_content_container_2 {
+  background-color: $gris;
+}
+aside#after_content_container,
+aside#after_content_container_2 {
   h2 {
     text-shadow: 0 1px 0 white;
+    color: $gris-medio;
   }
-}
-aside#after_content_container_2{
-  background-color: $gris;
 }
 
 

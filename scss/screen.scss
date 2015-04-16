@@ -13,10 +13,6 @@
 @import "colors";
 @import "typography";
 
-
-body {
-}
-
 .glyphicon {
   padding: 0.5em;
 }
@@ -25,8 +21,6 @@ li.leaf {
   padding: 0;
 }
 
-
-
 /**
  * Navigation
  */
@@ -34,12 +28,10 @@ nav.navbar-default {
   margin-bottom: 0;
   padding-bottom: 30px;
   border: none;
-
   .navbar-brand {
     img {
       max-width: 200px;
       margin-top: -7px;
-
       @media (max-width: 768px) {
         max-width: 250px;
       }
@@ -48,188 +40,17 @@ nav.navbar-default {
       }
     }
   }
-
   .navbar-collapse {
     border: none;
   }
-
   .navbar-nav {
     &>li {
       &>a {
         margin: 0;
-        &:hover {
-          @media (min-width: 768px) {
-            //padding-top: 45px;
-            //margin-bottom: -30px;
-          }
-        }
-      }
-    }
-  }
-
-  &.navbar-shrink {
-    .navbar-nav {
-      &>li {
-        &>a {
-          &:hover {
-          }
-        }
       }
     }
   }
 }
-
-
-/**
- * Header
- */
-header {
-  margin-bottom: 3.75rem;
-  background-size: cover;
-  background-attachment: scroll;
-  text-align: center;
-
-  .intro-text {
-    width: 50%;
-    margin: 0 auto;
-    padding: 5em 0;
-    @include adjust-font-size-to(42px);
-    line-height: 1.8em;
-  }
-}
-
-/**
- * Main
- */
-body.no-front {
-  main {
-  }
-}
-
-/**
- * Footer
- */
-footer {
-  margin-bottom: 0;
-  img {
-    width: 150px;
-    //height: 80px;
-    vertical-align: top;
-    //max-width: 100%;
-  }
-  [class^="icon-"], [class*="icon-"] {
-    padding: 0;
-    font-size: 4rem;
-    font-weight: 600;
-    line-height: 1.4;
-    //text-shadow: 0 1px 0 white;
-    text-align: center;
-  }
-}
-
-/**
- * Equipo
- */
-article.equipo {
-  @include rhythm;
-  h1 {
-    @include rhythm;
-    margin-top: 0;
-    color: $azul;
-  }
-}
-
-/**
- * Secciones
- */
-section.secciones {
-  .item {
-    position: relative;
-    overflow: hidden;
-    @include rhythm;
-    @include rhythm-borders;
-    border: none;
-    padding: 3em 2em 7em 2em;
-
-    .more-info {
-      position: absolute;
-      right: -9em;
-      bottom: -3em;
-      @include rhythm-borders;
-      padding-bottom: 4em;
-      padding-right: 7em;
-      padding-left: 7em;
-      //padding-bottom: 7em;
-      @include rotate(-45deg);
-      .glyphicon {
-      }
-    }
-  }
-}
-
-#features {
-  header {
-    @include rhythm;
-    h1 {
-      //font-size: 1.7rem;
-      font-weight: 600;
-      line-height: 1.4;
-      margin-top: 0.2rem;
-      margin-bottom: 0.5rem;
-      text-shadow: 0 1px 0 white;
-      text-align: center;
-    }
-    [class^="icon-"], [class*="icon-"] {
-      padding: 0;
-      font-size: 1.5rem;
-      font-weight: 600;
-      line-height: 1.4;
-      text-shadow: 0 1px 0 white;
-      text-align: center;
-    }
-  }
-  p {
-    //font-size: 1.4375rem;
-    font-weight: 400;
-    line-height: 1.6;
-    margin-bottom: 1.25rem;
-    //text-align: center;
-  }
-
-  img {
-    max-width: 100%;
-  }
-  .call-to-action {
-    float: none;
-    margin: auto;
-    @include rhythm-borders;
-    border: none;
-    a.btn {
-      background-color: $gris;
-      //background-color: $azul;
-      //color: white;
-    }
-  }
-}
-
-#tickerIBEX35 {
-  @include rhythm;
-  .tickerStock {
-    width: 100% !important;
-    .tickerCont {
-      width: 100% !important;
-    }
-    .tickerLogo {
-      display: none;
-    }
-  }
-}
-#IBEX35 {
-  .logo, .downloadApp {
-    display: none;
-  }
-}
-
 
 /**
  * Slider
@@ -249,30 +70,37 @@ section.secciones {
   position: relative;
 }
 .tp-caption.mdwawhitebg {
-font-size:30px;
-line-height:30px;
-font-weight:300;
-font-family:"Open Sans";
-color:rgb(255, 255, 255);
-text-decoration:none;
-background-color:rgba(0, 0, 0, 0.4);
-padding:5px 15px 10px;
-text-shadow:none;
-border-width:0px;
-border-color:rgb(0, 0, 0);
-border-style:none;
+  font-size:30px;
+  line-height:30px;
+  font-weight:300;
+  font-family:"Open Sans";
+  color:rgb(255, 255, 255);
+  text-decoration:none;
+  background-color:rgba(0, 0, 0, 0.4);
+  padding:5px 15px 10px;
+  text-shadow:none;
+  border-width:0px;
+  border-color:rgb(0, 0, 0);
+  border-style:none;
 }
 
 /**
- * Blog
+ * IBEX 35
  */
-.node-blog {
-  .content {
-    p {
-      img {
-        display: block;
-        margin: 0 auto;
-      }
+#tickerIBEX35 {
+  @include rhythm;
+  .tickerStock {
+    width: 100% !important;
+    .tickerCont {
+      width: 100% !important;
     }
+    .tickerLogo {
+      display: none;
+    }
+  }
+}
+#IBEX35 {
+  .logo, .downloadApp {
+    display: none;
   }
 }

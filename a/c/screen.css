@@ -144,21 +144,26 @@ nav.navbar-default .navbar-nav > li > a:hover {
 }
 
 /* line 7, ../../scss/_colors.scss */
-a {
-  color: #00528e;
-}
-
-/* line 11, ../../scss/_colors.scss */
 body {
   background-color: white;
 }
 
+/* line 12, ../../scss/_colors.scss */
+a {
+  color: #00528e;
+}
+
 /* line 16, ../../scss/_colors.scss */
-.breadcrumb {
+strong {
   color: #00528e;
 }
 
 /* line 20, ../../scss/_colors.scss */
+.breadcrumb {
+  color: #00528e;
+}
+
+/* line 24, ../../scss/_colors.scss */
 .whitebg {
   background-color: white;
   padding: 1em;
@@ -167,7 +172,7 @@ body {
 /**
  * Header
  */
-/* line 28, ../../scss/_colors.scss */
+/* line 32, ../../scss/_colors.scss */
 #top-info {
   color: #00528e;
   background-color: #f6f6f6;
@@ -176,37 +181,37 @@ body {
 /**
  * Navigation
  */
-/* line 45, ../../scss/_colors.scss */
+/* line 49, ../../scss/_colors.scss */
 nav.navbar-default {
   background-color: white;
 }
-/* line 52, ../../scss/_colors.scss */
+/* line 56, ../../scss/_colors.scss */
 nav.navbar-default .navbar-nav > li > a {
   color: #181818;
 }
 @media (min-width: 768px) {
-  /* line 52, ../../scss/_colors.scss */
+  /* line 56, ../../scss/_colors.scss */
   nav.navbar-default .navbar-nav > li > a {
     border-bottom: solid white 3px;
   }
 }
 @media (min-width: 768px) {
-  /* line 58, ../../scss/_colors.scss */
+  /* line 62, ../../scss/_colors.scss */
   nav.navbar-default .navbar-nav > li > a:hover {
     border-bottom: solid #00528e 1px;
   }
 }
-/* line 66, ../../scss/_colors.scss */
+/* line 70, ../../scss/_colors.scss */
 nav.navbar-default .navbar-nav > li > a.active {
   color: #00528e;
 }
 @media (min-width: 768px) {
-  /* line 66, ../../scss/_colors.scss */
+  /* line 70, ../../scss/_colors.scss */
   nav.navbar-default .navbar-nav > li > a.active {
     border-bottom: solid #00528e 1px;
   }
 }
-/* line 80, ../../scss/_colors.scss */
+/* line 84, ../../scss/_colors.scss */
 nav.navbar-default.navbar-shrink .navbar-nav > li > a:hover {
   color: white;
 }
@@ -214,64 +219,67 @@ nav.navbar-default.navbar-shrink .navbar-nav > li > a:hover {
 /**
  * Main
  */
-/* line 93, ../../scss/_colors.scss */
-body.no-front header {
-  background-color: #f6f6f6;
-}
-/* line 95, ../../scss/_colors.scss */
-body.no-front header h1, body.no-front header h2, body.no-front header h3, body.no-front header h4, body.no-front header h5, body.no-front header h6 {
-  color: #00528e;
-}
-/* line 97, ../../scss/_colors.scss */
-body.no-front header h1 i, body.no-front header h2 i, body.no-front header h3 i, body.no-front header h4 i, body.no-front header h5 i, body.no-front header h6 i {
-  color: #f6f6f6;
-}
-/* line 103, ../../scss/_colors.scss */
+/* line 98, ../../scss/_colors.scss */
 body.no-front main .breadcrumb {
   background-color: transparent;
 }
-/* line 107, ../../scss/_colors.scss */
+/* line 102, ../../scss/_colors.scss */
+body.no-front main article#content > header {
+  background-color: #f6f6f6;
+}
+/* line 105, ../../scss/_colors.scss */
 body.no-front main article#content h1, body.no-front main article#content h2, body.no-front main article#content h3, body.no-front main article#content h4, body.no-front main article#content h5, body.no-front main article#content h6 {
   color: #00528e;
 }
-/* line 113, ../../scss/_colors.scss */
-body.no-front main article#content img {
-  max-width: 100%;
+/* line 107, ../../scss/_colors.scss */
+body.no-front main article#content h1 i, body.no-front main article#content h2 i, body.no-front main article#content h3 i, body.no-front main article#content h4 i, body.no-front main article#content h5 i, body.no-front main article#content h6 i {
+  color: #f6f6f6;
+}
+
+/**
+ * Features
+ */
+/* line 120, ../../scss/_colors.scss */
+#features .call-to-action a.btn {
+  background-color: #f6f6f6;
 }
 
 /**
  * After Content Container
  */
-/* line 123, ../../scss/_colors.scss */
+/* line 129, ../../scss/_colors.scss */
 aside#after_content_container {
   background-color: #f6f6f6;
 }
 @media (min-width: 992px) {
-  /* line 123, ../../scss/_colors.scss */
+  /* line 129, ../../scss/_colors.scss */
   aside#after_content_container {
     background-repeat: repeat-y;
     background-position: top center;
   }
 }
-/* line 129, ../../scss/_colors.scss */
-aside#after_content_container h2 {
-  text-shadow: 0 1px 0 white;
-}
 
-/* line 133, ../../scss/_colors.scss */
+/* line 136, ../../scss/_colors.scss */
 aside#after_content_container_2 {
   background-color: #f6f6f6;
+}
+
+/* line 141, ../../scss/_colors.scss */
+aside#after_content_container h2,
+aside#after_content_container_2 h2 {
+  text-shadow: 0 1px 0 white;
+  color: #626262;
 }
 
 /**
  * Triptych
  */
-/* line 141, ../../scss/_colors.scss */
+/* line 151, ../../scss/_colors.scss */
 aside#triptych {
   background-color: #f6f6f6;
   background: url(/sites/all/themes/mdwa01/a/i/body-pattern.jpg);
 }
-/* line 144, ../../scss/_colors.scss */
+/* line 154, ../../scss/_colors.scss */
 aside#triptych h2 {
   text-shadow: 0 1px 0 white;
 }
@@ -279,20 +287,20 @@ aside#triptych h2 {
 /**
  * Footer
  */
-/* line 152, ../../scss/_colors.scss */
+/* line 162, ../../scss/_colors.scss */
 footer {
   background-color: #626262;
   color: white;
 }
-/* line 156, ../../scss/_colors.scss */
+/* line 166, ../../scss/_colors.scss */
 footer #footer-columns .content {
   color: #f6f6f6;
 }
-/* line 158, ../../scss/_colors.scss */
+/* line 168, ../../scss/_colors.scss */
 footer #footer-columns .content a {
   color: #f6f6f6;
 }
-/* line 162, ../../scss/_colors.scss */
+/* line 172, ../../scss/_colors.scss */
 footer #footer-columns [class^="icon-"], footer #footer-columns [class*="icon-"] {
   color: #181818;
 }
@@ -300,22 +308,22 @@ footer #footer-columns [class^="icon-"], footer #footer-columns [class*="icon-"]
 /**
  * Secciones
  */
-/* line 174, ../../scss/_colors.scss */
+/* line 184, ../../scss/_colors.scss */
 section.secciones .item {
   background-color: white;
 }
-/* line 177, ../../scss/_colors.scss */
+/* line 187, ../../scss/_colors.scss */
 section.secciones .item .more-info {
   background-color: #181818;
   color: white;
 }
 
-/* line 184, ../../scss/_colors.scss */
+/* line 194, ../../scss/_colors.scss */
 #bigTriangleColor {
   display: block;
   background-color: #f6f6f6;
 }
-/* line 187, ../../scss/_colors.scss */
+/* line 197, ../../scss/_colors.scss */
 #bigTriangleColor path {
   fill: white;
   stroke: white;
@@ -334,11 +342,56 @@ body {
 }
 
 /* line 17, ../../scss/_typography.scss */
+h1 {
+  font-size: 2.5em;
+}
+
+/* line 18, ../../scss/_typography.scss */
+h2 {
+  font-size: 2.3em;
+}
+
+/* line 19, ../../scss/_typography.scss */
+h3 {
+  font-size: 2.1em;
+}
+
+/* line 20, ../../scss/_typography.scss */
+h4 {
+  font-size: 1.8em;
+}
+
+/* line 21, ../../scss/_typography.scss */
+h5 {
+  font-size: 1.5em;
+}
+
+/* line 22, ../../scss/_typography.scss */
+h6 {
+  font-size: 1.3em;
+}
+
+/* line 23, ../../scss/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+
+/* line 27, ../../scss/_typography.scss */
+h2 {
+  padding-bottom: 1em;
+  border-bottom: solid 1px #00528e;
+}
+
+/* line 31, ../../scss/_typography.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 21, ../../scss/_typography.scss */
+/* line 35, ../../scss/_typography.scss */
 aside {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -349,7 +402,7 @@ aside {
 /**
  * Header
  */
-/* line 29, ../../scss/_typography.scss */
+/* line 43, ../../scss/_typography.scss */
 #top-info {
   font-size: 0.85714em;
   line-height: 1.75em;
@@ -360,41 +413,22 @@ aside {
   margin-bottom: 2rem;
 }
 
-/* line 36, ../../scss/_typography.scss */
-header h1#page-title {
-  border-top-width: 0.0625em;
-  border-top-style: solid;
-  padding-top: 1.25em;
-  border-bottom-width: 0.0625em;
-  border-bottom-style: solid;
-  padding-bottom: 1.25em;
-  border-left-width: 0.0625em;
-  border-left-style: solid;
-  padding-left: 3.875em;
-  border-right-width: 0.0625em;
-  border-right-style: solid;
-  padding-right: 3.875em;
-  border: none;
-  text-align: left;
-  font-size: 2.5rem;
-}
-
 /**
  * Navigation
  */
-/* line 51, ../../scss/_typography.scss */
+/* line 53, ../../scss/_typography.scss */
 nav.navbar-default {
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  /* line 51, ../../scss/_typography.scss */
+  /* line 53, ../../scss/_typography.scss */
   nav.navbar-default {
     font-size: 0.71429em;
     line-height: 2.1em;
   }
 }
 @media (min-width: 992px) {
-  /* line 51, ../../scss/_typography.scss */
+  /* line 53, ../../scss/_typography.scss */
   nav.navbar-default {
     font-size: 1em;
     line-height: 1.5em;
@@ -404,101 +438,30 @@ nav.navbar-default {
 /**
  * Main
  */
-/* line 64, ../../scss/_typography.scss */
+/* line 66, ../../scss/_typography.scss */
 main {
   margin: 0;
   border: none;
-  font-weight: 400;
-}
-/* line 69, ../../scss/_typography.scss */
-main .breadcrumb {
-  font-size: 0.85714em;
-  line-height: 1.75em;
+  font-weight: 300;
 }
 
-/* line 75, ../../scss/_typography.scss */
-body.no-front header {
-  text-align: left;
-}
-/* line 77, ../../scss/_typography.scss */
-body.no-front header h1#page-title {
-  display: inline-block;
-  font-size: 1.28571em;
-  line-height: 2.33333em;
-  border-width: 0.07143em;
-  border-style: solid;
-  padding: 1.42857em;
-  margin: 0;
-  border: none;
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: white;
-}
-/* line 90, ../../scss/_typography.scss */
+/* line 74, ../../scss/_typography.scss */
 body.no-front main .breadcrumb {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
+  font-size: 1.14286em;
+  line-height: 1.3125em;
 }
-/* line 93, ../../scss/_typography.scss */
+/* line 78, ../../scss/_typography.scss */
 body.no-front main article#content {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
-  font-weight: 300;
 }
-/* line 96, ../../scss/_typography.scss */
-body.no-front main article#content .breadcrumb {
-  font-size: 1.14286em;
-  line-height: 1.3125em;
-}
-/* line 99, ../../scss/_typography.scss */
-body.no-front main article#content header {
-  background-color: #f6f6f6;
-  text-align: left;
-}
-/* line 103, ../../scss/_typography.scss */
-body.no-front main article#content .block {
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-}
-/* line 106, ../../scss/_typography.scss */
-body.no-front main article#content h1 {
-  font-size: 2.5em;
-}
-/* line 107, ../../scss/_typography.scss */
-body.no-front main article#content h2 {
-  font-size: 2.3em;
-}
-/* line 108, ../../scss/_typography.scss */
-body.no-front main article#content h3 {
-  font-size: 2.1em;
-}
-/* line 109, ../../scss/_typography.scss */
-body.no-front main article#content h4 {
-  font-size: 1.8em;
-}
-/* line 110, ../../scss/_typography.scss */
-body.no-front main article#content h5 {
-  font-size: 1.5em;
-}
-/* line 111, ../../scss/_typography.scss */
-body.no-front main article#content h6 {
-  font-size: 1.3em;
-}
-/* line 112, ../../scss/_typography.scss */
-body.no-front main article#content h1, body.no-front main article#content h2, body.no-front main article#content h3, body.no-front main article#content h4, body.no-front main article#content h5, body.no-front main article#content h6 {
-  text-transform: uppercase;
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-}
-/* line 117, ../../scss/_typography.scss */
+/* line 81, ../../scss/_typography.scss */
 body.no-front main article#content h1#page-title {
   display: inline-block;
   font-size: 1.28571em;
@@ -512,32 +475,12 @@ body.no-front main article#content h1#page-title {
   padding-bottom: 0;
   background-color: white;
 }
-/* line 127, ../../scss/_typography.scss */
-body.no-front main article#content h2 {
-  padding-bottom: 1em;
-  border-bottom: solid 1px #00528e;
-}
-/* line 132, ../../scss/_typography.scss */
+/* line 92, ../../scss/_typography.scss */
 body.no-front main article#content i {
   padding: 0;
 }
-/* line 138, ../../scss/_typography.scss */
-body.no-front main article#content article.equipo {
-  line-height: 1.8em;
-}
-/* line 140, ../../scss/_typography.scss */
-body.no-front main article#content article.equipo h1 {
-  font-size: 1.42857em;
-  line-height: 2.1em;
-  margin-top: 0em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 0em;
-  margin-top: 0;
-  font-style: italic;
-}
-/* line 148, ../../scss/_typography.scss */
-body.no-front main article#content div.container.content {
+/* line 100, ../../scss/_typography.scss */
+body.no-front article#content div.container.content {
   border-width: 0.07143em;
   border-style: solid;
   padding: 1.42857em;
@@ -545,36 +488,27 @@ body.no-front main article#content div.container.content {
   border: none;
   line-height: 1.8em;
 }
-/* line 153, ../../scss/_typography.scss */
-body.no-front main article#content div.container.content p {
+/* line 105, ../../scss/_typography.scss */
+body.no-front article#content div.container.content p {
   border-bottom-width: 0.07143em;
   border-bottom-style: solid;
   padding-bottom: 1.42857em;
   border: none;
 }
-/* line 157, ../../scss/_typography.scss */
-body.no-front main article#content div.container.content ul {
-  list-style-position: inside;
-}
-/* line 159, ../../scss/_typography.scss */
-body.no-front main article#content div.container.content ul li::before {
-  font-family: "Glyphicons Halflings";
-  content: "  ";
-}
-/* line 165, ../../scss/_typography.scss */
-body.no-front main article#content #sidebar_first,
-body.no-front main article#content #sidebar_second {
+/* line 111, ../../scss/_typography.scss */
+body.no-front article#content #sidebar_first,
+body.no-front article#content #sidebar_second {
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 168, ../../scss/_typography.scss */
-body.no-front main article#content #sidebar_first h2,
-body.no-front main article#content #sidebar_second h2 {
+/* line 114, ../../scss/_typography.scss */
+body.no-front article#content #sidebar_first h2,
+body.no-front article#content #sidebar_second h2 {
   font-size: 1.2em;
 }
-/* line 171, ../../scss/_typography.scss */
-body.no-front main article#content #sidebar_first .content,
-body.no-front main article#content #sidebar_second .content {
+/* line 117, ../../scss/_typography.scss */
+body.no-front article#content #sidebar_first .content,
+body.no-front article#content #sidebar_second .content {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
@@ -584,7 +518,7 @@ body.no-front main article#content #sidebar_second .content {
 /**
  * After Content
  */
-/* line 182, ../../scss/_typography.scss */
+/* line 127, ../../scss/_typography.scss */
 div#after_content {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -599,111 +533,8 @@ div#after_content {
 /**
  * After Content Container
  */
-/* line 192, ../../scss/_typography.scss */
-aside#after_content_container {
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-  margin: 0;
-  border-width: 0.07143em;
-  border-style: solid;
-  padding: 1.42857em;
-  border: none;
-}
-/* line 198, ../../scss/_typography.scss */
-aside#after_content_container .row > div {
-  border-width: 0.0625em;
-  border-style: none;
-  padding: 2.5625em;
-}
-/* line 205, ../../scss/_typography.scss */
-aside#after_content_container #block-views-actualidad-entradas-recientes h2,
-aside#after_content_container #block-views-actualidad-ultimas-noticias h2 {
-  font-family: 'Merriweather', serif;
-  font-weight: 300;
-  color: #666;
-  text-transform: uppercase;
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-  margin-top: 0;
-  border-bottom: solid 1px #dddddd;
-}
-/* line 215, ../../scss/_typography.scss */
-aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser,
-aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser {
-  font-family: 'Merriweather', serif;
-  text-align: center;
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-  margin-bottom: 0;
-}
-/* line 220, ../../scss/_typography.scss */
-aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser header,
-aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser header {
-  margin-bottom: 0.5rem;
-  text-align: left;
-}
-/* line 223, ../../scss/_typography.scss */
-aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser header h1,
-aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser header h1 {
-  font-size: 1.28571em;
-  line-height: 2.33333em;
-}
-/* line 226, ../../scss/_typography.scss */
-aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser header p.blog-meta,
-aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser header p.noticia-meta,
-aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser header p.blog-meta,
-aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser header p.noticia-meta {
-  font-style: italic;
-  font-size: 0.85714em;
-  line-height: 1.75em;
-}
-/* line 231, ../../scss/_typography.scss */
-aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser header span.entradilla,
-aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser header span.entradilla {
-  font-size: 0.85714em;
-  line-height: 1.75em;
-}
-/* line 235, ../../scss/_typography.scss */
-aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser p,
-aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser p {
-  text-align: left;
-}
-/* line 238, ../../scss/_typography.scss */
-aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser figure,
-aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser figure {
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-}
-/* line 240, ../../scss/_typography.scss */
-aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser figure img,
-aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser figure img {
-  height: auto;
-}
-/* line 245, ../../scss/_typography.scss */
-aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser figure figcaption,
-aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser figure figcaption {
-  font-size: 0.85714em;
-  line-height: 1.75em;
-}
-/* line 249, ../../scss/_typography.scss */
-aside#after_content_container #block-views-actualidad-entradas-recientes article.teaser::after,
-aside#after_content_container #block-views-actualidad-ultimas-noticias article.teaser::after {
-  font-family: "kingthings_flourishesregular";
-  content: "O";
-  font-size: 2.57143em;
-  line-height: 1.16667em;
-  text-shadow: 0 1px 0 white;
-}
-
-/* line 258, ../../scss/_typography.scss */
+/* line 136, ../../scss/_typography.scss */
+aside#after_content_container,
 aside#after_content_container_2 {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -715,31 +546,18 @@ aside#after_content_container_2 {
   padding: 1.42857em;
   border: none;
 }
-/* line 264, ../../scss/_typography.scss */
+/* line 142, ../../scss/_typography.scss */
+aside#after_content_container .row > div,
 aside#after_content_container_2 .row > div {
   border-width: 0.0625em;
   border-style: none;
   padding: 2.5625em;
 }
-/* line 267, ../../scss/_typography.scss */
-aside#after_content_container_2 .row > div h2 {
-  font-family: 'Merriweather', serif;
-  font-weight: 300;
-  color: #666;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-  margin-top: 0;
-  border-bottom: solid 1px #dddddd;
-}
 
 /**
  * Triptych
  */
-/* line 284, ../../scss/_typography.scss */
+/* line 151, ../../scss/_typography.scss */
 #triptych {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -755,7 +573,7 @@ aside#after_content_container_2 .row > div h2 {
 /**
  * Footer
  */
-/* line 294, ../../scss/_typography.scss */
+/* line 161, ../../scss/_typography.scss */
 footer {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -763,23 +581,9 @@ footer {
   margin-bottom: 1.5em;
   margin: 0;
 }
-/* line 299, ../../scss/_typography.scss */
-footer ul li.leaf {
-  list-style-image: none;
-  list-style-type: none;
-}
-/* line 302, ../../scss/_typography.scss */
-footer ul li.leaf:before {
-  color: #181818;
-  font-family: "Glyphicons Halflings";
-  content: " ";
-}
-/* line 307, ../../scss/_typography.scss */
-footer ul li.leaf a {
-  color: white;
-}
-/* line 313, ../../scss/_typography.scss */
-footer #footer-columns {
+
+/* line 165, ../../scss/_typography.scss */
+#footer-columns {
   font-size: 0.85714em;
   line-height: 1.75em;
   border-width: 0.07143em;
@@ -789,17 +593,24 @@ footer #footer-columns {
   padding-right: 0;
   border: none;
 }
-/* line 319, ../../scss/_typography.scss */
-footer #footer-columns div {
+/* line 171, ../../scss/_typography.scss */
+#footer-columns div {
   overflow: hidden;
 }
-/* line 322, ../../scss/_typography.scss */
-footer #footer-columns h2 {
+/* line 174, ../../scss/_typography.scss */
+#footer-columns h2 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+  text-transform: capitalize;
   padding-bottom: 0.3rem;
   border-bottom: solid 1px white;
 }
-/* line 326, ../../scss/_typography.scss */
-footer #footer-columns .content {
+/* line 181, ../../scss/_typography.scss */
+#footer-columns .content {
   border-top-width: 0.07143em;
   border-top-style: solid;
   padding-top: 1.42857em;
@@ -808,20 +619,49 @@ footer #footer-columns .content {
   padding-bottom: 1.42857em;
   border: none;
 }
-/* line 332, ../../scss/_typography.scss */
-footer #footer-columns dt {
+/* line 187, ../../scss/_typography.scss */
+#footer-columns dt {
   text-align: right;
   width: 20%;
   float: left;
   color: #181818;
 }
-/* line 338, ../../scss/_typography.scss */
-footer #footer-columns dd {
+/* line 193, ../../scss/_typography.scss */
+#footer-columns dd {
   width: 75%;
   float: right;
 }
-/* line 344, ../../scss/_typography.scss */
-footer #footer {
+/* line 198, ../../scss/_typography.scss */
+#footer-columns ul li.leaf {
+  list-style-image: none;
+  list-style-type: none;
+}
+/* line 201, ../../scss/_typography.scss */
+#footer-columns ul li.leaf:before {
+  color: #181818;
+  font-family: "Glyphicons Halflings";
+  content: " ";
+}
+/* line 206, ../../scss/_typography.scss */
+#footer-columns ul li.leaf a {
+  color: white;
+}
+/* line 211, ../../scss/_typography.scss */
+#footer-columns img {
+  width: 150px;
+  vertical-align: top;
+}
+/* line 215, ../../scss/_typography.scss */
+#footer-columns [class^="icon-"], #footer-columns [class*="icon-"] {
+  padding: 0;
+  font-size: 4em;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* line 223, ../../scss/_typography.scss */
+#footer {
   font-size: 0.85714em;
   line-height: 1.75em;
   border-top: solid 1px white;
@@ -830,208 +670,27 @@ footer #footer {
 }
 
 /**
- * Secciones
+ * Features
  */
-/* line 355, ../../scss/_typography.scss */
-section.secciones {
-  padding-top: 3em;
-}
-/* line 357, ../../scss/_typography.scss */
-section.secciones .item {
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-  border-width: 0.07143em;
-  border-style: solid;
-  padding: 1.42857em;
-  border: none;
-  padding: 3em 2em 7em 2em;
-}
-/* line 363, ../../scss/_typography.scss */
-section.secciones .item .more-info {
-  font-size: 1em;
-  line-height: 1.5em;
-  text-align: center;
-  border-width: 0.07143em;
-  border-style: solid;
-  padding: 1.42857em;
-  padding-bottom: 4em;
-  padding-right: 7em;
-  padding-left: 7em;
-}
-
-/**
- * Slider
- */
-/**
- * Blog
- */
-/* line 387, ../../scss/_typography.scss */
-.view-blog .view-content p {
-  text-align: justify;
-}
-
-/* line 20, ../../scss/screen.scss */
-.glyphicon {
-  padding: 0.5em;
-}
-
-/* line 24, ../../scss/screen.scss */
-li.leaf {
-  padding: 0;
-}
-
-/**
- * Navigation
- */
-/* line 33, ../../scss/screen.scss */
-nav.navbar-default {
-  margin-bottom: 0;
-  padding-bottom: 30px;
-  border: none;
-}
-/* line 39, ../../scss/screen.scss */
-nav.navbar-default .navbar-brand img {
-  max-width: 200px;
-  margin-top: -7px;
-}
-@media (max-width: 768px) {
-  /* line 39, ../../scss/screen.scss */
-  nav.navbar-default .navbar-brand img {
-    max-width: 250px;
-  }
-}
-@media (min-width: 992px) {
-  /* line 39, ../../scss/screen.scss */
-  nav.navbar-default .navbar-brand img {
-    max-width: 300px;
-  }
-}
-/* line 52, ../../scss/screen.scss */
-nav.navbar-default .navbar-collapse {
-  border: none;
-}
-/* line 58, ../../scss/screen.scss */
-nav.navbar-default .navbar-nav > li > a {
-  margin: 0;
-}
-
-/**
- * Header
- */
-/* line 86, ../../scss/screen.scss */
-header {
-  margin-bottom: 3.75rem;
-  background-size: cover;
-  background-attachment: scroll;
-  text-align: center;
-}
-/* line 92, ../../scss/screen.scss */
-header .intro-text {
-  width: 50%;
-  margin: 0 auto;
-  padding: 5em 0;
-  font-size: 3em;
-  line-height: 1.5em;
-  line-height: 1.8em;
-}
-
-/**
- * Main
- */
-/**
- * Footer
- */
-/* line 112, ../../scss/screen.scss */
-footer {
-  margin-bottom: 0;
-}
-/* line 114, ../../scss/screen.scss */
-footer img {
-  width: 150px;
-  vertical-align: top;
-}
-/* line 120, ../../scss/screen.scss */
-footer [class^="icon-"], footer [class*="icon-"] {
-  padding: 0;
-  font-size: 4rem;
-  font-weight: 600;
-  line-height: 1.4;
-  text-align: center;
-}
-
-/**
- * Equipo
- */
-/* line 133, ../../scss/screen.scss */
-article.equipo {
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-}
-/* line 135, ../../scss/screen.scss */
-article.equipo h1 {
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-  margin-top: 0;
-  color: #00528e;
-}
-
-/**
- * Secciones
- */
-/* line 146, ../../scss/screen.scss */
-section.secciones .item {
-  position: relative;
-  overflow: hidden;
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-  border-width: 0.07143em;
-  border-style: solid;
-  padding: 1.42857em;
-  border: none;
-  padding: 3em 2em 7em 2em;
-}
-/* line 154, ../../scss/screen.scss */
-section.secciones .item .more-info {
-  position: absolute;
-  right: -9em;
-  bottom: -3em;
-  border-width: 0.07143em;
-  border-style: solid;
-  padding: 1.42857em;
-  padding-bottom: 4em;
-  padding-right: 7em;
-  padding-left: 7em;
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-/* line 171, ../../scss/screen.scss */
+/* line 234, ../../scss/_typography.scss */
 #features header {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 173, ../../scss/screen.scss */
+/* line 236, ../../scss/_typography.scss */
 #features header h1 {
+  font-size: 1em;
+  line-height: 1.5em;
   font-weight: 600;
   line-height: 1.4;
-  margin-top: 0.2rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
   text-shadow: 0 1px 0 white;
   text-align: center;
 }
-/* line 182, ../../scss/screen.scss */
+/* line 245, ../../scss/_typography.scss */
 #features header [class^="icon-"], #features header [class*="icon-"] {
   padding: 0;
   font-size: 1.5rem;
@@ -1040,17 +699,13 @@ section.secciones .item .more-info {
   text-shadow: 0 1px 0 white;
   text-align: center;
 }
-/* line 191, ../../scss/screen.scss */
+/* line 254, ../../scss/_typography.scss */
 #features p {
   font-weight: 400;
   line-height: 1.6;
   margin-bottom: 1.25rem;
 }
-/* line 199, ../../scss/screen.scss */
-#features img {
-  max-width: 100%;
-}
-/* line 202, ../../scss/screen.scss */
+/* line 260, ../../scss/_typography.scss */
 #features .call-to-action {
   float: none;
   margin: auto;
@@ -1059,60 +714,235 @@ section.secciones .item .more-info {
   padding: 1.42857em;
   border: none;
 }
-/* line 207, ../../scss/screen.scss */
-#features .call-to-action a.btn {
-  background-color: #f6f6f6;
+
+/**
+ * Blog
+ */
+/* line 273, ../../scss/_typography.scss */
+.view-blog .view-content p {
+  text-align: justify;
 }
 
-/* line 215, ../../scss/screen.scss */
-#tickerIBEX35 {
+/* line 282, ../../scss/_typography.scss */
+#after_content_container .block h2,
+#after_content_container_2 .block h2 {
+  font-size: 1em;
+  line-height: 1.5em;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+  margin-top: 0;
+  border-bottom: solid 1px #dddddd;
+}
+
+/* line 296, ../../scss/_typography.scss */
+#after_content_container_2 .block h2 {
+  text-align: center;
+}
+
+/* line 304, ../../scss/_typography.scss */
+.node-pagina ul {
+  list-style-position: inside;
+}
+/* line 306, ../../scss/_typography.scss */
+.node-pagina ul li::before {
+  font-family: "Glyphicons Halflings";
+  content: "  ";
+}
+
+/* line 313, ../../scss/_typography.scss */
+.noticia,
+.blog {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+  margin-bottom: 0;
+}
+/* line 320, ../../scss/_typography.scss */
+.noticia header,
+.blog header {
+  margin-bottom: 0.5em;
+  text-align: left;
+}
+/* line 323, ../../scss/_typography.scss */
+.noticia header h1,
+.blog header h1 {
+  font-size: 1.42857em;
+  line-height: 2.1em;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+  text-transform: none;
+}
+/* line 329, ../../scss/_typography.scss */
+.noticia header p.blog-meta,
+.noticia header p.noticia-meta,
+.blog header p.blog-meta,
+.blog header p.noticia-meta {
+  font-style: italic;
+  font-size: 0.85714em;
+  line-height: 1.75em;
+}
+/* line 334, ../../scss/_typography.scss */
+.noticia header .entradilla,
+.blog header .entradilla {
+  font-weight: 300;
+  font-size: 0.85714em;
+  line-height: 1.75em;
+}
+/* line 339, ../../scss/_typography.scss */
+.noticia p,
+.blog p {
+  text-align: left;
+}
+/* line 342, ../../scss/_typography.scss */
+.noticia figure,
+.blog figure {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 217, ../../scss/screen.scss */
-#tickerIBEX35 .tickerStock {
-  width: 100% !important;
+/* line 344, ../../scss/_typography.scss */
+.noticia figure img,
+.blog figure img {
+  max-width: 100%;
+  height: auto;
 }
-/* line 219, ../../scss/screen.scss */
-#tickerIBEX35 .tickerStock .tickerCont {
-  width: 100% !important;
+/* line 349, ../../scss/_typography.scss */
+.noticia figure figcaption,
+.blog figure figcaption {
+  font-size: 0.85714em;
+  line-height: 1.75em;
 }
-/* line 222, ../../scss/screen.scss */
-#tickerIBEX35 .tickerStock .tickerLogo {
-  display: none;
+/* line 353, ../../scss/_typography.scss */
+.noticia.teaser::after,
+.blog.teaser::after {
+  font-family: "kingthings_flourishesregular";
+  content: "O";
+  font-size: 2.57143em;
+  line-height: 1.16667em;
+  text-shadow: 0 1px 0 white;
 }
 
-/* line 228, ../../scss/screen.scss */
-#IBEX35 .logo, #IBEX35 .downloadApp {
-  display: none;
+/* line 361, ../../scss/_typography.scss */
+.blog h1 {
+  line-height: 1.5em;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+}
+/* line 365, ../../scss/_typography.scss */
+.blog .field-name-body {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+/* line 367, ../../scss/_typography.scss */
+.blog .field-name-body img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 374, ../../scss/_typography.scss */
+.equipo {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+  line-height: 1.8em;
+}
+/* line 377, ../../scss/_typography.scss */
+.equipo h1 {
+  font-size: 1.42857em;
+  line-height: 2.1em;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+  margin-top: 0;
+  font-style: italic;
+}
+
+/* line 16, ../../scss/screen.scss */
+.glyphicon {
+  padding: 0.5em;
+}
+
+/* line 20, ../../scss/screen.scss */
+li.leaf {
+  padding: 0;
+}
+
+/**
+ * Navigation
+ */
+/* line 27, ../../scss/screen.scss */
+nav.navbar-default {
+  margin-bottom: 0;
+  padding-bottom: 30px;
+  border: none;
+}
+/* line 32, ../../scss/screen.scss */
+nav.navbar-default .navbar-brand img {
+  max-width: 200px;
+  margin-top: -7px;
+}
+@media (max-width: 768px) {
+  /* line 32, ../../scss/screen.scss */
+  nav.navbar-default .navbar-brand img {
+    max-width: 250px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 32, ../../scss/screen.scss */
+  nav.navbar-default .navbar-brand img {
+    max-width: 300px;
+  }
+}
+/* line 43, ../../scss/screen.scss */
+nav.navbar-default .navbar-collapse {
+  border: none;
+}
+/* line 48, ../../scss/screen.scss */
+nav.navbar-default .navbar-nav > li > a {
+  margin: 0;
 }
 
 /**
  * Slider
  */
-/* line 237, ../../scss/screen.scss */
+/* line 58, ../../scss/screen.scss */
 .boxedcontainer {
   max-width: 1170px;
   margin: auto;
   padding: 0 30px;
 }
 
-/* line 242, ../../scss/screen.scss */
+/* line 63, ../../scss/screen.scss */
 .banner-container {
   width: 100%;
   position: relative;
   padding: 0;
 }
 
-/* line 247, ../../scss/screen.scss */
+/* line 68, ../../scss/screen.scss */
 .banner {
   width: 100%;
   position: relative;
 }
 
-/* line 251, ../../scss/screen.scss */
+/* line 72, ../../scss/screen.scss */
 .tp-caption.mdwawhitebg {
   font-size: 30px;
   line-height: 30px;
@@ -1129,10 +959,29 @@ section.secciones .item .more-info {
 }
 
 /**
- * Blog
+ * IBEX 35
  */
-/* line 272, ../../scss/screen.scss */
-.node-blog .content p img {
-  display: block;
-  margin: 0 auto;
+/* line 90, ../../scss/screen.scss */
+#tickerIBEX35 {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+/* line 92, ../../scss/screen.scss */
+#tickerIBEX35 .tickerStock {
+  width: 100% !important;
+}
+/* line 94, ../../scss/screen.scss */
+#tickerIBEX35 .tickerStock .tickerCont {
+  width: 100% !important;
+}
+/* line 97, ../../scss/screen.scss */
+#tickerIBEX35 .tickerStock .tickerLogo {
+  display: none;
+}
+
+/* line 103, ../../scss/screen.scss */
+#IBEX35 .logo, #IBEX35 .downloadApp {
+  display: none;
 }
