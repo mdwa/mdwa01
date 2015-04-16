@@ -12,6 +12,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 
 h1 { font-size: 2.5em; }
@@ -116,6 +117,14 @@ body.no-front {
       }
       .content {
         @include rhythm;
+      }
+      #block-block-2 {
+        dt {
+          display: none;
+        }
+        #google-map {
+          display: none;
+        }
       }
     }
   }
@@ -231,6 +240,7 @@ footer {
  * Features
  */
 #features {
+  text-align: center;
   header {
     @include rhythm;
     h1 {
@@ -240,7 +250,6 @@ footer {
       margin-top: 0.2em;
       margin-bottom: 0.5em;
       text-shadow: 0 1px 0 white;
-      text-align: center;
     }
     [class^="icon-"], [class*="icon-"] {
       padding: 0;
@@ -313,31 +322,35 @@ footer {
 .noticia,
 .blog {
   font-family: 'Merriweather', serif;
-  text-align: center;
+  text-align: justify;
   @include rhythm;
   margin-bottom: 0;
-  //min-height: 42em;
+  
   header {
     margin-bottom: 0.5em;
-    text-align: left;
+    text-align: center;
     h1 {
-      @include adjust-font-size-to(20px);
+      @include adjust-font-size-to(35px);
+      line-height: 1.5em;
       @include rhythm(0);
-      text-transform: none;
     }
 
-    p.blog-meta, 
-    p.noticia-meta {
+    .blog-meta, 
+    .noticia-meta {
+      text-align: center;
       font-style: italic;
       @include adjust-font-size-to(12px);
     }
     .entradilla {
-      font-weight: 300;
-      @include adjust-font-size-to(12px);
+      p {
+        text-align: center;
+        font-weight: 300;
+        @include adjust-font-size-to(12px);
+      }
     }
   }
   p {
-    text-align: left;
+    text-align: justify;
   }
   figure {
     @include rhythm;
@@ -345,29 +358,68 @@ footer {
       //width: 100%;
       max-width: 100%;
       height: auto;
+      display: block;
+      margin: auto;
     }
     figcaption {
       @include adjust-font-size-to(12px);
+      text-align: center;
     }
   }
+  .field-name-body {
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+  .links {
+    text-align: center;
+    @include adjust-font-size-to(12px);
+    &.inline {
+      display: block;
+    }
+  }
+  /*
   &.teaser::after {
     font-family: "kingthings_flourishesregular";
     content: "O";
     @include adjust-font-size-to(36px);
     text-shadow: 0 1px 0 white;
   }
+  */
 }
-.blog {
+
+.teaser {
+  border-bottom: solid 1px $gris-claro;
+  @include rhythm;
+  header {
+    text-align: left;
     h1 {
+      @include adjust-font-size-to(20px);
       line-height: 1.5em;
+      text-transform: uppercase;
       @include rhythm(0);
     }
+    .blog-meta,
+    .noticia-meta {
+        text-align: left;
+    }
+    .entradilla {
+      p {
+        text-align: left;
+      }
+    }
+  }
   .field-name-body {
     @include rhythm;
-    img {
-      display: block;
-      margin: 0 auto;
-    }
+  }
+  .links {
+    text-align: right;
+  }
+}
+.view-id-display-id-page_1 {
+  .teaser.blog {
+    min-height: 35em;
   }
 }
 

@@ -20,18 +20,18 @@
   <header>
     <h1>
       <?php print render($title_prefix); ?>
-      <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
+      <?php print $title; ?>
       <?php print render($title_sufix); ?>
     </h1>
     <?php print render($content['field_noticia_entradilla']); ?>
-    <p class="noticia-meta">
     <?php if ($display_submitted): ?>
+    <p class="noticia-meta">
       <time datetime="<?php print $variables['datetime']; ?>" class="submitted">
        <?php print $submitted; ?>
       </time>
-    <?php endif; ?>
     <span> | </span><?php print render($content['field_tags']); ?>
     </p>
+    <?php endif; ?>
   </header>
   <?php hide($content ['sharethis']); ?>
   <?php print render($content); ?>

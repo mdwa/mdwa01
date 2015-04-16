@@ -22,22 +22,19 @@
 
 <?php if ($view_mode == "full"): ?>
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> blog"<?php print $attributes; ?>>
-
-  <?php print $user_picture; ?>
-
+<header>
   <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-  <?php else: ?>
-    <h1<?php print $title_attributes; ?>><?php print $title; ?></h1>
-  <?php endif; ?>
+  <h1<?php print $title_attributes; ?>><?php print $title; ?></h1>
   <?php print render($title_suffix); ?>
 
   <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php print $submitted; ?>
-    </div>
+    <p class="blog-meta">
+    <?php print t('by'); ?> <span class="author" rel="author"><?php print $name; ?></span>&mdash;<time datetime="<?php print $variables['datetime']; ?>" class="submitted"><?php print $submitted; ?></time></span>
+    <br/>
+    <?php print render($content['field_tags']); ?>
+    </p>
   <?php endif; ?>
+</header>
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php
