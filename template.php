@@ -38,6 +38,11 @@ function mdwa01_preprocess_node(&$variables) {
     $variables ['submitted'] = format_date($node->created, 'medio_sin_hora');
     $variables ['datetime']  = format_date($node->created, 'custom', 'Y-m-d');
   }
+  if ($node->type == 'pagina') {
+    // Inserto atributo typeof a la imágenes del body insertadas por el usuario.
+    $body = $variables['content']['body'][0]['#markup'];
+    $variables['content']['body'][0]['#markup'] = str_replace('img ', 'img typeof="foaf:Image "', $body);
+  }
 }
 
 function mdwa01_menu_tree__primary(&$variables) {
@@ -47,6 +52,9 @@ function mdwa01_menu_tree__primary(&$variables) {
 function mdwa01_breadcrumb(&$variables) {
   $breadcrumb = $variables['breadcrumb'];
   if (!empty($breadcrumb)) {
+    if (preg_match("(Inicio|Home)", $breadcrumb[0])) {
+      array_shift($breadcrumb);
+    }
     array_unshift($breadcrumb, l(t('Home'), '<front>'));
     $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
     $output .= '<div class="breadcrumb"><i class="glyphicon glyphicon-home">&nbsp;</i>' . implode(' » ', $breadcrumb) . '</div>';
