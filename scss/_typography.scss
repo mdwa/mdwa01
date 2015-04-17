@@ -370,6 +370,7 @@ footer {
     img {
       display: block;
       margin: auto;
+      max-width: 100%;
     }
   }
   .links {
@@ -432,4 +433,8 @@ footer {
     margin-top: 0;
     font-style: italic;
   }
+}
+
+.submitted {
+  text-transform: lowercase;
 }

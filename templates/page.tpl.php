@@ -35,15 +35,15 @@
   <article id="content">
     <header>
     <div class="container">
-    <?php print render($title_prefix); ?>
     <?php if ($title): ?>
       <h1 class="title" id="page-title">
+        <?php print render($title_prefix); ?>
         <i class="glyphicon glyphicon-chevron-left"></i>
         <?php if (isset($section_title) && !empty($section_title)) print $section_title; else print $title; ?>
         <i class="glyphicon glyphicon-chevron-right"></i>
+        <?php print render($title_suffix); ?>
       </h1>
     <?php endif; ?>
-    <?php print render($title_suffix); ?>
     </div>    </header>
 
     <?php if ($messages): ?>

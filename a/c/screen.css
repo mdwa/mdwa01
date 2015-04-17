@@ -855,21 +855,22 @@ footer {
 .blog .field-name-body img {
   display: block;
   margin: auto;
+  max-width: 100%;
 }
-/* line 375, ../../scss/_typography.scss */
+/* line 376, ../../scss/_typography.scss */
 .noticia .links,
 .blog .links {
   text-align: center;
   font-size: 0.85714em;
   line-height: 1.75em;
 }
-/* line 378, ../../scss/_typography.scss */
+/* line 379, ../../scss/_typography.scss */
 .noticia .links.inline,
 .blog .links.inline {
   display: block;
 }
 
-/* line 392, ../../scss/_typography.scss */
+/* line 393, ../../scss/_typography.scss */
 .teaser {
   border-bottom: solid 1px #dddddd;
   margin-top: 1.5em;
@@ -877,11 +878,11 @@ footer {
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 395, ../../scss/_typography.scss */
+/* line 396, ../../scss/_typography.scss */
 .teaser header {
   text-align: left;
 }
-/* line 397, ../../scss/_typography.scss */
+/* line 398, ../../scss/_typography.scss */
 .teaser header h1 {
   font-size: 1.42857em;
   line-height: 2.1em;
@@ -892,33 +893,33 @@ footer {
   padding-bottom: 0em;
   margin-bottom: 0em;
 }
-/* line 403, ../../scss/_typography.scss */
+/* line 404, ../../scss/_typography.scss */
 .teaser header .blog-meta,
 .teaser header .noticia-meta {
   text-align: left;
 }
-/* line 408, ../../scss/_typography.scss */
+/* line 409, ../../scss/_typography.scss */
 .teaser header .entradilla p {
   text-align: left;
 }
-/* line 413, ../../scss/_typography.scss */
+/* line 414, ../../scss/_typography.scss */
 .teaser .field-name-body {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 416, ../../scss/_typography.scss */
+/* line 417, ../../scss/_typography.scss */
 .teaser .links {
   text-align: right;
 }
 
-/* line 421, ../../scss/_typography.scss */
+/* line 422, ../../scss/_typography.scss */
 .view-id-display-id-page_1 .teaser.blog {
   min-height: 35em;
 }
 
-/* line 426, ../../scss/_typography.scss */
+/* line 427, ../../scss/_typography.scss */
 .equipo {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -926,7 +927,7 @@ footer {
   margin-bottom: 1.5em;
   line-height: 1.8em;
 }
-/* line 429, ../../scss/_typography.scss */
+/* line 430, ../../scss/_typography.scss */
 .equipo h1 {
   font-size: 1.42857em;
   line-height: 2.1em;
@@ -936,6 +937,11 @@ footer {
   margin-bottom: 0em;
   margin-top: 0;
   font-style: italic;
+}
+
+/* line 438, ../../scss/_typography.scss */
+.submitted {
+  text-transform: lowercase;
 }
 
 /* line 16, ../../scss/screen.scss */

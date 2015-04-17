@@ -13,8 +13,12 @@ function mdwa01_preprocess_html(&$variables) {
 }
 
 function mdwa01_preprocess_page(&$variables) {
-  // Page suggestions
   if (isset($variables['node'])) {
+    $node = $variables['node'];
+    if ($node->type == 'noticia' || $node->type == 'blog') {
+      $variables['title'] = t('Actualidad');
+    }
+    // Page suggestions
     $suggestion = 'page__' . str_replace('-', '--', $variables['node']->type);
     $variables['theme_hook_suggestions'][] = $suggestion;
   }
@@ -24,6 +28,8 @@ function mdwa01_preprocess_page(&$variables) {
     $variables['primary_nav'] = menu_tree(variable_get('menu_main_links_source', 'main_menu'));
     $variables['primary_nav']['#theme_wrappers'] = array('menu_tree__primary');
   }
+}
+function mdwa01_process_page(&$variables) {
 }
 
 function mdwa01_preprocess_node(&$variables) {
