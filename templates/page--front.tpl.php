@@ -30,10 +30,12 @@
   <!-- /.container-fluid -->
 </nav>   
 
+<!-- Slider -->
 <?php if ($page['slider']): ?>
   <?php print render($page['slider']); ?>
 <?php endif; ?>
 
+<!-- Mensajes -->
 <?php if ($messages): ?>
   <div id="messages">
     <div class="section clearfix">

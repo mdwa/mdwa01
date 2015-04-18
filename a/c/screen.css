@@ -448,11 +448,10 @@ nav.navbar-default {
 main {
   margin: 0;
   border: none;
-  font-weight: 300;
 }
 
-/* line 78, ../../scss/_typography.scss */
-body.no-front main .breadcrumb {
+/* line 79, ../../scss/_typography.scss */
+body main .breadcrumb {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
@@ -460,15 +459,15 @@ body.no-front main .breadcrumb {
   font-size: 1.14286em;
   line-height: 1.3125em;
 }
-/* line 82, ../../scss/_typography.scss */
-body.no-front main article#content {
+/* line 83, ../../scss/_typography.scss */
+body main article#content {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 85, ../../scss/_typography.scss */
-body.no-front main article#content h1#page-title {
+/* line 86, ../../scss/_typography.scss */
+body main article#content h1#page-title {
   display: inline-block;
   font-size: 1.28571em;
   line-height: 2.33333em;
@@ -481,12 +480,12 @@ body.no-front main article#content h1#page-title {
   padding-bottom: 0;
   background-color: white;
 }
-/* line 96, ../../scss/_typography.scss */
-body.no-front main article#content i {
+/* line 97, ../../scss/_typography.scss */
+body main article#content i {
   padding: 0;
 }
-/* line 104, ../../scss/_typography.scss */
-body.no-front article#content div.container.content {
+/* line 105, ../../scss/_typography.scss */
+body article#content div.container.content {
   border-width: 0.07143em;
   border-style: solid;
   padding: 1.42857em;
@@ -494,47 +493,52 @@ body.no-front article#content div.container.content {
   border: none;
   line-height: 1.8em;
 }
-/* line 109, ../../scss/_typography.scss */
-body.no-front article#content div.container.content p {
+/* line 110, ../../scss/_typography.scss */
+body article#content div.container.content p {
   border-bottom-width: 0.07143em;
   border-bottom-style: solid;
   padding-bottom: 1.42857em;
   border: none;
+  text-align: justify;
 }
-/* line 115, ../../scss/_typography.scss */
-body.no-front article#content #sidebar_first,
-body.no-front article#content #sidebar_second {
+/* line 116, ../../scss/_typography.scss */
+body article#content div.container.content figcaption p {
+  text-align: center;
+}
+/* line 122, ../../scss/_typography.scss */
+body article#content #sidebar_first,
+body article#content #sidebar_second {
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 118, ../../scss/_typography.scss */
-body.no-front article#content #sidebar_first h2,
-body.no-front article#content #sidebar_second h2 {
+/* line 125, ../../scss/_typography.scss */
+body article#content #sidebar_first h2,
+body article#content #sidebar_second h2 {
   font-size: 1.2em;
 }
-/* line 121, ../../scss/_typography.scss */
-body.no-front article#content #sidebar_first .content,
-body.no-front article#content #sidebar_second .content {
+/* line 128, ../../scss/_typography.scss */
+body article#content #sidebar_first .content,
+body article#content #sidebar_second .content {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 125, ../../scss/_typography.scss */
-body.no-front article#content #sidebar_first #block-block-2 dt,
-body.no-front article#content #sidebar_second #block-block-2 dt {
+/* line 132, ../../scss/_typography.scss */
+body article#content #sidebar_first #block-block-2 dt,
+body article#content #sidebar_second #block-block-2 dt {
   display: none;
 }
-/* line 128, ../../scss/_typography.scss */
-body.no-front article#content #sidebar_first #block-block-2 #google-map,
-body.no-front article#content #sidebar_second #block-block-2 #google-map {
+/* line 135, ../../scss/_typography.scss */
+body article#content #sidebar_first #block-block-2 #google-map,
+body article#content #sidebar_second #block-block-2 #google-map {
   display: none;
 }
 
 /**
  * After Content
  */
-/* line 139, ../../scss/_typography.scss */
+/* line 147, ../../scss/_typography.scss */
 div#after_content {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -549,7 +553,7 @@ div#after_content {
 /**
  * After Content Container
  */
-/* line 148, ../../scss/_typography.scss */
+/* line 156, ../../scss/_typography.scss */
 aside#after_content_container,
 aside#after_content_container_2 {
   margin-top: 1.5em;
@@ -562,7 +566,7 @@ aside#after_content_container_2 {
   padding: 1.42857em;
   border: none;
 }
-/* line 154, ../../scss/_typography.scss */
+/* line 162, ../../scss/_typography.scss */
 aside#after_content_container .row > div,
 aside#after_content_container_2 .row > div {
   border-width: 0.0625em;
@@ -573,7 +577,7 @@ aside#after_content_container_2 .row > div {
 /**
  * Triptych
  */
-/* line 163, ../../scss/_typography.scss */
+/* line 171, ../../scss/_typography.scss */
 #triptych {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -589,7 +593,7 @@ aside#after_content_container_2 .row > div {
 /**
  * Footer
  */
-/* line 173, ../../scss/_typography.scss */
+/* line 181, ../../scss/_typography.scss */
 footer {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -598,7 +602,7 @@ footer {
   margin: 0;
 }
 
-/* line 177, ../../scss/_typography.scss */
+/* line 185, ../../scss/_typography.scss */
 #footer-columns {
   font-size: 0.85714em;
   line-height: 1.75em;
@@ -609,11 +613,11 @@ footer {
   padding-right: 0;
   border: none;
 }
-/* line 183, ../../scss/_typography.scss */
+/* line 191, ../../scss/_typography.scss */
 #footer-columns div {
   overflow: hidden;
 }
-/* line 186, ../../scss/_typography.scss */
+/* line 194, ../../scss/_typography.scss */
 #footer-columns h2 {
   font-size: 1em;
   line-height: 1.5em;
@@ -625,7 +629,7 @@ footer {
   padding-bottom: 0.3rem;
   border-bottom: solid 1px white;
 }
-/* line 193, ../../scss/_typography.scss */
+/* line 201, ../../scss/_typography.scss */
 #footer-columns .content {
   border-top-width: 0.07143em;
   border-top-style: solid;
@@ -635,39 +639,39 @@ footer {
   padding-bottom: 1.42857em;
   border: none;
 }
-/* line 199, ../../scss/_typography.scss */
+/* line 207, ../../scss/_typography.scss */
 #footer-columns dt {
   text-align: right;
   width: 20%;
   float: left;
   color: #181818;
 }
-/* line 205, ../../scss/_typography.scss */
+/* line 213, ../../scss/_typography.scss */
 #footer-columns dd {
   width: 75%;
   float: right;
 }
-/* line 210, ../../scss/_typography.scss */
+/* line 218, ../../scss/_typography.scss */
 #footer-columns ul li.leaf {
   list-style-image: none;
   list-style-type: none;
 }
-/* line 213, ../../scss/_typography.scss */
+/* line 221, ../../scss/_typography.scss */
 #footer-columns ul li.leaf:before {
   color: #181818;
   font-family: "Glyphicons Halflings";
   content: " ";
 }
-/* line 218, ../../scss/_typography.scss */
+/* line 226, ../../scss/_typography.scss */
 #footer-columns ul li.leaf a {
   color: white;
 }
-/* line 223, ../../scss/_typography.scss */
+/* line 231, ../../scss/_typography.scss */
 #footer-columns img {
   width: 150px;
   vertical-align: top;
 }
-/* line 227, ../../scss/_typography.scss */
+/* line 235, ../../scss/_typography.scss */
 #footer-columns [class^="icon-"], #footer-columns [class*="icon-"] {
   padding: 0;
   font-size: 4em;
@@ -676,7 +680,7 @@ footer {
   text-align: center;
 }
 
-/* line 235, ../../scss/_typography.scss */
+/* line 243, ../../scss/_typography.scss */
 #footer {
   font-size: 0.85714em;
   line-height: 1.75em;
@@ -688,18 +692,18 @@ footer {
 /**
  * Features
  */
-/* line 245, ../../scss/_typography.scss */
+/* line 253, ../../scss/_typography.scss */
 #features {
   text-align: center;
 }
-/* line 247, ../../scss/_typography.scss */
+/* line 255, ../../scss/_typography.scss */
 #features header {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 249, ../../scss/_typography.scss */
+/* line 257, ../../scss/_typography.scss */
 #features header h1 {
   font-size: 1em;
   line-height: 1.5em;
@@ -709,7 +713,7 @@ footer {
   margin-bottom: 0.5em;
   text-shadow: 0 1px 0 white;
 }
-/* line 257, ../../scss/_typography.scss */
+/* line 265, ../../scss/_typography.scss */
 #features header [class^="icon-"], #features header [class*="icon-"] {
   padding: 0;
   font-size: 1.5rem;
@@ -718,13 +722,13 @@ footer {
   text-shadow: 0 1px 0 white;
   text-align: center;
 }
-/* line 266, ../../scss/_typography.scss */
+/* line 274, ../../scss/_typography.scss */
 #features p {
   font-weight: 400;
   line-height: 1.6;
   margin-bottom: 1.25rem;
 }
-/* line 272, ../../scss/_typography.scss */
+/* line 280, ../../scss/_typography.scss */
 #features .call-to-action {
   float: none;
   margin: auto;
@@ -737,12 +741,12 @@ footer {
 /**
  * Blog
  */
-/* line 285, ../../scss/_typography.scss */
+/* line 293, ../../scss/_typography.scss */
 .view-blog .view-content p {
   text-align: justify;
 }
 
-/* line 294, ../../scss/_typography.scss */
+/* line 302, ../../scss/_typography.scss */
 #after_content_container .block h2,
 #after_content_container_2 .block h2 {
   font-size: 1em;
@@ -758,42 +762,42 @@ footer {
   border-bottom: solid 1px #dddddd;
 }
 
-/* line 308, ../../scss/_typography.scss */
+/* line 316, ../../scss/_typography.scss */
 #after_content_container_2 .block h2 {
   text-align: center;
 }
 
-/* line 316, ../../scss/_typography.scss */
+/* line 324, ../../scss/_typography.scss */
 .node-pagina ul {
   list-style-position: inside;
 }
-/* line 318, ../../scss/_typography.scss */
+/* line 326, ../../scss/_typography.scss */
 .node-pagina ul li::before {
   font-family: "Glyphicons Halflings";
   content: "  ";
 }
-/* line 323, ../../scss/_typography.scss */
+/* line 331, ../../scss/_typography.scss */
 .node-pagina figure {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 325, ../../scss/_typography.scss */
+/* line 333, ../../scss/_typography.scss */
 .node-pagina figure img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: auto;
 }
-/* line 332, ../../scss/_typography.scss */
+/* line 340, ../../scss/_typography.scss */
 .node-pagina figure figcaption {
   font-size: 0.85714em;
   line-height: 1.75em;
   text-align: center;
 }
 
-/* line 339, ../../scss/_typography.scss */
+/* line 347, ../../scss/_typography.scss */
 .noticia,
 .blog {
   font-family: 'Merriweather', serif;
@@ -812,13 +816,13 @@ footer {
   }
   */
 }
-/* line 346, ../../scss/_typography.scss */
+/* line 354, ../../scss/_typography.scss */
 .noticia header,
 .blog header {
   margin-bottom: 0.5em;
   text-align: center;
 }
-/* line 349, ../../scss/_typography.scss */
+/* line 357, ../../scss/_typography.scss */
 .noticia header h1,
 .blog header h1 {
   font-size: 2.5em;
@@ -829,7 +833,7 @@ footer {
   padding-bottom: 0em;
   margin-bottom: 0em;
 }
-/* line 355, ../../scss/_typography.scss */
+/* line 363, ../../scss/_typography.scss */
 .noticia header .blog-meta,
 .noticia header .noticia-meta,
 .blog header .blog-meta,
@@ -839,7 +843,7 @@ footer {
   font-size: 0.85714em;
   line-height: 1.75em;
 }
-/* line 362, ../../scss/_typography.scss */
+/* line 370, ../../scss/_typography.scss */
 .noticia header .entradilla p,
 .blog header .entradilla p {
   text-align: center;
@@ -847,12 +851,12 @@ footer {
   font-size: 0.85714em;
   line-height: 1.75em;
 }
-/* line 369, ../../scss/_typography.scss */
+/* line 377, ../../scss/_typography.scss */
 .noticia p,
 .blog p {
   text-align: justify;
 }
-/* line 372, ../../scss/_typography.scss */
+/* line 380, ../../scss/_typography.scss */
 .noticia figure,
 .blog figure {
   margin-top: 1.5em;
@@ -860,7 +864,7 @@ footer {
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 374, ../../scss/_typography.scss */
+/* line 382, ../../scss/_typography.scss */
 .noticia figure img,
 .blog figure img {
   max-width: 100%;
@@ -868,34 +872,34 @@ footer {
   display: block;
   margin: auto;
 }
-/* line 381, ../../scss/_typography.scss */
+/* line 389, ../../scss/_typography.scss */
 .noticia figure figcaption,
 .blog figure figcaption {
   font-size: 0.85714em;
   line-height: 1.75em;
   text-align: center;
 }
-/* line 387, ../../scss/_typography.scss */
+/* line 395, ../../scss/_typography.scss */
 .noticia .field-name-body img,
 .blog .field-name-body img {
   display: block;
   margin: auto;
   max-width: 100%;
 }
-/* line 393, ../../scss/_typography.scss */
+/* line 401, ../../scss/_typography.scss */
 .noticia .links,
 .blog .links {
   text-align: center;
   font-size: 0.85714em;
   line-height: 1.75em;
 }
-/* line 396, ../../scss/_typography.scss */
+/* line 404, ../../scss/_typography.scss */
 .noticia .links.inline,
 .blog .links.inline {
   display: block;
 }
 
-/* line 410, ../../scss/_typography.scss */
+/* line 418, ../../scss/_typography.scss */
 .teaser {
   border-bottom: solid 1px #dddddd;
   margin-top: 1.5em;
@@ -903,11 +907,11 @@ footer {
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 413, ../../scss/_typography.scss */
+/* line 421, ../../scss/_typography.scss */
 .teaser header {
   text-align: left;
 }
-/* line 415, ../../scss/_typography.scss */
+/* line 423, ../../scss/_typography.scss */
 .teaser header h1 {
   font-size: 1.42857em;
   line-height: 2.1em;
@@ -918,33 +922,33 @@ footer {
   padding-bottom: 0em;
   margin-bottom: 0em;
 }
-/* line 421, ../../scss/_typography.scss */
+/* line 429, ../../scss/_typography.scss */
 .teaser header .blog-meta,
 .teaser header .noticia-meta {
   text-align: left;
 }
-/* line 426, ../../scss/_typography.scss */
+/* line 434, ../../scss/_typography.scss */
 .teaser header .entradilla p {
   text-align: left;
 }
-/* line 431, ../../scss/_typography.scss */
+/* line 439, ../../scss/_typography.scss */
 .teaser .field-name-body {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 434, ../../scss/_typography.scss */
+/* line 442, ../../scss/_typography.scss */
 .teaser .links {
   text-align: right;
 }
 
-/* line 439, ../../scss/_typography.scss */
+/* line 447, ../../scss/_typography.scss */
 .view-id-display-id-page_1 .teaser.blog {
   min-height: 35em;
 }
 
-/* line 444, ../../scss/_typography.scss */
+/* line 452, ../../scss/_typography.scss */
 .equipo {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -952,7 +956,7 @@ footer {
   margin-bottom: 1.5em;
   line-height: 1.8em;
 }
-/* line 447, ../../scss/_typography.scss */
+/* line 455, ../../scss/_typography.scss */
 .equipo h1 {
   font-size: 1.42857em;
   line-height: 2.1em;
@@ -964,7 +968,7 @@ footer {
   font-style: italic;
 }
 
-/* line 455, ../../scss/_typography.scss */
+/* line 463, ../../scss/_typography.scss */
 .submitted {
   text-transform: lowercase;
 }
