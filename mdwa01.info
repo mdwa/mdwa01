@@ -6,31 +6,43 @@ core = 7.x
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;
 
-regions[header]              = Header
 regions[help]                = Help
 regions[page_top]            = Page top
 regions[page_bottom]         = Page bottom
-
-regions[slider]              = Slider
-regions[featured]            = Featured
-regions[before_content]      = Before content
-regions[sidebar_first]       = Sidebar first
 regions[content]             = Content
-regions[sidebar_second]      = Sidebar second
-regions[after_content]       = After content
-regions[after_content_2]     = After content 2
-regions[after_content_3]     = After content 3
-regions[after_content_4]     = After content 4
 
-regions[triptych_first]      = Triptych first
-regions[triptych_middle]     = Triptych middle
-regions[triptych_last]       = Triptych last
+;; Global page regions
+regions[header_info]     = Header info
+regions[footer_columns]  = Footer columns
+regions[legal]           = Legal
 
-regions[footer_firstcolumn]  = Footer first column
-regions[footer_secondcolumn] = Footer second column
-regions[footer_thirdcolumn]  = Footer third column
-regions[footer_fourthcolumn] = Footer fourth column
-regions[footer] = Footer
+;; Front page regions
+regions[slider]          = Slider
+regions[featured]        = Featured
+regions[actualidad]      = Actualidad
+regions[ibex35]          = IBEX-35
+
+;; Page regions
+regions[related_content] = Related content
+
+;regions[header]              = Header
+;regions[before_content]      = Before content
+;regions[sidebar_first]       = Sidebar first
+:regions[sidebar_second]      = Sidebar second
+;regions[after_content]       = After content
+;regions[after_content_2]     = After content 2
+;regions[after_content_3]     = After content 3
+;regions[after_content_4]     = After content 4
+
+;regions[triptych_first]      = Triptych first
+;regions[triptych_middle]     = Triptych middle
+;regions[triptych_last]       = Triptych last
+
+;regions[footer_firstcolumn]  = Footer first column
+;regions[footer_secondcolumn] = Footer second column
+;regions[footer_thirdcolumn]  = Footer third column
+;regions[footer_fourthcolumn] = Footer fourth column
+;regions[footer] = Footer
 
 ;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets

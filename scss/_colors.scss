@@ -19,6 +19,7 @@ strong {
 
 .breadcrumb {
   color: $azul;
+  background: white;
 }
 
 .whitebg {
@@ -29,18 +30,9 @@ strong {
 /**
  * Header
  */
-#top-info {
+#header-info {
   color: $azul;
   background-color: $gris;
-}
-header {
-  //background-color: rgba(0,0,0,0.4);
-  .intro-text {
-    .intro-lead-in {
-      //color: white;
-      //background-color: rgba(0,0,0, 0.4);
-    }
-  }
 }
 
 /**
@@ -92,31 +84,25 @@ nav.navbar-default {
 }
 
 /**
- * Main
+ * Article#content
  */
-body.no-front {
-  main {
-    .breadcrumb {
-      background-color: transparent;
-    }
-    article#content {
-      &>header {
-        background-color: $gris;
-      }
-      h1,h2,h3,h4,h5,h6 {
-        color: $azul;
-        i {
-          color: $gris;
-        }
-      }
+
+article#content {
+  &>header {
+    background-color: $gris;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    color: $azul;
+    i {
+      color: $gris;
     }
   }
 }
 
 /**
- * Features
+ * Featured
  */
-#features {
+#featured {
   .call-to-action {
     a.btn {
       background-color: $gris;
@@ -125,73 +111,8 @@ body.no-front {
 }
 
 /**
- * After Content Container
+ * Separador en font page
  */
-aside#after_content_container {
-  background-color: $gris;
-  @media (min-width: 992px) {
-    background-repeat: repeat-y;
-    background-position: top center;
-  }
-}
-aside#after_content_container_2 {
-  background-color: $gris;
-}
-aside#after_content_container,
-aside#after_content_container_2 {
-  h2 {
-    text-shadow: 0 1px 0 white;
-    color: $gris-medio;
-  }
-}
-
-
-/**
- * Triptych
- */
-aside#triptych {
-  background-color: $gris;
-  @include background(image-url("/sites/all/themes/mdwa01/a/i/body-pattern.jpg"));
-  h2 {
-    text-shadow: 0 1px 0 white;
-  }
-}
-
-/**
- * Footer
- */
-footer {
-  background-color: $gris-medio;
-  color: white;
-  #footer-columns {
-   .content {
-      color: $gris;
-      a {
-        color: $gris;
-      }
-    }
-    [class^="icon-"], [class*="icon-"] {
-      color: $gris-oscuro;
-    }
-  }
-  #footer {
-  }
-}
-
-/**
- * Secciones
- */
-section.secciones {
-  .item {
-    background-color: white;
-
-    .more-info {
-      background-color: $gris-oscuro;
-      color: white;
-    }
-  }
-}
-
 #bigTriangleColor {
   display: block;
   background-color: $gris;
@@ -201,4 +122,49 @@ section.secciones {
     stroke: white;
     stroke-width: 2;
   }
+}
+
+/**
+ * Actualidad
+ */
+#actualidad {
+  background: $gris;
+  h2 {
+    color: $gris-medio;
+  }
+}
+
+/**
+ * IBEX35
+ */
+#ibex35 {
+  background: $gris;
+  h2 {
+    color: $gris-medio;
+  }
+}
+
+/**
+ * Footer columns
+ */
+#footer-columns {
+  background-color: $gris-medio;
+  color: white;
+  .content {
+    color: $gris;
+    a {
+      color: $gris;
+    }
+  }
+  [class^="icon-"], [class*="icon-"] {
+    color: $gris-oscuro;
+  }
+}
+
+/**
+ * Legal
+ */
+#legal {
+  background-color: $gris-medio;
+  color: white;
 }

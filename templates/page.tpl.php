@@ -1,7 +1,9 @@
 <!-- Contact info -->
-<?php if ($page['header']): ?>
-  <section id="top-info">
-    <?php print render($page['header']); ?>
+<?php if ($page['header_info']): ?>
+  <section id="header-info">
+    <div class="container-fluid">
+     <?php print render($page['header_info']); ?>
+    </div>
   </section>
 <?php endif; ?>
 
@@ -76,69 +78,34 @@
         </div>
       <?php endif; ?>
       <div class="row">
-        <?php if ($page['sidebar_first']): ?>
-          <div id="sidebar_first" class="col-md-3">
-            <?php print render($page['sidebar_first']); ?>
-          </div>
-        <?php endif; ?>
-
-        <?php
-          $class = ' class="col-xs-12"';
-          if ($page['sidebar_first'] && $page['sidebar_second']) {
-            $class = ' class="col-md-6"';
-          } elseif ($page['sidebar_first'] || $page['sidebar_second']) {
-            $class = ' class="col-md-9"';
-          }
-        ?>
-        <div<?php if ($class) print $class; ?>>
+        <div id="main-content" class="<?php ($variables['two_columns']) ? print 'col-md-9' : print 'col-xs-12'; ?>">
           <?php print render($page['content']); ?>
         </div>
-
-        <?php if ($page['sidebar_second']): ?>
-          <div id="sidebar_second" class="col-sm-12 col-md-3">
-            <?php print render($page['sidebar_second']); ?>
+        <?php if ($page['related_content']): ?>
+          <div id="related_content" class="<?php ($variables['two_columns']) ? print 'col-md-3' : print 'col-xs-12'; ?>">
+            <?php print render($page['related_content']); ?>
           </div>
         <?php endif; ?>
-
       </div>
     </div>
 
-    <?php if ($page['after_content']): ?>
-    <div class="container">
-    <section>
-      <?php print render($page['after_content']); ?>
-    </section>
-    </div>
-    <?php endif; ?>
   </article> <!-- /.section, /#content -->
 </main> <!-- /#main, /#main-wrapper -->
 
 <footer>
-  <?php if ($page['footer_firstcolumn'] || $page['footer_secondcolumn'] || $page['footer_thirdcolumn'] || $page['footer_fourthcolumn']): ?>
-    <div id="footer-columns" class="container">
-
-      <div class="col-md-3">
-        <?php print render($page['footer_firstcolumn']); ?>
+  <?php if ($page['footer_columns']): ?>
+    <section id="footer-columns">
+      <div class="container">
+        <?php print render($page['footer_columns']); ?>
       </div>
-
-      <div class="col-md-3">
-        <?php print render($page['footer_secondcolumn']); ?>
-      </div>
-
-      <div class="col-md-3">
-        <?php print render($page['footer_thirdcolumn']); ?>
-      </div>
-
-      <div class="col-md-3">
-        <?php print render($page['footer_fourthcolumn']); ?>
-      </div>
-
-    </div> <!-- /#footer-columns -->
+    </section> <!-- /#footer-columns -->
   <?php endif; ?>
 
-  <?php if ($page['footer']): ?>
-    <div id="footer" class="container">
-      <?php print render($page['footer']); ?>
-    </div>
+  <?php if ($page['legal']): ?>
+    <section id="legal">
+      <div class="container">
+        <?php print render($page['legal']); ?>
+      </div>
+    </section>
   <?php endif; ?>
 </footer> <!-- /#footer -->

@@ -1,7 +1,9 @@
 <!-- Contact info -->
-<?php if ($page['header']): ?>
-  <section id="top-info">
-    <?php print render($page['header']); ?>
+<?php if ($page['header_info']): ?>
+  <section id="header-info">
+    <div class="container-fluid">
+     <?php print render($page['header_info']); ?>
+    </div>
   </section>
 <?php endif; ?>
 
@@ -32,115 +34,65 @@
 
 <!-- Slider -->
 <?php if ($page['slider']): ?>
-  <?php print render($page['slider']); ?>
+  <section id="slider">
+    <div class="container-fluid">
+      <?php print render($page['slider']); ?>
+    </div>
+  </section>
 <?php endif; ?>
 
 <!-- Mensajes -->
 <?php if ($messages): ?>
-  <div id="messages">
-    <div class="section clearfix">
+  <section id="messages">
+    <div class="container">
       <?php print $messages; ?>
     </div>
-  </div> <!-- /.section, /#messages -->
+  </section> <!-- /.section, /#messages -->
 <?php endif; ?>
 
-<?php if ($page['before_content']): ?>
-  <div id="before-content">
-    <?php print render($page['before_content']); ?>
-  </div>
-<?php endif; ?>
-
-<?php if ($page['after_content']): ?>
-  <div id="after_content">
-    <?php print render($page['after_content']); ?>
-  </div>
-<?php endif; ?>
+<?php if ($page['featured']): ?>
+  <section id="featured">
+    <div class="container">
+    <?php print render($page['featured']); ?>
+    </div>
+  </section>
+<?php endif; ?> <!-- /#featured -->
 
 <!-- Separador -->
 <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" id="bigTriangleColor">
   <path d="M0 0 L50 100 L100 0 Z"/>
 </svg>
 
-<?php if ($page['after_content_2'] || $page['after_content_3']): ?>
-  <aside id="after_content_container">
+<?php if ($page['actualidad']): ?>
+  <section id="actualidad">
     <div class="container">
-      <div class="row">
-
-        <div class="col-sm-6">
-          <?php print render($page['after_content_2']); ?>
-        </div>
-
-        <div class="col-sm-6">
-          <?php print render($page['after_content_3']); ?>
-        </div>
-
-      </div>
+      <?php print render($page['actualidad']); ?>
     </div>
-  </aside>
-<?php endif; ?>
+  </section>
+<?php endif; ?> <!-- /#actualidad -->
 
-<?php if ($page['after_content_4']): ?>
-  <aside id="after_content_container_2">
+<?php if ($page['ibex35']): ?>
+  <section id="ibex35">
     <div class="container">
-      <div class="row">
-
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-          <?php print render($page['after_content_4']); ?>
-        </div>
-
-      </div>
+      <?php print render($page['ibex35']); ?>
     </div>
-  </aside>
-<?php endif; ?>
-
-<?php if ($page['triptych_first'] || $page['triptych_middle'] || $page['triptych_last']): ?>
-<aside id="triptych">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-4">
-        <?php print render($page['triptych_first']); ?>
-      </div>
-
-      <div class="col-md-4">
-        <?php print render($page['triptych_middle']); ?>
-      </div>
-
-      <div class="col-md-4">
-        <?php print render($page['triptych_last']); ?>
-      </div>
-
-    </div><!-- /#end-row -->
-  </div>
-</aside> <!-- /#triptych, /#triptych-wrapper -->
-<?php endif; ?>
+  </section>
+<?php endif; ?> <!-- /#ibex35 -->
 
 <footer>
-  <?php if ($page['footer_firstcolumn'] || $page['footer_secondcolumn'] || $page['footer_thirdcolumn'] || $page['footer_fourthcolumn']): ?>
-    <div id="footer-columns" class="container">
-
-      <div class="col-md-3">
-        <?php print render($page['footer_firstcolumn']); ?>
+  <?php if ($page['footer_columns']): ?>
+    <section id="footer-columns">
+      <div class="container">
+        <?php print render($page['footer_columns']); ?>
       </div>
-
-      <div class="col-md-3">
-        <?php print render($page['footer_secondcolumn']); ?>
-      </div>
-
-      <div class="col-md-3">
-        <?php print render($page['footer_thirdcolumn']); ?>
-      </div>
-
-      <div class="col-md-3">
-        <?php print render($page['footer_fourthcolumn']); ?>
-      </div>
-
-    </div> <!-- /#footer-columns -->
+    </section> <!-- /#footer-columns -->
   <?php endif; ?>
 
-  <?php if ($page['footer']): ?>
-    <div id="footer" class="container">
-      <?php print render($page['footer']); ?>
-    </div>
+  <?php if ($page['legal']): ?>
+    <section id="legal">
+      <div class="container">
+        <?php print render($page['legal']); ?>
+      </div>
+    </section>
   <?php endif; ?>
 </footer> <!-- /#footer -->

@@ -12,6 +12,9 @@ function mdwa01_preprocess_html(&$variables) {
   }
 }
 
+function mdwa01_preprocess_region(&$variables) {
+}
+
 function mdwa01_preprocess_page(&$variables) {
   if (isset($variables['node'])) {
     $node = $variables['node'];
@@ -19,15 +22,24 @@ function mdwa01_preprocess_page(&$variables) {
       $variables['section_title'] = t('Actualidad');
     }
     // Page suggestions
-    $suggestion = 'page__' . str_replace('-', '--', $variables['node']->type);
-    $variables['theme_hook_suggestions'][] = $suggestion;
+    //$suggestion = 'page__' . str_replace('-', '--', $variables['node']->type);
+    //$variables['theme_hook_suggestions'][] = $suggestion;
   }
+
+  // Vocabulary page suggestions
   if (arg(0) == 'taxonomy' && arg(1) == 'term' && is_numeric(arg(2))) {
     $term = taxonomy_term_load(arg(2));
     $variables['theme_hook_suggestions'][] = 'page__vocabulary__' . $term->vocabulary_machine_name;
     if ($term->vocabulary_machine_name == 'tags') {
       $variables['section_title'] = t('Actualidad');
     }
+  }
+
+  // Check for two columns page
+  $active_trail = menu_get_active_trail();
+  $two_columns_pages = ['Actualidad', 'Contact'];
+  if (sizeof($active_trail) > 1) {
+    $variables['two_columns'] = in_array($active_trail[1]['link_title'], $two_columns_pages);
   }
 
   // Primary nav
@@ -48,6 +60,18 @@ function mdwa01_preprocess_node(&$variables) {
     // Inserto atributo typeof a la imágenes del body insertadas por el usuario.
     $body = $variables['content']['body'][0]['#markup'];
     $variables['content']['body'][0]['#markup'] = str_replace('img ', 'img typeof="foaf:Image "', $body);
+  }
+}
+
+function mdwa01_preprocess_block(&$variables) {
+  if ($variables['block']->region == 'footer_columns') {
+    $variables['classes_array'][] = 'col-md-3';
+  }
+  if ($variables['block']->region == 'ibex35') {
+    $variables['classes_array'][] = 'col-xs-12 col-sm-8 col-sm-offset-2';
+  }
+  if ($variables['block']->region == 'actualidad') {
+    $variables['classes_array'][] = 'col-sm-6';
   }
 }
 

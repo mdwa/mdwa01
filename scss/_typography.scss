@@ -40,15 +40,19 @@ aside {
   @include rhythm;
 }
 
+.block {
+  @include rhythm-borders;
+  border: none;
+}
 
 /**
  * Header
  */
-#top-info {
+#header-info {
   @include adjust-font-size-to(12px);
   @include rhythm-borders;
   border: none;
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
 }
 
 /**
@@ -145,55 +149,85 @@ body {
   }
 }
 
-
 /**
- * After Content
+ * Featured
  */
-div#after_content {
+#featured {
   @include rhythm;
   @include rhythm-borders;
   border: none;
-}
+  text-align: center;
+  header {
+    @include rhythm;
+    h1 {
+      @include adjust-font-size-to(14px);
+      font-weight: 600;
+      line-height: 1.4;
+      margin-top: 0.2em;
+      margin-bottom: 0.5em;
+      text-shadow: 0 1px 0 white;
+    }
+    [class^="icon-"], [class*="icon-"] {
+      padding: 0;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.4;
+      text-shadow: 0 1px 0 white;
+      text-align: center;
+    }
+  }
+  p {
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
 
-/**
- * After Content Container
- */
-aside#after_content_container,
-aside#after_content_container_2 {
-  @include rhythm;
-  margin: 0;
-  @include rhythm-borders;
-  border: none;
-  .row>div {
-    @include rhythm-borders(1px,2,16px,none);
+  .call-to-action {
+    float: none;
+    margin: auto;
+    @include rhythm-borders;
+    border: none;
   }
 }
 
-
 /**
- * Triptych
+ * Actualidad e IBEX35
  */
-#triptych {
-  @include rhythm;
-  margin: 0;
+#actualidad,
+#ibex35 {
   @include rhythm-borders;
   border: none;
+  .block {
+    h2 {
+      @include adjust-font-size-to(14px);
+      font-family: 'Merriweather', serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      //@include adjust-font-size-to(18px);
+      @include rhythm;
+      margin-top: 0;
+      border-bottom: solid 1px $gris-claro;
+    }
+  }
 }
 
 /**
- * Footer
+ * IBEX-35
  */
-footer {
-  @include rhythm;
-  margin: 0;
+#ibex35 {
+  h2 {
+    text-align: center;
+  }
 }
+
+/**
+ * Footer columns
+ */
 #footer-columns {
   @include adjust-font-size-to(12px);
   @include rhythm-borders;
-  padding-left: 0;
-  padding-right: 0;
   border: none;
-  div {
+  .block {
     overflow: hidden;
   }
   h2 {
@@ -245,48 +279,38 @@ footer {
     text-align: center;
   }
 }
-#footer {
+
+/**
+ * Legal
+ */
+#legal {
   @include adjust-font-size-to(12px);
-  border-top: solid 1px white;
-  padding-left: 0;
-  padding-right: 0;
+  .block {
+    border-top: 1px solid white;
+  }
 }
 
 /**
- * Features
+ * Related content
  */
-#features {
-  text-align: center;
-  header {
-    @include rhythm;
-    h1 {
-      @include adjust-font-size-to(14px);
-      font-weight: 600;
-      line-height: 1.4;
-      margin-top: 0.2em;
-      margin-bottom: 0.5em;
-      text-shadow: 0 1px 0 white;
+#related_content {
+  @include adjust-font-size-to(14px);
+  .block {
+    padding-bottom: 0;
+    h2 {
+      font-size: 1.2em;
     }
-    [class^="icon-"], [class*="icon-"] {
-      padding: 0;
-      font-size: 1.5rem;
-      font-weight: 600;
-      line-height: 1.4;
-      text-shadow: 0 1px 0 white;
-      text-align: center;
+    .content {
+      //@include rhythm;
     }
   }
-  p {
-    font-weight: 400;
-    line-height: 1.6;
-    margin-bottom: 1.25rem;
-  }
-
-  .call-to-action {
-    float: none;
-    margin: auto;
-    @include rhythm-borders;
-    border: none;
+  #block-block-2 {
+    dt {
+      display: none;
+    }
+    #google-map {
+      display: none;
+    }
   }
 }
 
@@ -303,18 +327,7 @@ footer {
 
 #after_content_container,
 #after_content_container_2 {
-  .block {
-    h2 {
-      @include adjust-font-size-to(14px);
-      font-family: 'Merriweather', serif;
-      font-weight: 300;
-      text-transform: uppercase;
-      //@include adjust-font-size-to(18px);
-      @include rhythm;
-      margin-top: 0;
-      border-bottom: solid 1px $gris-claro;
-    }
-  }
+
 }
 #after_content_container_2 {
   .block {
@@ -335,13 +348,7 @@ footer {
   }
   figure {
     @include rhythm;
-    img {
-      //width: 100%;
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: auto;
-    }
+
     figcaption {
       @include adjust-font-size-to(12px);
       text-align: center;
