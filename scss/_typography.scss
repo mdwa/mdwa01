@@ -50,8 +50,8 @@ aside {
  */
 #header-info {
   @include adjust-font-size-to(12px);
-  @include rhythm-borders;
-  border: none;
+  //@include rhythm-borders;
+  //border: none;
   margin-bottom: 2em;
 }
 
@@ -337,6 +337,12 @@ body {
   }
 }
 
+.teaser {
+  //@include rhythm;
+  .field-name-body {
+    //@include rhythm;
+  }
+}
 
 .node-pagina {
   ul {
@@ -348,7 +354,9 @@ body {
   }
   figure {
     @include rhythm;
-
+    img {
+      margin: auto;
+    }
     figcaption {
       @include adjust-font-size-to(12px);
       text-align: center;
@@ -371,7 +379,6 @@ body {
       line-height: 1.5em;
       @include rhythm(0);
     }
-
     .blog-meta, 
     .noticia-meta {
       text-align: center;
@@ -386,6 +393,31 @@ body {
       }
     }
   }
+  &.teaser {
+    border-bottom: solid 1px $gris-claro;
+    header {
+      text-align: left;
+      h1 {
+        @include adjust-font-size-to(20px);
+        line-height: 1.5em;
+        text-transform: uppercase;
+        @include rhythm(0);
+      }
+      .blog-meta,
+      .noticia-meta {
+        text-align: left;
+      }
+      .entradilla {
+        p {
+          text-align: left;
+        }
+      }
+    }
+    .links {
+      text-align: right;
+    }
+  }
+
   p {
     text-align: justify;
   }
@@ -427,40 +459,6 @@ body {
   */
 }
 
-.teaser {
-  border-bottom: solid 1px $gris-claro;
-  @include rhythm;
-  header {
-    text-align: left;
-    h1 {
-      @include adjust-font-size-to(20px);
-      line-height: 1.5em;
-      text-transform: uppercase;
-      @include rhythm(0);
-    }
-    .blog-meta,
-    .noticia-meta {
-        text-align: left;
-    }
-    .entradilla {
-      p {
-        text-align: left;
-      }
-    }
-  }
-  .field-name-body {
-    @include rhythm;
-  }
-  .links {
-    text-align: right;
-  }
-}
-.view-id-display-id-page_1 {
-  .teaser.blog {
-    min-height: 35em;
-  }
-}
-
 .equipo {
   @include rhythm;
   line-height: 1.8em;
@@ -469,6 +467,29 @@ body {
     @include rhythm(0);
     margin-top: 0;
     font-style: italic;
+    text-align: center;
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+    @media (min-width: 992px) {
+      text-align: left;
+    }
+  }
+  img {
+    margin: auto;
+    @include rhythm;
+    @media (min-width: 768px) {
+      margin-top: -2em;
+    }
+  }
+}
+
+
+
+
+.view-id-display-id-page_1 {
+  .teaser.blog {
+    min-height: 35em;
   }
 }
 

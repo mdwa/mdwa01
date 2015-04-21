@@ -103,17 +103,23 @@ nav.navbar-default .navbar-nav > li > a:hover {
 }
 
 /* line 24, ../../scss/_base.scss */
+.language-switcher-locale-url li {
+  float: right;
+  padding: 0 0.5em;
+}
+
+/* line 31, ../../scss/_base.scss */
 .cl-effect-1 {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 29, ../../scss/_base.scss */
+/* line 36, ../../scss/_base.scss */
 .cl-effect-1 a {
   color: #333;
   text-shadow: 0 1px 0 white;
 }
-/* line 33, ../../scss/_base.scss */
+/* line 40, ../../scss/_base.scss */
 .cl-effect-1 a::before {
   font-family: "kingthings_flourishesregular";
   font-size: 1.8em;
@@ -121,7 +127,7 @@ nav.navbar-default .navbar-nav > li > a:hover {
   margin-right: 10px;
   transform: translateX(20px);
 }
-/* line 40, ../../scss/_base.scss */
+/* line 47, ../../scss/_base.scss */
 .cl-effect-1 a::after {
   font-family: "kingthings_flourishesregular";
   font-size: 1.8em;
@@ -129,14 +135,14 @@ nav.navbar-default .navbar-nav > li > a:hover {
   margin-left: 10px;
   transform: translateX(-20px);
 }
-/* line 48, ../../scss/_base.scss */
+/* line 55, ../../scss/_base.scss */
 .cl-effect-1 a::before,
 .cl-effect-1 a::after {
   display: inline-block;
   opacity: 0;
   transition: transform 0.3s ease 0s, opacity 0.2s ease 0s;
 }
-/* line 54, ../../scss/_base.scss */
+/* line 61, ../../scss/_base.scss */
 .cl-effect-1 a:hover::before,
 .cl-effect-1 a:hover::after {
   opacity: 1;
@@ -400,10 +406,6 @@ aside {
 #header-info {
   font-size: 0.85714em;
   line-height: 1.75em;
-  border-width: 0.07143em;
-  border-style: solid;
-  padding: 1.42857em;
-  border: none;
   margin-bottom: 2em;
 }
 
@@ -745,30 +747,34 @@ body article#content #sidebar_second #block-block-2 #google-map {
   text-align: center;
 }
 
-/* line 342, ../../scss/_typography.scss */
+/* line 348, ../../scss/_typography.scss */
 .node-pagina ul {
   list-style-position: inside;
 }
-/* line 344, ../../scss/_typography.scss */
+/* line 350, ../../scss/_typography.scss */
 .node-pagina ul li::before {
   font-family: "Glyphicons Halflings";
   content: "  ";
 }
-/* line 349, ../../scss/_typography.scss */
+/* line 355, ../../scss/_typography.scss */
 .node-pagina figure {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 352, ../../scss/_typography.scss */
+/* line 357, ../../scss/_typography.scss */
+.node-pagina figure img {
+  margin: auto;
+}
+/* line 360, ../../scss/_typography.scss */
 .node-pagina figure figcaption {
   font-size: 0.85714em;
   line-height: 1.75em;
   text-align: center;
 }
 
-/* line 359, ../../scss/_typography.scss */
+/* line 367, ../../scss/_typography.scss */
 .noticia,
 .blog {
   font-family: 'Merriweather', serif;
@@ -787,13 +793,13 @@ body article#content #sidebar_second #block-block-2 #google-map {
   }
   */
 }
-/* line 366, ../../scss/_typography.scss */
+/* line 374, ../../scss/_typography.scss */
 .noticia header,
 .blog header {
   margin-bottom: 0.5em;
   text-align: center;
 }
-/* line 369, ../../scss/_typography.scss */
+/* line 377, ../../scss/_typography.scss */
 .noticia header h1,
 .blog header h1 {
   font-size: 2.5em;
@@ -804,7 +810,7 @@ body article#content #sidebar_second #block-block-2 #google-map {
   padding-bottom: 0em;
   margin-bottom: 0em;
 }
-/* line 375, ../../scss/_typography.scss */
+/* line 382, ../../scss/_typography.scss */
 .noticia header .blog-meta,
 .noticia header .noticia-meta,
 .blog header .blog-meta,
@@ -814,7 +820,7 @@ body article#content #sidebar_second #block-block-2 #google-map {
   font-size: 0.85714em;
   line-height: 1.75em;
 }
-/* line 382, ../../scss/_typography.scss */
+/* line 389, ../../scss/_typography.scss */
 .noticia header .entradilla p,
 .blog header .entradilla p {
   text-align: center;
@@ -822,68 +828,19 @@ body article#content #sidebar_second #block-block-2 #google-map {
   font-size: 0.85714em;
   line-height: 1.75em;
 }
-/* line 389, ../../scss/_typography.scss */
-.noticia p,
-.blog p {
-  text-align: justify;
-}
-/* line 392, ../../scss/_typography.scss */
-.noticia figure,
-.blog figure {
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-}
-/* line 394, ../../scss/_typography.scss */
-.noticia figure img,
-.blog figure img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
-}
-/* line 401, ../../scss/_typography.scss */
-.noticia figure figcaption,
-.blog figure figcaption {
-  font-size: 0.85714em;
-  line-height: 1.75em;
-  text-align: center;
-}
-/* line 407, ../../scss/_typography.scss */
-.noticia .field-name-body img,
-.blog .field-name-body img {
-  display: block;
-  margin: auto;
-  max-width: 100%;
-}
-/* line 413, ../../scss/_typography.scss */
-.noticia .links,
-.blog .links {
-  text-align: center;
-  font-size: 0.85714em;
-  line-height: 1.75em;
-}
-/* line 416, ../../scss/_typography.scss */
-.noticia .links.inline,
-.blog .links.inline {
-  display: block;
-}
-
-/* line 430, ../../scss/_typography.scss */
-.teaser {
+/* line 396, ../../scss/_typography.scss */
+.noticia.teaser,
+.blog.teaser {
   border-bottom: solid 1px #dddddd;
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
 }
-/* line 433, ../../scss/_typography.scss */
-.teaser header {
+/* line 398, ../../scss/_typography.scss */
+.noticia.teaser header,
+.blog.teaser header {
   text-align: left;
 }
-/* line 435, ../../scss/_typography.scss */
-.teaser header h1 {
+/* line 400, ../../scss/_typography.scss */
+.noticia.teaser header h1,
+.blog.teaser header h1 {
   font-size: 1.42857em;
   line-height: 2.1em;
   line-height: 1.5em;
@@ -893,33 +850,72 @@ body article#content #sidebar_second #block-block-2 #google-map {
   padding-bottom: 0em;
   margin-bottom: 0em;
 }
-/* line 441, ../../scss/_typography.scss */
-.teaser header .blog-meta,
-.teaser header .noticia-meta {
+/* line 406, ../../scss/_typography.scss */
+.noticia.teaser header .blog-meta,
+.noticia.teaser header .noticia-meta,
+.blog.teaser header .blog-meta,
+.blog.teaser header .noticia-meta {
   text-align: left;
 }
-/* line 446, ../../scss/_typography.scss */
-.teaser header .entradilla p {
+/* line 411, ../../scss/_typography.scss */
+.noticia.teaser header .entradilla p,
+.blog.teaser header .entradilla p {
   text-align: left;
 }
-/* line 451, ../../scss/_typography.scss */
-.teaser .field-name-body {
+/* line 416, ../../scss/_typography.scss */
+.noticia.teaser .links,
+.blog.teaser .links {
+  text-align: right;
+}
+/* line 421, ../../scss/_typography.scss */
+.noticia p,
+.blog p {
+  text-align: justify;
+}
+/* line 424, ../../scss/_typography.scss */
+.noticia figure,
+.blog figure {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 454, ../../scss/_typography.scss */
-.teaser .links {
-  text-align: right;
+/* line 426, ../../scss/_typography.scss */
+.noticia figure img,
+.blog figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+/* line 433, ../../scss/_typography.scss */
+.noticia figure figcaption,
+.blog figure figcaption {
+  font-size: 0.85714em;
+  line-height: 1.75em;
+  text-align: center;
+}
+/* line 439, ../../scss/_typography.scss */
+.noticia .field-name-body img,
+.blog .field-name-body img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+/* line 445, ../../scss/_typography.scss */
+.noticia .links,
+.blog .links {
+  text-align: center;
+  font-size: 0.85714em;
+  line-height: 1.75em;
+}
+/* line 448, ../../scss/_typography.scss */
+.noticia .links.inline,
+.blog .links.inline {
+  display: block;
 }
 
-/* line 459, ../../scss/_typography.scss */
-.view-id-display-id-page_1 .teaser.blog {
-  min-height: 35em;
-}
-
-/* line 464, ../../scss/_typography.scss */
+/* line 462, ../../scss/_typography.scss */
 .equipo {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -927,7 +923,7 @@ body article#content #sidebar_second #block-block-2 #google-map {
   margin-bottom: 1.5em;
   line-height: 1.8em;
 }
-/* line 467, ../../scss/_typography.scss */
+/* line 465, ../../scss/_typography.scss */
 .equipo h1 {
   font-size: 1.42857em;
   line-height: 2.1em;
@@ -937,9 +933,41 @@ body article#content #sidebar_second #block-block-2 #google-map {
   margin-bottom: 0em;
   margin-top: 0;
   font-style: italic;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  /* line 465, ../../scss/_typography.scss */
+  .equipo h1 {
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  /* line 465, ../../scss/_typography.scss */
+  .equipo h1 {
+    text-align: left;
+  }
+}
+/* line 478, ../../scss/_typography.scss */
+.equipo img {
+  margin: auto;
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+@media (min-width: 768px) {
+  /* line 478, ../../scss/_typography.scss */
+  .equipo img {
+    margin-top: -2em;
+  }
 }
 
-/* line 475, ../../scss/_typography.scss */
+/* line 491, ../../scss/_typography.scss */
+.view-id-display-id-page_1 .teaser.blog {
+  min-height: 35em;
+}
+
+/* line 496, ../../scss/_typography.scss */
 .submitted {
   text-transform: lowercase;
 }

@@ -23,6 +23,7 @@ regions[actualidad]      = Actualidad
 regions[ibex35]          = IBEX-35
 
 ;; Page regions
+regions[after_content]   = After content
 regions[related_content] = Related content
 
 ;regions[header]              = Header

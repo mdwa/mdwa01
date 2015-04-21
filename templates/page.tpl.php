@@ -80,6 +80,9 @@
       <div class="row">
         <div id="main-content" class="<?php ($variables['two_columns']) ? print 'col-md-9' : print 'col-xs-12'; ?>">
           <?php print render($page['content']); ?>
+          <?php if ($page['after_content']): ?>
+            <?php print render($page['after_content']); ?>
+          <?php endif; ?>
         </div>
         <?php if ($page['related_content']): ?>
           <div id="related_content" class="<?php ($variables['two_columns']) ? print 'col-md-3' : print 'col-xs-12'; ?>">

@@ -103,11 +103,9 @@ function mdwa01_feed_icon($variables) {
  * Campos
  */
 function Xmdwa01_preprocess_field(&$variables) {
-    if($variables['element']['#field_name'] == 'field_noticia_foto'){
         foreach($variables['items'] as $key => $item){
             $variables['items'][ $key ]['#item']['attributes']['class'][] = 'img-responsive'; // http://getbootstrap.com/css/#overview-responsive-images
         }
-    }
 }
 
 /**
@@ -174,6 +172,24 @@ function mdwa01_field__field_tags__blog($variables) {
   return $output;
 }
 
+/**
+ * Equipo: Campos
+ */
+function mdwa01_field__field_foto__equipo($variables) {
+  $output = '<figure>';
+  foreach ($variables ['items'] as $delta => $item) {
+    /*$variables['classes_array'][] = 'img-responsive';
+    dpm($variables);
+    unset($item ['#item']['width']);
+    unset($item ['#item']['height']);
+    $output .= drupal_render($item);*/
+    $uri = $item['#item']['uri'];
+    $src = image_style_url('large', $uri);
+    $output .= '<img src="' . $src . '" class="img-responsive" typeof="foaf:Image">';
+  }
+  $output .= '</figure>';
+  return $output;
+}
 /**
  * Image Styles
  */
