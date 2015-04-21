@@ -37,7 +37,7 @@ function mdwa01_preprocess_page(&$variables) {
 
   // Check for two columns page
   $active_trail = menu_get_active_trail();
-  $two_columns_pages = ['Actualidad', 'Contact'];
+  $two_columns_pages = array('Actualidad', 'Contact');
   if (sizeof($active_trail) > 1) {
     $variables['two_columns'] = in_array($active_trail[1]['link_title'], $two_columns_pages);
   }
