@@ -16,6 +16,8 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.2",
-    "slider-revolution": "~4.3.7"
+    "slider-revolution": "~4.3.7",
+    "masonry": "~3.3.0",
+    "jquery-bridget": "~1.1.0"
   }
 }

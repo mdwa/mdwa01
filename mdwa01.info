@@ -50,4 +50,4 @@ stylesheets-conditional[IE][screen, projection][] = a/c/ie.css
 scripts[] = a/j/bootstrap/dist/js/bootstrap.min.js
 scripts[] = a/j/slider-revolution/src/js/jquery.themepunch.plugins.min.js
 scripts[] = a/j/slider-revolution/src/js/jquery.themepunch.revolution.min.js
-
+scripts[] = a/j/masonry/dist/masonry.pkgd.min.js

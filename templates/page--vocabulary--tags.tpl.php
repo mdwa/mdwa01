@@ -83,7 +83,7 @@
         <?php endif; ?>
 
         <?php
-          $class = ' class="col-xs-12"';
+          $class = FALSE;
           if ($page['sidebar_first'] && $page['sidebar_second']) {
             $class = ' class="col-md-6"';
           } elseif ($page['sidebar_first'] || $page['sidebar_second']) {

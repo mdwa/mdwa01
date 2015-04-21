@@ -57,7 +57,7 @@ aside {
 nav.navbar-default {
   text-transform: uppercase;
   @media (min-width: 768px) {
-    @include adjust-font-size-to(10px);
+    @include adjust-font-size-to(11px);
   }
   @media (min-width: 992px) {
     @include adjust-font-size-to(14px);
@@ -82,6 +82,11 @@ body {
     }
     article#content {
       @include rhythm;
+
+      .block {
+        //@include rhythm-borders;
+        //border: none;
+      }
 
       h1#page-title {
         display: inline-block;

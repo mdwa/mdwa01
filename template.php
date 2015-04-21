@@ -16,20 +16,26 @@ function mdwa01_preprocess_page(&$variables) {
   if (isset($variables['node'])) {
     $node = $variables['node'];
     if ($node->type == 'noticia' || $node->type == 'blog') {
-      $variables['title'] = t('Actualidad');
+      $variables['section_title'] = t('Actualidad');
     }
     // Page suggestions
     $suggestion = 'page__' . str_replace('-', '--', $variables['node']->type);
     $variables['theme_hook_suggestions'][] = $suggestion;
   }
+  if (arg(0) == 'taxonomy' && arg(1) == 'term' && is_numeric(arg(2))) {
+    $term = taxonomy_term_load(arg(2));
+    $variables['theme_hook_suggestions'][] = 'page__vocabulary__' . $term->vocabulary_machine_name;
+    if ($term->vocabulary_machine_name == 'tags') {
+      $variables['section_title'] = t('Actualidad');
+    }
+  }
+
   // Primary nav
   $variables['primary_nav'] = FALSE;
   if ($variables['main_menu']) {
     $variables['primary_nav'] = menu_tree(variable_get('menu_main_links_source', 'main_menu'));
     $variables['primary_nav']['#theme_wrappers'] = array('menu_tree__primary');
   }
-}
-function mdwa01_process_page(&$variables) {
 }
 
 function mdwa01_preprocess_node(&$variables) {
@@ -55,9 +61,10 @@ function mdwa01_breadcrumb(&$variables) {
     if (preg_match("(Inicio|Home)", $breadcrumb[0])) {
       array_shift($breadcrumb);
     }
-    array_unshift($breadcrumb, l(t('Home'), '<front>'));
+    $home = '<i class="glyphicon glyphicon-home">&nbsp;</i>' . t('Home');
+    array_unshift($breadcrumb, l($home, '<front>', array('html' => TRUE)));
     $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
-    $output .= '<div class="breadcrumb"><i class="glyphicon glyphicon-home">&nbsp;</i>' . implode(' » ', $breadcrumb) . '</div>';
+    $output .= '<div class="breadcrumb">' . implode(' » ', $breadcrumb) . '</div>';
     return $output;
   }
 }
