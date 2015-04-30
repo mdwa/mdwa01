@@ -41,6 +41,7 @@ drupal_add_js('
       gutter: 0
      });
     $container.masonry("bindResize");
+    $container.masonry();
   });
 ',
   array('type' => 'inline', 'scope' => 'header'));
