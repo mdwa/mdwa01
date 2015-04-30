@@ -1,6 +1,6 @@
 <?php if($teaser): ?>
 <article id="node-<?php print $node->nid; ?>" class="equipo teaser">
-  <div class="col-xs-12 col-sm-8 col-sm-offset-4 col-md-10 col-md-offset-2">
+  <div class="col-xs-12 col-sm-8 col-sm-offset-4 col-mid-10 col-mid-offset-2">
     <header>
       <h1>
         <?php print render($title_prefix); ?>
@@ -9,10 +9,10 @@
       </h1>
     </header>
   </div>
-  <div class="col-xs-12 col-sm-4 col-md-2">
+  <div class="col-xs-12 col-sm-4 col-md-4">
     <?php print render($content['field_foto']); ?>
   </div>
-  <div class="col-xs-12 col-sm-8 col-md-10">
+  <div class="col-xs-12 col-sm-8 col-md-8">
     <?php hide($content['links']); ?>
     <?php print render($content); ?>
   </div>

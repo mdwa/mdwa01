@@ -1,6 +1,3 @@
-@import "compass/typography";
-@import "compass/typography/vertical_rhythm";
-
 
 $base-font-size: 14px;
 $base-line-height: 21px;
@@ -72,8 +69,8 @@ nav.navbar-default {
  * Main
  */
 main {
-  margin: 0;
-  border: none;
+  //margin: 0;
+  //border: none;
   //font-weight: 300;
 }
 
@@ -84,14 +81,9 @@ body {
       @include rhythm;
       @include adjust-font-size-to(16px);
     }
+
     article#content {
       @include rhythm;
-
-      .block {
-        //@include rhythm-borders;
-        //border: none;
-      }
-
       h1#page-title {
         display: inline-block;
         @include adjust-font-size-to(18px);
@@ -103,46 +95,57 @@ body {
         background-color: white;
       }
 
+      &.pagina {
+        header {
+          position: relative;
+          h1#page-title {
+            position: absolute;
+            bottom: 1.5em;
+            background: rgba(0,0,0,.8);
+            color: white;
+          }
+        }
+      }
+      
+    }
+
+    article#content {
       i {
         padding: 0;
-        //color: $gris;
       }
-    }
-  }
-
-  article#content {
-    div.container.content {
-      @include rhythm-borders;
-      padding-top: 0;
-      border: none;
-      line-height: 1.8em;
-      p {
-        @include trailing-border;
+      div.container.content {
+        @include rhythm-borders;
+        padding-top: 0;
         border: none;
-        text-align: justify;
-      }
-      figcaption {
+        line-height: 1.8em;
         p {
-          text-align: center;
+          @include trailing-border;
+          border: none;
+          //text-align: justify;
         }
-      }
+        figcaption {
+          p {
+            text-align: center;
+          }
+        }
 
-    }
-    #sidebar_first,
-    #sidebar_second {
-      @include adjust-font-size-to(14px);
-      h2 {
-        font-size: 1.2em;
       }
-      .content {
-        @include rhythm;
-      }
-      #block-block-2 {
-        dt {
-          display: none;
+      #sidebar_first,
+      #sidebar_second {
+        @include adjust-font-size-to(14px);
+        h2 {
+          font-size: 1.2em;
         }
-        #google-map {
-          display: none;
+        .content {
+          @include rhythm;
+        }
+        #block-block-2 {
+          dt {
+            display: none;
+          }
+          #google-map {
+            display: none;
+          }
         }
       }
     }
@@ -180,6 +183,12 @@ body {
     font-weight: 400;
     line-height: 1.6;
     margin-bottom: 1.25rem;
+  }
+
+  .slogan {
+    font-style: italic;
+    @include text-shadow($gris-medio 1px 1px 3px);
+    color: $azul;
   }
 
   .call-to-action {
@@ -424,7 +433,7 @@ body {
   figure {
     @include rhythm;
     img {
-      //width: 100%;
+      width: 100%;
       max-width: 100%;
       height: auto;
       display: block;
@@ -461,18 +470,23 @@ body {
 
 .equipo {
   @include rhythm;
+  @include rhythm-borders;
+  border-color: $gris-claro;
+  @include box-shadow($gris-medio 6px 6px 10px);
+  overflow: hidden;
   line-height: 1.8em;
+  text-align: center;
+  font-style: italic;
   h1 {
     @include adjust-font-size-to(20px);
     @include rhythm(0);
     margin-top: 0;
-    font-style: italic;
-    text-align: center;
+    //text-align: center;
     @media (min-width: 768px) {
-      text-align: left;
+      //text-align: left;
     }
     @media (min-width: 992px) {
-      text-align: left;
+      //text-align: left;
     }
   }
   img {
@@ -481,6 +495,10 @@ body {
     @media (min-width: 768px) {
       margin-top: -2em;
     }
+  }
+  .social-links {
+    @include rhythm;
+    text-align: center;
   }
 }
 

@@ -33,7 +33,6 @@
 </nav>   
 
 <!-- Main content -->
-
 <main>
   <article id="content">
     <header>
@@ -42,7 +41,7 @@
       <h1 class="title" id="page-title">
         <?php print render($title_prefix); ?>
         <i class="glyphicon glyphicon-chevron-left"></i>
-        <?php if (isset($section_title) && !empty($section_title)) print $section_title; else print $title; ?>
+        <?php print t('News'); ?>
         <i class="glyphicon glyphicon-chevron-right"></i>
         <?php print render($title_suffix); ?>
       </h1>
@@ -95,7 +94,6 @@
 
   </article> <!-- /.section, /#content -->
 </main> <!-- /#main, /#main-wrapper -->
-
 
 <footer>
   <?php if ($page['footer_columns']): ?>

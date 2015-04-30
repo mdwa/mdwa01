@@ -168,3 +168,24 @@ article#content {
   background-color: $gris-medio;
   color: white;
 }
+
+/**
+ * Related content
+ */
+#related_content {
+  .block {
+    color: $gris-medio;
+  }
+}
+
+/**
+ * Social links
+ */
+.social-links {
+  .fa {
+    background: $azul;
+    color: white;
+    padding: 1em;
+    @include border-radius(50%);
+  }
+}

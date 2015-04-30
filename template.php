@@ -19,11 +19,37 @@ function mdwa01_preprocess_page(&$variables) {
   if (isset($variables['node'])) {
     $node = $variables['node'];
     if ($node->type == 'noticia' || $node->type == 'blog') {
-      $variables['section_title'] = t('Actualidad');
+      $variables['section_title'] = t('News');
     }
-    // Page suggestions
-    //$suggestion = 'page__' . str_replace('-', '--', $variables['node']->type);
-    //$variables['theme_hook_suggestions'][] = $suggestion;
+    if ($node->type == 'pagina') {
+      $output = '<figure>';
+      $banner = field_get_items('node',$node, 'field_pagina_banner');
+      foreach ($banner as $delta => $item) {
+        $uri = $item['uri'];
+        $src = image_style_url('panorama', $uri);
+        $output .= '<img src="' . $src . '" class="img-responsive" typeof="foaf:Image">';
+      }
+      $output .= '</figure>';
+      $variables['banner'] = $output;
+    }
+    if ($node->type == 'webform') {
+      $menu = menu_get_active_trail();
+      if ($menu[1]['link_title'] = t('Customer Service')) {
+        $parent_node = node_load(explode('/', $menu[1]['link_path'])[1]);
+        $banner = field_get_items('node', $parent_node, 'field_pagina_banner');
+        $output = '<figure>';
+        foreach ($banner as $delta => $item) {
+          $uri = $item['uri'];
+          $src = image_style_url('panorama', $uri);
+          $output .= '<img src="' . $src . '" class="img-responsive" typeof="foaf:Image">';
+        }
+        $output .= '</figure>';
+        $variables['banner'] = $output;
+      }
+    }
+
+    // Node type suggestions
+    $variables['theme_hook_suggestions'][] = 'page__' . $node->type;
   }
 
   // Vocabulary page suggestions
@@ -31,14 +57,24 @@ function mdwa01_preprocess_page(&$variables) {
     $term = taxonomy_term_load(arg(2));
     $variables['theme_hook_suggestions'][] = 'page__vocabulary__' . $term->vocabulary_machine_name;
     if ($term->vocabulary_machine_name == 'tags') {
-      $variables['section_title'] = t('Actualidad');
+      $variables['section_title'] = t('News');
     }
+  }
+
+  // Contact Banner
+  if ($variables['theme_hook_suggestions'][0] == 'page__contact') {
+    $output = '<figure>';
+    $uri = 'public://paginas/banners/mapa.jpg';
+    $src = image_style_url('panorama', $uri);
+    $output .= '<img src="' . $src . '" class="img-responsive" typeof="foaf:Image">';
+    $output .= '</figure>';
+    $variables['banner'] = $output;
   }
 
   // Check for two columns page
   $active_trail = menu_get_active_trail();
-  $two_columns_pages = array('Actualidad', 'Contact');
-  if (sizeof($active_trail) > 1) {
+  $two_columns_pages = array('Actualidad', 'News', 'Contact');
+  if (count($active_trail) > 1) {
     $variables['two_columns'] = in_array($active_trail[1]['link_title'], $two_columns_pages);
   }
 
@@ -50,13 +86,16 @@ function mdwa01_preprocess_page(&$variables) {
   }
 }
 
+function mdwa01_process_page(&$variables) {
+}
+
 function mdwa01_preprocess_node(&$variables) {
   $node = $variables ['node'];
   if (($node->type == 'noticia' || $node->type == 'blog') && $variables ['display_submitted']) {
     $variables ['submitted'] = format_date($node->created, 'medio_sin_hora');
     $variables ['datetime']  = format_date($node->created, 'custom', 'Y-m-d');
   }
-  if ($node->type == 'pagina') {
+  if ($node->type == 'pagina' && isset($variables['content']['body'])) {
     // Inserto atributo typeof a la imágenes del body insertadas por el usuario.
     $body = $variables['content']['body'][0]['#markup'];
     $variables['content']['body'][0]['#markup'] = str_replace('img ', 'img typeof="foaf:Image "', $body);
@@ -75,6 +114,11 @@ function mdwa01_preprocess_block(&$variables) {
   }
 }
 
+function mdwa01_preprocess_webform_form(&$variables) {
+  //dpm($variables);
+  $variables['theme_hook_suggestions'][] = 'webform_form_' . $variables['nid'];
+}
+
 function mdwa01_menu_tree__primary(&$variables) {
   return '<ul class="nav navbar-nav navbar-right">' .$variables['tree'] . '</ul>';
 }
@@ -84,6 +128,12 @@ function mdwa01_breadcrumb(&$variables) {
   if (!empty($breadcrumb)) {
     if (preg_match("(Inicio|Home)", $breadcrumb[0])) {
       array_shift($breadcrumb);
+    }
+    // El breadcrumb del formulario de contacto lo muestra siempre en castellano.
+    // Aquí lo traduzco.
+    $contact = array("Contact", "Contacto");
+    if (in_array(drupal_get_title(), $contact)) {
+      array_unshift($breadcrumb, l(t('Contact'), 'contact'));
     }
     $home = '<i class="glyphicon glyphicon-home">&nbsp;</i>' . t('Home');
     array_unshift($breadcrumb, l($home, '<front>', array('html' => TRUE)));
@@ -190,6 +240,37 @@ function mdwa01_field__field_foto__equipo($variables) {
   $output .= '</figure>';
   return $output;
 }
+
+/**
+ * Página: Campos
+ */
+function mdwa01_field__field_pagina_banner__pagina($variables) {
+  $output = '<figure>';
+  foreach ($variables ['items'] as $delta => $item) {
+    $uri = $item['#item']['uri'];
+    $src = image_style_url('large', $uri);
+    $output .= '<img src="' . $src . '" class="img-responsive" typeof="foaf:Image">';
+  }
+  $output .= '</figure>';
+  return $output;
+}
+
+/**
+ * Equipo: Campos
+ */
+function mdwa01_field__field_equipo_social_links__equipo($variables) {
+  $output = '<ul class="social-links list-inline">';
+  foreach ($variables ['items'] as $delta => $item) {
+    $output .= '<li><a href="' . $item['#element']['url'] . '"';
+    foreach ($item['#element']['attributes'] as $id => $att) {
+      $output .= ' ' . $id . '="' . $att . '"';
+    }
+    $output .= '><span class="text-hide">' . $item['#element']['title'] . '</span></a></li>';
+  }
+  $output .= '</ul>';
+  return $output;
+}
+
 /**
  * Image Styles
  */

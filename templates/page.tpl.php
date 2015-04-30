@@ -36,17 +36,16 @@
 <main>
   <article id="content">
     <header>
-    <div class="container">
-    <?php if ($title): ?>
-      <h1 class="title" id="page-title">
-        <?php print render($title_prefix); ?>
-        <i class="glyphicon glyphicon-chevron-left"></i>
-        <?php if (isset($section_title) && !empty($section_title)) print $section_title; else print $title; ?>
-        <i class="glyphicon glyphicon-chevron-right"></i>
-        <?php print render($title_suffix); ?>
-      </h1>
-    <?php endif; ?>
-    </div>    </header>
+      <?php if ($title): ?>
+        <h1 class="title" id="page-title">
+          <?php print render($title_prefix); ?>
+          <i class="glyphicon glyphicon-chevron-left"></i>
+          <?php if (isset($section_title) && !empty($section_title)) print $section_title; else print $title; ?>
+          <i class="glyphicon glyphicon-chevron-right"></i>
+          <?php print render($title_suffix); ?>
+        </h1>
+      <?php endif; ?>
+    </header>
 
     <?php if ($messages): ?>
       <aside id="messages">
@@ -79,7 +78,9 @@
       <?php endif; ?>
       <div class="row">
         <div id="main-content" class="<?php ($variables['two_columns']) ? print 'col-md-9' : print 'col-xs-12'; ?>">
+          <?php if (!in_array($variables['title'], array('Actualidad','News'))): ?> 
           <?php print render($page['content']); ?>
+          <?php endif; ?>
           <?php if ($page['after_content']): ?>
             <?php print render($page['after_content']); ?>
           <?php endif; ?>
