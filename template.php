@@ -35,7 +35,8 @@ function mdwa01_preprocess_page(&$variables) {
     if ($node->type == 'webform') {
       $menu = menu_get_active_trail();
       if ($menu[1]['link_title'] = t('Customer Service')) {
-        $parent_node = node_load(explode('/', $menu[1]['link_path'])[1]);
+        $parent_chunks = explode('/', $menu[1]['link_path']); 
+        $parent_node = node_load($parent_chunks[1]);
         $banner = field_get_items('node', $parent_node, 'field_pagina_banner');
         $output = '<figure>';
         foreach ($banner as $delta => $item) {
