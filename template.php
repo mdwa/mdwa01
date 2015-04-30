@@ -27,7 +27,7 @@ function mdwa01_preprocess_page(&$variables) {
       foreach ($banner as $delta => $item) {
         $uri = $item['uri'];
         $src = image_style_url('panorama', $uri);
-        $output .= '<img src="' . $src . '" class="img-responsive" typeof="foaf:Image">';
+        $output .= '<img src="' . $src . '" class="banner" typeof="foaf:Image">';
       }
       $output .= '</figure>';
       $variables['banner'] = $output;
@@ -42,7 +42,7 @@ function mdwa01_preprocess_page(&$variables) {
         foreach ($banner as $delta => $item) {
           $uri = $item['uri'];
           $src = image_style_url('panorama', $uri);
-          $output .= '<img src="' . $src . '" class="img-responsive" typeof="foaf:Image">';
+          $output .= '<img src="' . $src . '" class="banner" typeof="foaf:Image">';
         }
         $output .= '</figure>';
         $variables['banner'] = $output;
