@@ -34,8 +34,9 @@
 
 <!-- Main content -->
 <main>
-  <article id="content">
+  <article id="content" class="pagina">
     <header>
+    <?php if ($banner) print $banner; ?>
       <?php if ($title): ?>
         <h1 class="title" id="page-title">
           <?php print render($title_prefix); ?>
