@@ -33,7 +33,6 @@
 </nav>   
 
 <!-- Main content -->
-
 <main>
   <article id="content" class="pagina">
     <header>
@@ -80,7 +79,9 @@
       <?php endif; ?>
       <div class="row">
         <div id="main-content" class="<?php ($variables['two_columns']) ? print 'col-md-9' : print 'col-xs-12'; ?>">
+          <?php if (!in_array($variables['title'], array('Actualidad','News'))): ?> 
           <?php print render($page['content']); ?>
+          <?php endif; ?>
           <?php if ($page['after_content']): ?>
             <?php print render($page['after_content']); ?>
           <?php endif; ?>
@@ -95,7 +96,6 @@
 
   </article> <!-- /.section, /#content -->
 </main> <!-- /#main, /#main-wrapper -->
-
 
 <footer>
   <?php if ($page['footer_columns']): ?>

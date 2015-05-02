@@ -19,9 +19,8 @@ function mdwa01_preprocess_page(&$variables) {
   if (isset($variables['node'])) {
     $node = $variables['node'];
 
-
     // Banner de página
-    if ($node->type == 'pagina') {
+    /*if ($node->type == 'pagina') {
       $output = '<figure>';
       $banner = field_get_items('node',$node, 'field_pagina_banner');
       foreach ($banner as $delta => $item) {
@@ -31,10 +30,10 @@ function mdwa01_preprocess_page(&$variables) {
       }
       $output .= '</figure>';
       $variables['banner'] = $output;
-    }
+    }*/
 
     // Banner para Buzón de sugerencias
-    if ($node->type == 'webform') {
+    /*if ($node->type == 'webform') {
       $menu = menu_get_active_trail();
       if ($menu[1]['link_title'] = t('Customer Service')) {
         $parent_chunks = explode('/', $menu[1]['link_path']); 
@@ -49,10 +48,10 @@ function mdwa01_preprocess_page(&$variables) {
         $output .= '</figure>';
         $variables['banner'] = $output;
       }
-    }
+    }*/
 
     // Título de página para noticias y blog, y banner
-    if ($node->type == 'noticia' || $node->type == 'blog') {
+    /*if ($node->type == 'noticia' || $node->type == 'blog') {
       $variables['section_title'] = t('News');
 
       $menu = menu_get_active_trail();
@@ -69,10 +68,37 @@ function mdwa01_preprocess_page(&$variables) {
         $output .= '</figure>';
         $variables['banner'] = $output;
       }
-    }
+    }*/
 
     // Node type suggestions
     $variables['theme_hook_suggestions'][] = 'page__' . $node->type;
+  }
+
+  // Banners
+  $menu = menu_get_active_trail();
+  if (count($menu) > 1) {
+    $parent_chunks = explode('/', $menu[1]['link_path']); 
+    if ($parent_node = node_load(end($parent_chunks))) {
+      $banner = field_get_items('node', $parent_node, 'field_pagina_banner');
+      $output = '<figure>';
+      foreach ($banner as $delta => $item) {
+        $uri = $item['uri'];
+        $src = image_style_url('panorama', $uri);
+        $output .= '<img src="' . $src . '" class="banner" typeof="foaf:Image">';
+      }
+      $output .= '</figure>';
+      $variables['banner'] = $output;
+    }
+  }
+
+  // Contact Banner
+  if ($variables['theme_hook_suggestions'][0] == 'page__contact') {
+    $output = '<figure>';
+    $uri = 'public://paginas/banners/mapa.jpg';
+    $src = image_style_url('panorama', $uri);
+    $output .= '<img src="' . $src . '" class="banner" typeof="foaf:Image">';
+    $output .= '</figure>';
+    $variables['banner'] = $output;
   }
 
   // Vocabulary page suggestions
@@ -82,16 +108,6 @@ function mdwa01_preprocess_page(&$variables) {
     if ($term->vocabulary_machine_name == 'tags') {
       $variables['section_title'] = t('News');
     }
-  }
-
-  // Contact Banner
-  if ($variables['theme_hook_suggestions'][0] == 'page__contact') {
-    $output = '<figure>';
-    $uri = 'public://paginas/banners/mapa.jpg';
-    $src = image_style_url('panorama', $uri);
-    $output .= '<img src="' . $src . '" class="img-responsive" typeof="foaf:Image">';
-    $output .= '</figure>';
-    $variables['banner'] = $output;
   }
 
   // Check for two columns page
