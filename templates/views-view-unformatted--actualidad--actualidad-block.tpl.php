@@ -34,14 +34,16 @@ drupal_add_js('
   cjq(document).ready(function($) {
     $container = $("#posts");
 
-    $container.masonry({
-      columnWidth: ".post",
-      itemSelector: ".post",
-      percentPosition: "true",
-      gutter: 0
-     });
-    $container.masonry("bindResize");
-    $container.masonry();
+    $container.imagesLoaded(function() {
+      $container.masonry({
+        columnWidth: ".post",
+        itemSelector: ".post",
+        percentPosition: "true",
+        gutter: 0
+      });
+      $container.masonry("bindResize");
+    });
+
   });
 ',
   array('type' => 'inline', 'scope' => 'header'));
