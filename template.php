@@ -94,7 +94,7 @@ function mdwa01_preprocess_page(&$variables) {
   // Contact Banner
   if ($variables['theme_hook_suggestions'][0] == 'page__contact') {
     $output = '<figure>';
-    $uri = 'public://paginas/banners/mapa.jpg';
+    $uri = 'public://default_images/Panorama_Donostia_Kontxako.jpg';
     $src = image_style_url('panorama', $uri);
     $output .= '<img src="' . $src . '" class="banner" typeof="foaf:Image">';
     $output .= '</figure>';
