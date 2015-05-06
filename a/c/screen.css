@@ -785,33 +785,47 @@ body main article#content #sidebar_second #block-block-2 #google-map {
 }
 
 /* line 364, ../../scss/_typography.scss */
-.node-pagina ul {
+.node ul, .panel ul {
   list-style-position: inside;
 }
 /* line 366, ../../scss/_typography.scss */
-.node-pagina ul li::before {
+.node ul li::before, .panel ul li::before {
   font-family: "Glyphicons Halflings";
   content: "  ";
 }
 /* line 371, ../../scss/_typography.scss */
-.node-pagina figure {
+.node figure, .panel figure {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
 /* line 373, ../../scss/_typography.scss */
-.node-pagina figure img {
+.node figure img, .panel figure img {
   margin: auto;
 }
 /* line 376, ../../scss/_typography.scss */
-.node-pagina figure figcaption {
+.node figure figcaption, .panel figure figcaption {
   font-size: 0.85714em;
   line-height: 1.75em;
   text-align: center;
 }
+/* line 381, ../../scss/_typography.scss */
+.node blockquote, .panel blockquote {
+  font-family: "Merryweather", serif;
+  font-size: 1.5em;
+  text-align: center;
+}
+/* line 386, ../../scss/_typography.scss */
+.node blockquote p::before, .panel blockquote p::before {
+  content: '\0000ab';
+}
+/* line 389, ../../scss/_typography.scss */
+.node blockquote p::after, .panel blockquote p::after {
+  content: '\0000bb';
+}
 
-/* line 383, ../../scss/_typography.scss */
+/* line 396, ../../scss/_typography.scss */
 .noticia,
 .blog {
   font-family: 'Merriweather', serif;
@@ -830,13 +844,13 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   }
   */
 }
-/* line 390, ../../scss/_typography.scss */
+/* line 403, ../../scss/_typography.scss */
 .noticia header,
 .blog header {
   margin-bottom: 0.5em;
   text-align: center;
 }
-/* line 393, ../../scss/_typography.scss */
+/* line 406, ../../scss/_typography.scss */
 .noticia header h1,
 .blog header h1 {
   font-size: 2.5em;
@@ -847,7 +861,7 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   padding-bottom: 0em;
   margin-bottom: 0em;
 }
-/* line 398, ../../scss/_typography.scss */
+/* line 411, ../../scss/_typography.scss */
 .noticia header .blog-meta,
 .noticia header .noticia-meta,
 .blog header .blog-meta,
@@ -857,7 +871,7 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   font-size: 0.85714em;
   line-height: 1.75em;
 }
-/* line 405, ../../scss/_typography.scss */
+/* line 418, ../../scss/_typography.scss */
 .noticia header .entradilla p,
 .blog header .entradilla p {
   text-align: center;
@@ -865,17 +879,17 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   font-size: 0.85714em;
   line-height: 1.75em;
 }
-/* line 412, ../../scss/_typography.scss */
+/* line 425, ../../scss/_typography.scss */
 .noticia.teaser,
 .blog.teaser {
   border-bottom: solid 1px #dddddd;
 }
-/* line 414, ../../scss/_typography.scss */
+/* line 427, ../../scss/_typography.scss */
 .noticia.teaser header,
 .blog.teaser header {
   text-align: left;
 }
-/* line 416, ../../scss/_typography.scss */
+/* line 429, ../../scss/_typography.scss */
 .noticia.teaser header h1,
 .blog.teaser header h1 {
   font-size: 1.42857em;
@@ -887,29 +901,29 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   padding-bottom: 0em;
   margin-bottom: 0em;
 }
-/* line 422, ../../scss/_typography.scss */
+/* line 435, ../../scss/_typography.scss */
 .noticia.teaser header .blog-meta,
 .noticia.teaser header .noticia-meta,
 .blog.teaser header .blog-meta,
 .blog.teaser header .noticia-meta {
   text-align: left;
 }
-/* line 427, ../../scss/_typography.scss */
+/* line 440, ../../scss/_typography.scss */
 .noticia.teaser header .entradilla p,
 .blog.teaser header .entradilla p {
   text-align: left;
 }
-/* line 432, ../../scss/_typography.scss */
+/* line 445, ../../scss/_typography.scss */
 .noticia.teaser .links,
 .blog.teaser .links {
   text-align: right;
 }
-/* line 437, ../../scss/_typography.scss */
+/* line 450, ../../scss/_typography.scss */
 .noticia p,
 .blog p {
   text-align: justify;
 }
-/* line 440, ../../scss/_typography.scss */
+/* line 453, ../../scss/_typography.scss */
 .noticia figure,
 .blog figure {
   margin-top: 1.5em;
@@ -917,7 +931,7 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 442, ../../scss/_typography.scss */
+/* line 455, ../../scss/_typography.scss */
 .noticia figure img,
 .blog figure img {
   width: 100%;
@@ -926,34 +940,34 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   display: block;
   margin: auto;
 }
-/* line 449, ../../scss/_typography.scss */
+/* line 462, ../../scss/_typography.scss */
 .noticia figure figcaption,
 .blog figure figcaption {
   font-size: 0.85714em;
   line-height: 1.75em;
   text-align: center;
 }
-/* line 455, ../../scss/_typography.scss */
+/* line 468, ../../scss/_typography.scss */
 .noticia .field-name-body img,
 .blog .field-name-body img {
   display: block;
   margin: auto;
   max-width: 100%;
 }
-/* line 461, ../../scss/_typography.scss */
+/* line 474, ../../scss/_typography.scss */
 .noticia .links,
 .blog .links {
   text-align: center;
   font-size: 0.85714em;
   line-height: 1.75em;
 }
-/* line 464, ../../scss/_typography.scss */
+/* line 477, ../../scss/_typography.scss */
 .noticia .links.inline,
 .blog .links.inline {
   display: block;
 }
 
-/* line 478, ../../scss/_typography.scss */
+/* line 491, ../../scss/_typography.scss */
 .equipo {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -971,7 +985,7 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   text-align: center;
   font-style: italic;
 }
-/* line 487, ../../scss/_typography.scss */
+/* line 500, ../../scss/_typography.scss */
 .equipo h1 {
   font-size: 1.42857em;
   line-height: 2.1em;
@@ -981,7 +995,7 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   margin-bottom: 0em;
   margin-top: 0;
 }
-/* line 499, ../../scss/_typography.scss */
+/* line 512, ../../scss/_typography.scss */
 .equipo img {
   margin: auto;
   margin-top: 1.5em;
@@ -990,12 +1004,12 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   margin-bottom: 1.5em;
 }
 @media (min-width: 768px) {
-  /* line 499, ../../scss/_typography.scss */
+  /* line 512, ../../scss/_typography.scss */
   .equipo img {
     margin-top: -2em;
   }
 }
-/* line 506, ../../scss/_typography.scss */
+/* line 519, ../../scss/_typography.scss */
 .equipo .social-links {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -1004,12 +1018,12 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   text-align: center;
 }
 
-/* line 516, ../../scss/_typography.scss */
+/* line 529, ../../scss/_typography.scss */
 .view-id-display-id-page_1 .teaser.blog {
   min-height: 35em;
 }
 
-/* line 521, ../../scss/_typography.scss */
+/* line 534, ../../scss/_typography.scss */
 .submitted {
   text-transform: lowercase;
 }

@@ -360,7 +360,7 @@ body {
   }
 }
 
-.node-pagina {
+.node, .panel {
   ul {
     list-style-position: inside;
     li::before {
@@ -376,6 +376,19 @@ body {
     figcaption {
       @include adjust-font-size-to(12px);
       text-align: center;
+    }
+  }
+  blockquote {
+    font-family: "Merryweather", serif;
+    font-size: 1.5em;
+    text-align: center;
+    p {
+      &::before {
+        content: '\0000ab';
+      }
+      &::after {
+        content: '\0000bb';
+      }
     }
   }
 }
