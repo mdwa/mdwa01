@@ -351,35 +351,35 @@ body {
 
 /* line 15, ../../scss/_typography.scss */
 h1 {
-  font-size: 2.3em;
+  font-size: 2.153846154em;
 }
 
 /* line 16, ../../scss/_typography.scss */
 h2 {
-  font-size: 2.1em;
+  font-size: 1.692307692em;
 }
 
 /* line 17, ../../scss/_typography.scss */
 h3 {
-  font-size: 1.9em;
+  font-size: 1.384615385em;
 }
 
 /* line 18, ../../scss/_typography.scss */
 h4 {
-  font-size: 1.7em;
+  font-size: 1.230769231em;
 }
 
 /* line 19, ../../scss/_typography.scss */
 h5 {
-  font-size: 1.5em;
+  font-size: 1.076923077em;
 }
 
 /* line 20, ../../scss/_typography.scss */
 h6 {
-  font-size: 1.3em;
+  font-size: 0.923076923em;
 }
 
-/* line 21, ../../scss/_typography.scss */
+/* line 22, ../../scss/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   margin-top: 1.5em;
@@ -388,23 +388,23 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5em;
 }
 
-/* line 25, ../../scss/_typography.scss */
+/* line 26, ../../scss/_typography.scss */
 h2 {
   padding-bottom: 0.5em;
   border-bottom: solid 1px #00528e;
 }
 
-/* line 29, ../../scss/_typography.scss */
+/* line 30, ../../scss/_typography.scss */
 h3 {
   margin-bottom: 0.5em;
 }
 
-/* line 32, ../../scss/_typography.scss */
+/* line 33, ../../scss/_typography.scss */
 strong {
   font-weight: 400;
 }
 
-/* line 36, ../../scss/_typography.scss */
+/* line 37, ../../scss/_typography.scss */
 aside {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -412,7 +412,7 @@ aside {
   margin-bottom: 1.5em;
 }
 
-/* line 40, ../../scss/_typography.scss */
+/* line 41, ../../scss/_typography.scss */
 .block {
   border-width: 0.07143em;
   border-style: solid;
@@ -423,7 +423,7 @@ aside {
 /**
  * Header
  */
-/* line 48, ../../scss/_typography.scss */
+/* line 49, ../../scss/_typography.scss */
 #header-info {
   font-size: 0.85714em;
   line-height: 1.75em;
@@ -433,19 +433,19 @@ aside {
 /**
  * Navigation
  */
-/* line 58, ../../scss/_typography.scss */
+/* line 59, ../../scss/_typography.scss */
 nav.navbar-default {
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  /* line 58, ../../scss/_typography.scss */
+  /* line 59, ../../scss/_typography.scss */
   nav.navbar-default {
     font-size: 0.78571em;
     line-height: 1.90909em;
   }
 }
 @media (min-width: 992px) {
-  /* line 58, ../../scss/_typography.scss */
+  /* line 59, ../../scss/_typography.scss */
   nav.navbar-default {
     font-size: 1em;
     line-height: 1.5em;
@@ -455,7 +455,7 @@ nav.navbar-default {
 /**
  * Main
  */
-/* line 80, ../../scss/_typography.scss */
+/* line 81, ../../scss/_typography.scss */
 body main .breadcrumb {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -464,14 +464,14 @@ body main .breadcrumb {
   font-size: 1.14286em;
   line-height: 1.3125em;
 }
-/* line 85, ../../scss/_typography.scss */
+/* line 86, ../../scss/_typography.scss */
 body main article#content {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 87, ../../scss/_typography.scss */
+/* line 88, ../../scss/_typography.scss */
 body main article#content h1#page-title {
   display: inline-block;
   font-size: 1.28571em;
@@ -485,28 +485,28 @@ body main article#content h1#page-title {
   padding-bottom: 0;
   background-color: white;
 }
-/* line 99, ../../scss/_typography.scss */
+/* line 100, ../../scss/_typography.scss */
 body main article#content.pagina header {
   position: relative;
 }
-/* line 101, ../../scss/_typography.scss */
+/* line 102, ../../scss/_typography.scss */
 body main article#content.pagina header h1#page-title {
   position: absolute;
   bottom: 1.5em;
   background: rgba(0, 0, 0, 0.8);
   color: white;
 }
-/* line 108, ../../scss/_typography.scss */
+/* line 109, ../../scss/_typography.scss */
 body main article#content.pagina header figure imag {
   display: block;
   width: 100%;
   height: auto;
 }
-/* line 120, ../../scss/_typography.scss */
+/* line 121, ../../scss/_typography.scss */
 body main article#content i {
   padding: 0;
 }
-/* line 123, ../../scss/_typography.scss */
+/* line 124, ../../scss/_typography.scss */
 body main article#content div.container.content {
   border-width: 0.07143em;
   border-style: solid;
@@ -515,29 +515,29 @@ body main article#content div.container.content {
   border: none;
   line-height: 1.8em;
 }
-/* line 128, ../../scss/_typography.scss */
+/* line 129, ../../scss/_typography.scss */
 body main article#content div.container.content p {
   border-bottom-width: 0.07143em;
   border-bottom-style: solid;
   padding-bottom: 1.42857em;
   border: none;
 }
-/* line 134, ../../scss/_typography.scss */
+/* line 135, ../../scss/_typography.scss */
 body main article#content div.container.content figcaption p {
   text-align: center;
 }
-/* line 140, ../../scss/_typography.scss */
+/* line 141, ../../scss/_typography.scss */
 body main article#content #sidebar_first,
 body main article#content #sidebar_second {
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 143, ../../scss/_typography.scss */
+/* line 144, ../../scss/_typography.scss */
 body main article#content #sidebar_first h2,
 body main article#content #sidebar_second h2 {
   font-size: 1.2em;
 }
-/* line 146, ../../scss/_typography.scss */
+/* line 147, ../../scss/_typography.scss */
 body main article#content #sidebar_first .content,
 body main article#content #sidebar_second .content {
   margin-top: 1.5em;
@@ -545,12 +545,12 @@ body main article#content #sidebar_second .content {
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 150, ../../scss/_typography.scss */
+/* line 151, ../../scss/_typography.scss */
 body main article#content #sidebar_first #block-block-2 dt,
 body main article#content #sidebar_second #block-block-2 dt {
   display: none;
 }
-/* line 153, ../../scss/_typography.scss */
+/* line 154, ../../scss/_typography.scss */
 body main article#content #sidebar_first #block-block-2 #google-map,
 body main article#content #sidebar_second #block-block-2 #google-map {
   display: none;
@@ -559,7 +559,7 @@ body main article#content #sidebar_second #block-block-2 #google-map {
 /**
  * Featured
  */
-/* line 165, ../../scss/_typography.scss */
+/* line 166, ../../scss/_typography.scss */
 #featured {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -571,14 +571,14 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   border: none;
   text-align: center;
 }
-/* line 170, ../../scss/_typography.scss */
+/* line 171, ../../scss/_typography.scss */
 #featured header {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 172, ../../scss/_typography.scss */
+/* line 173, ../../scss/_typography.scss */
 #featured header h1 {
   font-size: 1em;
   line-height: 1.5em;
@@ -588,7 +588,7 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   margin-bottom: 0.5em;
   text-shadow: 0 1px 0 white;
 }
-/* line 180, ../../scss/_typography.scss */
+/* line 181, ../../scss/_typography.scss */
 #featured header [class^="icon-"], #featured header [class*="icon-"] {
   padding: 0;
   font-size: 1.5rem;
@@ -597,19 +597,19 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   text-shadow: 0 1px 0 white;
   text-align: center;
 }
-/* line 189, ../../scss/_typography.scss */
+/* line 190, ../../scss/_typography.scss */
 #featured p {
   font-weight: 400;
   line-height: 1.6;
   margin-bottom: 1.25rem;
 }
-/* line 195, ../../scss/_typography.scss */
+/* line 196, ../../scss/_typography.scss */
 #featured .slogan {
   font-style: italic;
   text-shadow: #626262 1px 1px 3px;
   color: #00528e;
 }
-/* line 201, ../../scss/_typography.scss */
+/* line 202, ../../scss/_typography.scss */
 #featured .call-to-action {
   float: none;
   margin: auto;
@@ -622,7 +622,7 @@ body main article#content #sidebar_second #block-block-2 #google-map {
 /**
  * Actualidad e IBEX35
  */
-/* line 212, ../../scss/_typography.scss */
+/* line 213, ../../scss/_typography.scss */
 #actualidad,
 #ibex35 {
   border-width: 0.07143em;
@@ -630,7 +630,7 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   padding: 1.42857em;
   border: none;
 }
-/* line 217, ../../scss/_typography.scss */
+/* line 218, ../../scss/_typography.scss */
 #actualidad .block h2,
 #ibex35 .block h2 {
   font-size: 1em;
@@ -649,7 +649,7 @@ body main article#content #sidebar_second #block-block-2 #google-map {
 /**
  * IBEX-35
  */
-/* line 234, ../../scss/_typography.scss */
+/* line 235, ../../scss/_typography.scss */
 #ibex35 h2 {
   text-align: center;
 }
@@ -657,7 +657,7 @@ body main article#content #sidebar_second #block-block-2 #google-map {
 /**
  * Footer columns
  */
-/* line 242, ../../scss/_typography.scss */
+/* line 243, ../../scss/_typography.scss */
 #footer-columns {
   font-size: 0.85714em;
   line-height: 1.75em;
@@ -666,11 +666,11 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   padding: 1.42857em;
   border: none;
 }
-/* line 246, ../../scss/_typography.scss */
+/* line 247, ../../scss/_typography.scss */
 #footer-columns .block {
   overflow: hidden;
 }
-/* line 249, ../../scss/_typography.scss */
+/* line 250, ../../scss/_typography.scss */
 #footer-columns h2 {
   font-size: 1em;
   line-height: 1.5em;
@@ -682,7 +682,7 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   padding-bottom: 0.3rem;
   border-bottom: solid 1px white;
 }
-/* line 256, ../../scss/_typography.scss */
+/* line 257, ../../scss/_typography.scss */
 #footer-columns .content {
   border-top-width: 0.07143em;
   border-top-style: solid;
@@ -692,39 +692,39 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   padding-bottom: 1.42857em;
   border: none;
 }
-/* line 262, ../../scss/_typography.scss */
+/* line 263, ../../scss/_typography.scss */
 #footer-columns dt {
   text-align: right;
   width: 20%;
   float: left;
   color: #181818;
 }
-/* line 268, ../../scss/_typography.scss */
+/* line 269, ../../scss/_typography.scss */
 #footer-columns dd {
   width: 75%;
   float: right;
 }
-/* line 273, ../../scss/_typography.scss */
+/* line 274, ../../scss/_typography.scss */
 #footer-columns ul li.leaf {
   list-style-image: none;
   list-style-type: none;
 }
-/* line 276, ../../scss/_typography.scss */
+/* line 277, ../../scss/_typography.scss */
 #footer-columns ul li.leaf:before {
   color: #181818;
   font-family: "Glyphicons Halflings";
   content: " ";
 }
-/* line 281, ../../scss/_typography.scss */
+/* line 282, ../../scss/_typography.scss */
 #footer-columns ul li.leaf a {
   color: white;
 }
-/* line 286, ../../scss/_typography.scss */
+/* line 287, ../../scss/_typography.scss */
 #footer-columns img {
   width: 150px;
   vertical-align: top;
 }
-/* line 290, ../../scss/_typography.scss */
+/* line 291, ../../scss/_typography.scss */
 #footer-columns [class^="icon-"], #footer-columns [class*="icon-"] {
   padding: 0;
   font-size: 4em;
@@ -736,12 +736,12 @@ body main article#content #sidebar_second #block-block-2 #google-map {
 /**
  * Legal
  */
-/* line 302, ../../scss/_typography.scss */
+/* line 303, ../../scss/_typography.scss */
 #legal {
   font-size: 0.85714em;
   line-height: 1.75em;
 }
-/* line 304, ../../scss/_typography.scss */
+/* line 305, ../../scss/_typography.scss */
 #legal .block {
   border-top: 1px solid white;
 }
@@ -749,24 +749,24 @@ body main article#content #sidebar_second #block-block-2 #google-map {
 /**
  * Related content
  */
-/* line 312, ../../scss/_typography.scss */
+/* line 313, ../../scss/_typography.scss */
 #related_content {
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 314, ../../scss/_typography.scss */
+/* line 315, ../../scss/_typography.scss */
 #related_content .block {
   padding-bottom: 0;
 }
-/* line 316, ../../scss/_typography.scss */
+/* line 317, ../../scss/_typography.scss */
 #related_content .block h2 {
   font-size: 1.2em;
 }
-/* line 324, ../../scss/_typography.scss */
+/* line 325, ../../scss/_typography.scss */
 #related_content #block-block-2 dt {
   display: none;
 }
-/* line 327, ../../scss/_typography.scss */
+/* line 328, ../../scss/_typography.scss */
 #related_content #block-block-2 #google-map {
   display: none;
 }
@@ -774,58 +774,58 @@ body main article#content #sidebar_second #block-block-2 #google-map {
 /**
  * Blog
  */
-/* line 338, ../../scss/_typography.scss */
+/* line 339, ../../scss/_typography.scss */
 .view-blog .view-content p {
   text-align: justify;
 }
 
-/* line 350, ../../scss/_typography.scss */
+/* line 351, ../../scss/_typography.scss */
 #after_content_container_2 .block h2 {
   text-align: center;
 }
 
-/* line 364, ../../scss/_typography.scss */
+/* line 365, ../../scss/_typography.scss */
 .node ul, .panel ul {
   list-style-position: inside;
 }
-/* line 366, ../../scss/_typography.scss */
+/* line 367, ../../scss/_typography.scss */
 .node ul li::before, .panel ul li::before {
   font-family: "Glyphicons Halflings";
   content: "  ";
 }
-/* line 371, ../../scss/_typography.scss */
+/* line 372, ../../scss/_typography.scss */
 .node figure, .panel figure {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 373, ../../scss/_typography.scss */
+/* line 374, ../../scss/_typography.scss */
 .node figure img, .panel figure img {
   margin: auto;
 }
-/* line 376, ../../scss/_typography.scss */
+/* line 377, ../../scss/_typography.scss */
 .node figure figcaption, .panel figure figcaption {
   font-size: 0.85714em;
   line-height: 1.75em;
   text-align: center;
 }
-/* line 381, ../../scss/_typography.scss */
+/* line 382, ../../scss/_typography.scss */
 .node blockquote, .panel blockquote {
   font-family: "Merryweather", serif;
   font-size: 1.5em;
   text-align: center;
 }
-/* line 386, ../../scss/_typography.scss */
+/* line 387, ../../scss/_typography.scss */
 .node blockquote p::before, .panel blockquote p::before {
   content: '\0000ab';
 }
-/* line 389, ../../scss/_typography.scss */
+/* line 390, ../../scss/_typography.scss */
 .node blockquote p::after, .panel blockquote p::after {
   content: '\0000bb';
 }
 
-/* line 396, ../../scss/_typography.scss */
+/* line 397, ../../scss/_typography.scss */
 .noticia,
 .blog {
   font-family: 'Merriweather', serif;
@@ -844,13 +844,13 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   }
   */
 }
-/* line 403, ../../scss/_typography.scss */
+/* line 404, ../../scss/_typography.scss */
 .noticia header,
 .blog header {
   margin-bottom: 0.5em;
   text-align: center;
 }
-/* line 406, ../../scss/_typography.scss */
+/* line 407, ../../scss/_typography.scss */
 .noticia header h1,
 .blog header h1 {
   font-size: 2.5em;
@@ -861,7 +861,7 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   padding-bottom: 0em;
   margin-bottom: 0em;
 }
-/* line 411, ../../scss/_typography.scss */
+/* line 412, ../../scss/_typography.scss */
 .noticia header .blog-meta,
 .noticia header .noticia-meta,
 .blog header .blog-meta,
@@ -871,7 +871,7 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   font-size: 0.85714em;
   line-height: 1.75em;
 }
-/* line 418, ../../scss/_typography.scss */
+/* line 419, ../../scss/_typography.scss */
 .noticia header .entradilla p,
 .blog header .entradilla p {
   text-align: center;
@@ -879,17 +879,17 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   font-size: 0.85714em;
   line-height: 1.75em;
 }
-/* line 425, ../../scss/_typography.scss */
+/* line 426, ../../scss/_typography.scss */
 .noticia.teaser,
 .blog.teaser {
   border-bottom: solid 1px #dddddd;
 }
-/* line 427, ../../scss/_typography.scss */
+/* line 428, ../../scss/_typography.scss */
 .noticia.teaser header,
 .blog.teaser header {
   text-align: left;
 }
-/* line 429, ../../scss/_typography.scss */
+/* line 430, ../../scss/_typography.scss */
 .noticia.teaser header h1,
 .blog.teaser header h1 {
   font-size: 1.42857em;
@@ -901,29 +901,29 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   padding-bottom: 0em;
   margin-bottom: 0em;
 }
-/* line 435, ../../scss/_typography.scss */
+/* line 436, ../../scss/_typography.scss */
 .noticia.teaser header .blog-meta,
 .noticia.teaser header .noticia-meta,
 .blog.teaser header .blog-meta,
 .blog.teaser header .noticia-meta {
   text-align: left;
 }
-/* line 440, ../../scss/_typography.scss */
+/* line 441, ../../scss/_typography.scss */
 .noticia.teaser header .entradilla p,
 .blog.teaser header .entradilla p {
   text-align: left;
 }
-/* line 445, ../../scss/_typography.scss */
+/* line 446, ../../scss/_typography.scss */
 .noticia.teaser .links,
 .blog.teaser .links {
   text-align: right;
 }
-/* line 450, ../../scss/_typography.scss */
+/* line 451, ../../scss/_typography.scss */
 .noticia p,
 .blog p {
   text-align: justify;
 }
-/* line 453, ../../scss/_typography.scss */
+/* line 454, ../../scss/_typography.scss */
 .noticia figure,
 .blog figure {
   margin-top: 1.5em;
@@ -931,7 +931,7 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 455, ../../scss/_typography.scss */
+/* line 456, ../../scss/_typography.scss */
 .noticia figure img,
 .blog figure img {
   width: 100%;
@@ -940,34 +940,34 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   display: block;
   margin: auto;
 }
-/* line 462, ../../scss/_typography.scss */
+/* line 463, ../../scss/_typography.scss */
 .noticia figure figcaption,
 .blog figure figcaption {
   font-size: 0.85714em;
   line-height: 1.75em;
   text-align: center;
 }
-/* line 468, ../../scss/_typography.scss */
+/* line 469, ../../scss/_typography.scss */
 .noticia .field-name-body img,
 .blog .field-name-body img {
   display: block;
   margin: auto;
   max-width: 100%;
 }
-/* line 474, ../../scss/_typography.scss */
+/* line 475, ../../scss/_typography.scss */
 .noticia .links,
 .blog .links {
   text-align: center;
   font-size: 0.85714em;
   line-height: 1.75em;
 }
-/* line 477, ../../scss/_typography.scss */
+/* line 478, ../../scss/_typography.scss */
 .noticia .links.inline,
 .blog .links.inline {
   display: block;
 }
 
-/* line 491, ../../scss/_typography.scss */
+/* line 492, ../../scss/_typography.scss */
 .equipo {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -985,7 +985,7 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   text-align: center;
   font-style: italic;
 }
-/* line 500, ../../scss/_typography.scss */
+/* line 501, ../../scss/_typography.scss */
 .equipo h1 {
   font-size: 1.42857em;
   line-height: 2.1em;
@@ -995,7 +995,7 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   margin-bottom: 0em;
   margin-top: 0;
 }
-/* line 512, ../../scss/_typography.scss */
+/* line 513, ../../scss/_typography.scss */
 .equipo img {
   margin: auto;
   margin-top: 1.5em;
@@ -1004,12 +1004,12 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   margin-bottom: 1.5em;
 }
 @media (min-width: 768px) {
-  /* line 512, ../../scss/_typography.scss */
+  /* line 513, ../../scss/_typography.scss */
   .equipo img {
     margin-top: -2em;
   }
 }
-/* line 519, ../../scss/_typography.scss */
+/* line 520, ../../scss/_typography.scss */
 .equipo .social-links {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -1018,12 +1018,12 @@ body main article#content #sidebar_second #block-block-2 #google-map {
   text-align: center;
 }
 
-/* line 529, ../../scss/_typography.scss */
+/* line 530, ../../scss/_typography.scss */
 .view-id-display-id-page_1 .teaser.blog {
   min-height: 35em;
 }
 
-/* line 534, ../../scss/_typography.scss */
+/* line 535, ../../scss/_typography.scss */
 .submitted {
   text-transform: lowercase;
 }
@@ -1138,4 +1138,13 @@ nav.navbar-default .navbar-nav > li > a {
 /* line 97, ../../scss/screen.scss */
 #IBEX35 .logo, #IBEX35 .downloadApp {
   display: none;
+}
+
+/**
+ * Blog
+ */
+/* line 105, ../../scss/screen.scss */
+.media-image {
+  max-width: 100%;
+  height: auto;
 }
