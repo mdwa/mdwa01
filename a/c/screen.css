@@ -315,11 +315,15 @@ article#content h1 i, article#content h2 i, article#content h3 i, article#conten
   background-color: #626262;
   color: white;
 }
+/* line 170, ../../scss/_colors.scss */
+#legal a {
+  color: white;
+}
 
 /**
  * Related content
  */
-/* line 176, ../../scss/_colors.scss */
+/* line 179, ../../scss/_colors.scss */
 #related_content .block {
   color: #626262;
 }
@@ -327,7 +331,7 @@ article#content h1 i, article#content h2 i, article#content h3 i, article#conten
 /**
  * Social links
  */
-/* line 185, ../../scss/_colors.scss */
+/* line 188, ../../scss/_colors.scss */
 .social-links .fa {
   background: #00528e;
   color: white;

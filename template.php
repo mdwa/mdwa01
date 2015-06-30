@@ -101,6 +101,17 @@ function mdwa01_preprocess_page(&$variables) {
     $variables['banner'] = $output;
   }
 
+  // Default banner for página
+  //if ($node->type == 'pagina' && $node->field_pagina_banner == null) {
+  if (!isset($variables['banner'])) {
+    $output = '<figure>';
+    $uri = 'public://default_images/Panorama_Donostia_Kontxako.jpg';
+    $src = image_style_url('panorama', $uri);
+    $output .= '<img src="' . $src . '" class="banner" typeof="foaf:Image">';
+    $output .= '</figure>';
+    $variables['banner'] = $output;
+  }
+
   // Vocabulary page suggestions
   if (arg(0) == 'taxonomy' && arg(1) == 'term' && is_numeric(arg(2))) {
     $term = taxonomy_term_load(arg(2));
