@@ -18,7 +18,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand page-scroll" href="<?php print base_path(); ?>">
+        <a class="navbar-brand page-scroll" href="<?php print $front_page; ?>">
         <img src="<?php print $logo; ?>" alt="MD Wealth Advisors">
         </a>
       </div>
