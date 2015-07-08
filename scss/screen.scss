@@ -15,6 +15,32 @@ li.leaf {
   padding: 0;
 }
 
+input,
+textarea,
+select {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #acacac;
+  box-sizing: border-box;
+  color: #666;
+  display: block;
+  margin-bottom: 1em;
+  max-width: 100%;
+  padding: 0.375em 0.625em;
+}
+input[type="submit"] {
+  background-color: $azul;
+  boder: medium none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.125em;
+  padding: 0.275em 0.75em;
+  font-weight: 400;
+  &:hover {
+    background-color: tint($azul, 10%);
+  }
+}
+
 /**
  * Navigation
  */
