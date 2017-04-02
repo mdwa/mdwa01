@@ -57,6 +57,7 @@ stylesheets[all][] = a/j/slider-revolution/src/css/settings.css
 stylesheets[screen, projection][] = a/c/screen.css
 stylesheets[print][] = a/c/print.css
 stylesheets-conditional[IE][screen, projection][] = a/c/ie.css
+stylesheets[all][] = a/c/infobolsa-widgets.css
 
 ;;;;;;;;;;;;;;;;;;;;
 ;; Scripts

@@ -1,0 +1,281 @@
+.tickerStock {
+	border:1px solid #cccccc;
+	background:#ffffff;
+	height:16px;
+	left:0;
+	margin:0 auto;
+	overflow:hidden;
+	position:relative;
+	top:0
+}
+.tickerCont {
+	height:16px;
+	position:absolute
+}
+.tickerRow {
+	left:0;
+	padding:0;
+	position:absolute;
+	top:0
+}
+.tickerLogo {
+	display:block;
+	background:url(../img/spriteTicker.png) no-repeat center -28px;
+	width:20px;
+	height:16px;
+	position:relative;
+	top:0
+}
+.datoTemp {
+	left:-100000px;
+	position:absolute;
+	top:-200px;
+	visibility:hidden
+}
+table.ticker {
+	overflow:hidden;
+	width:100%;
+	height:16px;
+	background:#ffffff;
+	font-family:"PT Sans", Arial, sans-serif !important;
+	font-size:13px !important;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased
+}
+table.ticker tr .name {
+	overflow:hidden;
+	height:16px;
+	padding:0 0 0 10px;
+	line-height:16px;
+	white-space:nowrap;
+	text-transform:uppercase;
+	text-align:left;
+	font-size:14px;
+	color:#0683c2;
+	cursor:pointer
+}
+table.ticker tr .name a,table.ticker tr .name a:visited {
+	color:#000;
+	text-decoration:none
+}
+table.ticker tr .name a:hover {
+	color:#0683c2
+}
+table.ticker tr td {
+	height:30px;
+	padding:0 0 0 30px;
+	vertical-align:top;
+	line-height:18px;
+	white-space:nowrap;
+	text-align:right;
+	font-size:12px
+}
+table.ticker tr td.trend {
+	height:14px;
+	width:10px;
+	padding:2px 0 2px 0
+}
+table.ticker tr td.trend div.top,table.ticker tr td.trend div.flop,table.ticker tr td.trend div.equal {
+	display:block;
+	width:4px;
+	height:12px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	-webkit-box-shadow:5px 0 5px 0 #000000 0.2 inset;
+	-moz-box-shadow:5px 0 5px 0 #000000 0.2 inset;
+	box-shadow:5px 0 5px 0 #000000 0.2 inset
+}
+table.ticker tr td.trend div.top {
+	background:#72a15a
+}
+table.ticker tr td.trend div.flop {
+	background:#ae4646
+}
+table.ticker tr td.trend div.equal {
+	background:#3e5986
+}
+table.ticker tr td.arrow .top,table.ticker tr td.arrow .flop,table.ticker tr td.arrow .equal {
+	display:inline-block;
+	background-image:url(../img/spriteTicker.png);
+	background-repeat:no-repeat;
+	width:16px;
+	height:9px;
+	margin:0 64px 0 4px
+}
+table.ticker tr td.arrow .top {
+	background-position:0 0
+}
+table.ticker tr td.arrow .flop {
+	background-position:0 -9px
+}
+table.ticker tr td.arrow .equal {
+	background-position:0 -18px
+}
+table.ticker .top {
+	color:#72a15a !important
+}
+table.ticker .flop {
+	color:#ae4646 !important
+}
+table.ticker .equal {
+	color:#3e5986 !important
+}
+.widget {
+	background:#ffffff;
+	margin:0 auto;
+	width:100%;
+	min-width:150px;
+	font-family:"PT Sans", Arial, sans-serif !important;
+	font-size:13px !important;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased
+}
+.widget .logo {
+	background:#169ddb;
+	background:-moz-linear-gradient(top, #169ddb 0%, #006198 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #169ddb), color-stop(100%, #006198));
+	background:-webkit-linear-gradient(top, #169ddb 0%, #006198 100%);
+	background:-o-linear-gradient(top, #169ddb 0%, #006198 100%);
+	background:-ms-linear-gradient(top, #169ddb 0%, #006198 100%);
+	background:linear-gradient(to bottom, #169ddb 0%, #006198 100%);
+	Filter:progid:DXImageTransform.Microsoft.gradient(startColorstr = '#FF169DDB', endColorstr = '#FF006198', GradientType = 0);
+	height:30px;
+	padding:5px 0
+}
+.widget .logo a {
+	display:block;
+	margin:0 auto;
+	height:30px;
+	width:100px;
+	background:url(../img/spriteWidget.png) no-repeat -32px 0;
+	cursor:pointer
+}
+.widget .downloadApp {
+	background:url(../img/pattern.gif);
+	width:100%;
+	text-align:center;
+	margin:0 auto 4px auto;
+	-webkit-box-shadow:0 0 10px 0 #000000 1 inset;
+	-moz-box-shadow:0 0 10px 0 #000000 1 inset;
+	box-shadow:0 0 10px 0 #000000 1 inset
+}
+.widget .downloadApp a {
+	display:block;
+	background:url(../img/spriteWidget.png) no-repeat 0 -30px;
+	margin:0 auto;
+	height:32px;
+	width:142px
+}
+.widget .downloadApp a:hover {
+	cursor:hand;
+	opacity:.5
+}
+.widget .valor {
+	text-align:center;
+	text-transform:uppercase;
+	color:#0000000
+}
+.widget .valor a {
+	color:#000000;
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:none
+}
+.widget .valor a:hover {
+	color:#0683c2
+}
+.widget .prima {
+	text-align:center;
+	text-transform:uppercase;
+	color:#000000
+}
+.widget .prima a {
+	color:#000000;
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:none
+}
+.widget .prima a:hover {
+	color:#0683c2
+}
+.widget .prima a .flag {
+	display:inline-block;
+	background:url(../img/spriteWidget.png) no-repeat -132px 0;
+	width:14px;
+	height:11px;
+	margin:1px 4px 0 0
+}
+.widget .datos {
+	margin:5px 10px 0 10px;
+	width:auto
+}
+.widget .datos table {
+	width:100%
+}
+.widget .datos table td {
+	white-space:nowrap;
+	color:#666666
+}
+.widget .datos table td.price {
+	font-size:17px
+}
+.widget .datos table td.arrow .top,.widget .datos table td.arrow .flop,.widget .datos table td.arrow .equal,.widget .datos table td.arrow .inv.top,.widget .datos table td.arrow .inv.flop {
+	display:inline-block;
+	background-image:url(../img/spriteWidget.png);
+	background-repeat:no-repeat;
+	width:16px;
+	height:9px
+}
+.widget .datos table td.arrow .top {
+	background-position:0 0
+}
+.widget .datos table td.arrow .flop {
+	background-position:0 -9px
+}
+.widget .datos table td.arrow .equal {
+	background-position:0 -18px
+}
+.widget .datos table td.arrow .inv.top {
+	background-position:-16px -9px !important
+}
+.widget .datos table td.arrow .inv.flop {
+	background-position:-16px 0 !important
+}
+.widget .datos table td.date,.widget .datos table td.hour {
+	font-size:11px;
+	line-height:20px
+}
+.widget .graf {
+	margin:2px 4px;
+	text-align:center;
+	cursor:pointer;
+	background:#ffffff;
+	border:1px solid #dcdcdc;
+	-webkit-box-shadow:0 0 7px 0 #000000 0.1 inset;
+	-moz-box-shadow:0 0 7px 0 #000000 0.1 inset;
+	box-shadow:0 0 7px 0 #000000 0.1 inset
+}
+.widget .graf img {
+	margin:5px auto
+}
+.widget .copy {
+	display:block;
+	margin:5px auto;
+	width:auto;
+	text-align:center;
+	color:#002872;
+	font-size:11px
+}
+.widget .txtRight,.widget .alignRight {
+	text-align:right !important
+}
+.widget .top {
+	color:#72a15a !important
+}
+.widget .flop {
+	color:#ae4646 !important
+}
+.widget .equal {
+	color:#3e5986 !important
+}
